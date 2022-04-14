@@ -1,0 +1,121 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis.css" type="text/css" />
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis-network.min.js"> </script>
+<center>
+<h1>Tag Network of: Hogwarts Eighth Year,Hogwarts Era,Hogwarts Fourth Year<br>Number of Nodes: 10<br>Number of Edges: 9</h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+
+<style type="text/css">
+
+        #mynetwork {
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff;
+            border: 1px solid lightgray;
+            position: relative;
+            float: left;
+        }
+
+        
+
+        
+        #config {
+            float: left;
+            width: 400px;
+            height: 600px;
+        }
+        
+
+        
+</style>
+
+</head>
+
+<body>
+<div id = "mynetwork"></div>
+
+
+<div id = "config"></div>
+
+<script type="text/javascript">
+
+    // initialize global variables.
+    var edges;
+    var nodes;
+    var network; 
+    var container;
+    var options, data;
+
+    
+    // This method is responsible for drawing the graph, returns the drawn network
+    function drawGraph() {
+        var container = document.getElementById('mynetwork');
+        
+        
+
+        // parsing and collecting nodes and edges from the python
+        nodes = new vis.DataSet([{"color": "yellow", "group": 0, "id": "Hogwarts Eighth Year", "label": "Hogwarts Eighth Year", "shape": "dot", "size": 10, "title": "Hogwarts Eighth Year"}, {"color": "orange", "id": "Hogwarts Eighth Year Common Room", "label": "Hogwarts Eighth Year Common Room", "shape": "dot", "size": 10, "title": "Hogwarts Eighth Year Common Room"}, {"color": "blue", "group": 0, "id": "Hogwarts Era", "label": "Hogwarts Era", "shape": "dot", "size": 40, "title": "\u003ch3\u003eHogwarts Era\u003ch3\u003e"}, {"color": "blue", "group": 0, "id": "Hogwarts Fourth Year", "label": "Hogwarts Fourth Year", "shape": "dot", "size": 10, "title": "\u003ch3\u003eHogwarts Fourth Year\u003ch3\u003e"}, {"color": "yellow", "id": "Hogwarts First Year", "label": "Hogwarts First Year", "shape": "dot", "size": 10, "title": "Hogwarts First Year"}, {"color": "yellow", "id": "Hogwarts Second Year", "label": "Hogwarts Second Year", "shape": "dot", "size": 10, "title": "Hogwarts Second Year"}, {"color": "yellow", "id": "Hogwarts Third Year", "label": "Hogwarts Third Year", "shape": "dot", "size": 10, "title": "Hogwarts Third Year"}, {"color": "yellow", "id": "Hogwarts Fifth Year", "label": "Hogwarts Fifth Year", "shape": "dot", "size": 10, "title": "Hogwarts Fifth Year"}, {"color": "yellow", "id": "Hogwarts Sixth Year", "label": "Hogwarts Sixth Year", "shape": "dot", "size": 10, "title": "Hogwarts Sixth Year"}, {"color": "yellow", "id": "Hogwarts Seventh Year", "label": "Hogwarts Seventh Year", "shape": "dot", "size": 10, "title": "Hogwarts Seventh Year"}]);
+        edges = new vis.DataSet([{"arrows": "to", "from": "Hogwarts Eighth Year", "to": "Hogwarts Eighth Year Common Room", "weight": 1}, {"arrows": "to", "from": "Hogwarts Era", "to": "Hogwarts Eighth Year", "weight": 1}, {"arrows": "to", "from": "Hogwarts Era", "to": "Hogwarts Fourth Year", "weight": 1}, {"arrows": "to", "from": "Hogwarts Era", "to": "Hogwarts First Year", "weight": 1}, {"arrows": "to", "from": "Hogwarts Era", "to": "Hogwarts Second Year", "weight": 1}, {"arrows": "to", "from": "Hogwarts Era", "to": "Hogwarts Third Year", "weight": 1}, {"arrows": "to", "from": "Hogwarts Era", "to": "Hogwarts Fifth Year", "weight": 1}, {"arrows": "to", "from": "Hogwarts Era", "to": "Hogwarts Sixth Year", "weight": 1}, {"arrows": "to", "from": "Hogwarts Era", "to": "Hogwarts Seventh Year", "weight": 1}]);
+
+        // adding nodes and edges to the graph
+        data = {nodes: nodes, edges: edges};
+
+        var options = {
+    "configure": {
+        "enabled": true,
+        "filter": true
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": false,
+            "type": "continuous"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+        
+        
+
+        
+        // if this network requires displaying the configure window,
+        // put it in its div
+        options.configure["container"] = document.getElementById("config");
+        
+
+        network = new vis.Network(container, data, options);
+	 
+        
+
+
+        
+
+        return network;
+
+    }
+
+    drawGraph();
+
+</script>
+</body>
+</html>

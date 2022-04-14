@@ -1,0 +1,22 @@
+{
+  "name": "tag_scra",
+  "version": "1.0.0",
+  "description": "dependencies for scraper.js",
+  "main": "scraper.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RickArora/4088_Final_Project.git"
+  },
+  "author": "Elias Bestard Lorigados",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+    "puppeteer": "^8.0.0"
+  }
+}
