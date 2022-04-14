@@ -17,6 +17,7 @@
   },
   "homepage": "",
   "dependencies": {
-    "puppeteer": "^8.0.0"
+    "argparse": "^2.0.1",
+    "puppeteer": "^13.5.2"
   }
 }
