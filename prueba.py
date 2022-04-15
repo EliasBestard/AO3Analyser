@@ -15,7 +15,7 @@ import pandas as pd
 # %%
 # rick=['node', './Modules/DaScra/scraper.js']
 # d = check_output(rick)
-stories_df= pd.read_excel('dascra_output.xlsx',
+stories_df= pd.read_excel('./OutputFiles/dascra_output.xlsx',
               dtype={
                   'Additional Tags:': str, 'Archive Warning:': str,
                   'Author:': str, 'Bookmarks:': str,
@@ -43,24 +43,29 @@ print(len(additional_tags))
 
 # %%
 #TODO add the output file name of the JSON tag-data as parameter
-
-tag_structure_file_name='current_tag_net'
-# tag_structure_file_name='Disability_tag_net'
-# tag_structure_file_name='old_tag_net'
-
-tags_to_mine=['node', './Modules/TagScraping/scraper.js',tag_structure_file_name,"Hogwarts Eighth Year",'Hogwarts Era',"Hogwarts Fourth Year"]
-# tags_to_mine=['node', './Modules/TagScraping/scraper.js',tag_structure_file_name ,"Deaf Character", "Disability","Hogwarts Eighth Year",'Hogwarts Era',"Hogwarts Fourth Year"]
-# tags_to_mine=['node', './Modules/TagScraping/scraper.js',tag_structure_file_name ,"Disability",]
+args_to_tags_scraper=['node', './Modules/TagScraping/scraper.js' ]
 
 
-# tags_to_mine=['node', './Modules/TagScraping/scraper.js,tag_structure_file_name']
-# tags_to_mine.extend(additional_tags)
+tag_structure_file_name='Acurrent_tag_net'
+additional_tags=["Hogwarts Eighth Year",'Hogwarts Era',"Hogwarts Fourth Year"]
+additional_tags=["Deaf Character", "Disability","Hogwarts Eighth Year",'Hogwarts Era',"Hogwarts Fourth Year"]
 
 
-tags_to_mine=['node', './Modules/TagScraping/scraper.js']
+# tag_structure_file_name='Disability_current_tag_net'
+# additional_tags=["Disability"]
 
 
-p = check_output(tags_to_mine)
+# tag_structure_file_name='Disability_old_tag_net'
+# additional_tags=["Disability"]
+# args_to_tags_scraper.extend(['-av','old'])
+
+
+
+args_to_tags_scraper.extend(['-of',tag_structure_file_name])
+args_to_tags_scraper.extend(['-t'])
+args_to_tags_scraper.extend(additional_tags)
+print(args_to_tags_scraper)
+p = check_output(args_to_tags_scraper)
 
 # %% [markdown]
 # ## Building the Network and Visuals

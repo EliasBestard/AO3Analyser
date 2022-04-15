@@ -19,9 +19,9 @@ def net_build(data):
             G.nodes[tag]['title']="<h3>"+tag+"<h3>" 
             # G.nodes[tag]['title']="<h3>"+tag+"<h3>" + "<br> ".join(data[tag]['synned_tags'])
             # G.nodes[tag]['synned_tags']=data[tag]['synned_tags']
-            G.nodes[tag]['color']='blue'
+            G.nodes[tag]['color']='#2E86C1'
                         
-            add_subtags(G,data[tag]['subtags'],tag)
+            add_full_subtags(G,data[tag]['subtags'],tag)
             add_metatags(G,data,tag)
 
         elif data[tag]["type"]=="freeform_tag":
@@ -42,7 +42,7 @@ def add_metatags(G:nx.DiGraph,data, metatag):
         G.add_node(item)
         G.nodes[item]['group']=min(G.nodes[item]['group'],1) if G.nodes[item].__contains__('group') else 1
         G.nodes[item]['title']=G.nodes[item]['title'] if G.nodes[item].__contains__('title') else item
-        G.nodes[item]['color']=G.nodes[item]['color'] if G.nodes[item].__contains__('color') else "read"
+        G.nodes[item]['color']=G.nodes[item]['color'] if G.nodes[item].__contains__('color') else "#CB4335"
         G.add_edge(item, metatag)
 
     # for item in data[metatag]["subtags"]:
@@ -71,7 +71,7 @@ def add_metatags(G:nx.DiGraph,data, metatag):
     return G
 
 
-def add_subtags(G:nx.DiGraph,data, metatag):
+def add_full_subtags(G:nx.DiGraph,data, metatag):
     """
     Given a graph G and the scrapped data from TagScraper (JSON) and a metatag
     adds the metatag to the nodes and all their ongoing/ingoing connections with its tags
@@ -84,16 +84,20 @@ def add_subtags(G:nx.DiGraph,data, metatag):
             G.add_node(item) if not G.has_node(item) else None 
             G.add_edge(metatag,item) if not G.has_edge(metatag,item) else None
             G.nodes[item]['title']=item
-            G.nodes[item]['color']='yellow'
+            G.nodes[item]['color']='#CA6F1E'
+            G.nodes[item]['group']=2
+
         else:
             current_tag=list(item.keys())[0]
             G.add_node(current_tag) if not G.has_node(current_tag) else None 
             G.add_edge(metatag,current_tag) if not G.has_edge(metatag,current_tag) else None
             G.nodes[current_tag]['title']=current_tag
-            G.nodes[current_tag]['color']="yellow"
+            G.nodes[current_tag]['color']="#CA6F1E"
+            G.nodes[current_tag]['group']=2
             my_stack.append(item)
-
+    count_group=2
     while (len(my_stack)>0):
+        count_group+=1
         current_element = my_stack.pop(0)
         current_tag = list(current_element.keys())[0]
 
@@ -104,13 +108,15 @@ def add_subtags(G:nx.DiGraph,data, metatag):
                 G.add_node(item) if not G.has_node(item) else None 
                 G.add_edge(current_tag,item) if not G.has_edge(current_tag,item) else None
                 G.nodes[item]['title']=item
-                G.nodes[item]['color']="orange"
+                G.nodes[item]['color']="#D4AC0D"
+                G.nodes[item]['group']=count_group
             else:
                 next_tag = list(item.keys())[0]
                 G.add_node(next_tag) if not G.has_node(next_tag) else None 
                 G.add_edge(current_tag, next_tag) if not G.has_edge(current_tag,next_tag) else None
                 G.nodes[next_tag]['title']=next_tag
-                G.nodes[next_tag]['color']="orange"
+                G.nodes[next_tag]['color']="#D4AC0D"
+                G.nodes[next_tag]['group']=count_group
 
                 my_stack.append(item)
 
