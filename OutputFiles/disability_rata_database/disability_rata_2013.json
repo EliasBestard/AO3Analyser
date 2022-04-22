@@ -1,0 +1,73 @@
+{
+    "Disability": {
+        "type": "canonical_tag",
+        "parent_tags": [
+            "No Fandom"
+        ],
+        "synned_tags": [
+            "Disabilities",
+            "Disability Issues",
+            "disability themes",
+            "disabilty",
+            "Disable",
+            "disabled!stuck",
+            "Dsiable",
+            "Handicap",
+            "impairment",
+            "Permanant Injury of Main Character"
+        ],
+        "subtags": [
+            "Deaf",
+            {
+                "Deaf Character": [
+                    "Deaf Dave",
+                    "Deaf Clint",
+                    "Deaf Clint Barton",
+                    "Deaf Derek",
+                    "Deaf Derek Hale",
+                    "Deaf John",
+                    "Deaf Bilbo",
+                    "Deaf Castiel",
+                    "Deaf Dean Winchester",
+                    "Deaf Stiles"
+                ]
+            },
+            "Blindness",
+            {
+                "Blind Character": [
+                    "Blind Stiles",
+                    "Blind Sherlock",
+                    "Blind Dave",
+                    "Blind Roy",
+                    "Blind Harry",
+                    "Blind John",
+                    "Blind Sam",
+                    "Blind Castiel",
+                    "Blind Loki",
+                    "Blind Dean",
+                    "Blind Derek",
+                    "Blind Sollux Captor"
+                ]
+            },
+            "Physical Disability",
+            "Permanent Injury",
+            "Disabled Character",
+            {
+                "Canon Disabled Character": [
+                    null
+                ]
+            },
+            "Learning Disabilities",
+            "Dyslexia",
+            "Muteness",
+            {
+                "Mute Loki": [
+                    null
+                ]
+            }
+        ],
+        "metatags": [
+            ""
+        ]
+    }
+}
