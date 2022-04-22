@@ -19,9 +19,9 @@ const URLs =
 	{
 		headless: false,
 		args: ["--no-sandbox", "--disable-setuid-sandbox"],
-		headers:{
-			'User-Agent': 'bot'
-		  }
+		// headers:{
+		// 	'User-Agent': 'bot'
+		//   }
 	});
   
 	try
@@ -34,18 +34,21 @@ const URLs =
 		await page.$eval('input[id="tos_agree"]', check => check.click());
 		await page.waitForTimeout(1000);
 		await page.$eval('button[id="accept_tos"]', btn => btn.click());
-		await page.setUserAgent('bot');
+		await page.waitForTimeout(1000);
+
+		await page.select('select[name="work_search[sort_column]"]', 'kudos_count');
+		await page.waitForTimeout(1000);
+		await page.click('input[value="Sort and Filter"]');
+		await page.waitForTimeout(2000);
+
+		// await page.setUserAgent('bot');
 		var works = [];
 		let max_stories=100
-		while (true)
+		// while (true)
+		while (max_stories>0)
 		{
-			let temp_count=0
 			works = works.concat (await page.evaluate(() => 
 			{
-				setTimeout(function() {
-					// Add tasks to do
-				
-				
 				let elements = document.getElementsByClassName('work blurb group');
 				let res = [];
 				for (let element of elements)
@@ -86,15 +89,8 @@ const URLs =
 				}
 				return res;
 
-
-
-
-			}, 3000 );
-
-
 			}));
-			temp_count = works.length-temp_count
-			max_stories = max_stories-temp_count;
+			max_stories -=20 ;
 			let next = await page.evaluate(() => 
 			{
 				let nextEl = document.getElementsByClassName('next')[0];

@@ -54,7 +54,41 @@ const URLs = {
 		args_mine.tags,
 		// process.argv.length > 3 ? process.argv.slice(3) : tag_to_mine,
 };
+
+switch (args_mine.AO3_version) {
+	case 'current':
+	  URLs.site = "https://archiveofourown.org/";
+	  break;
+	case '2021':
+		URLs.site = "https://web.archive.org/web/20210125165441/https://archiveofourown.org/";
+		break;
+	case '2018':
+		URLs.site = "https://web.archive.org/web/20180205161503/https://archiveofourown.org/";
+		break;
+	case '2017':
+		URLs.site = "https://web.archive.org/web/20170723141339/https://archiveofourown.org/";
+		break;
+	case '2016':
+		URLs.site = "https://web.archive.org/web/20160217094435/https://archiveofourown.org/";
+		break;
+	case '2015':
+		URLs.site = "https://web.archive.org/web/20150105080944/https://archiveofourown.org/";
+		break;
+	case '2014':
+		URLs.site = "https://web.archive.org/web/20140911124210/https://archiveofourown.org/";
+		break;
+	case '2013':
+		URLs.site = "https://web.archive.org/web/20130907212114/https://archiveofourown.org/tags";
+		break;
+	default:
+	  text = "https://archiveofourown.org/";
+  }
+
+
 // console.log(URLs.tag)
+
+
+
 
 ( async () => {	
 	const browser = await puppeteer.launch({
@@ -70,10 +104,24 @@ const URLs = {
 	
 	try{
 		for (let index = 0; index < URLs.tag.length; index++) {
+			console.log("================= "+(index+1)+"/"+URLs.tag.length+" =================");
 			console.log("================= MINING TAG: "+URLs.tag[index]+" =================");
+			
 			let temp = await mine_RATAS(URLs.tag[index], page)
-			mined_tags[URLs.tag[index]]=temp;
+			if(temp==NaN)
+				continue;
+			mined_tags[URLs.tag[index]]= temp;
+			
 			console.log("===================================================================")
+			if(index%50==0 & index>0)
+				await delay(60000);
+			console.log("================= Waiting 3min =================");
+			if(index>99){
+				if(index%10==0)
+					delay(5000);
+				if(index%50==0)
+					delay(60000);
+			}	
 		}		
 	}
 	catch (e){
@@ -85,7 +133,7 @@ const URLs = {
 		// write the JSON 
 		
 		// fs.writeFile("./"+URLs.file_name+".json", dictstring,function(err, result) {
-		fs.writeFile(args_mine.output_path+args_mine.output_file+".json", dictstring,function(err, result) {
+		fs.writeFile(args_mine.output_path+args_mine.output_file+"_"+args_mine.AO3_version+".json", dictstring,function(err, result) {
 			if(err) console.log('error', err);
 		});
 
@@ -95,9 +143,22 @@ const URLs = {
 		process.exit(0);
 })();
 
+
+
+
+
+function delay(time) {
+	return new Promise(resolve => setTimeout(resolve, time));
+  }
+
+
+
+
 async function mine_RATAS (tag_to_mine, page){
 	//go to "https://archiveofourown.org/tag_to mine"
 	await page.goto(URLs.site + 'tags/' + tag_to_mine ); 
+
+	
 
 	//conditions
 	// await page.waitForTimeout(2000);
@@ -105,10 +166,12 @@ async function mine_RATAS (tag_to_mine, page){
 	await page.waitForTimeout(1000);
 	// await page.$eval('button[id="accept_tos"]', btn => btn.click());
 	
-	
 	// Mine the RATAS of the current tag
 	let current_tag = await page.evaluate(() => {
 		let my_dic={};
+
+		if(document.getElementById('error'))
+			return NaN
 		console.log("Type of TAG");
 		let type_of_tag = document.getElementsByClassName('tag home profile')[0].children[1].innerText;
 		// console.log(type_of_tag);
@@ -119,7 +182,11 @@ async function mine_RATAS (tag_to_mine, page){
 				my_dic.type="canonical_tag";
 				break;
 			case "This tag belongs to the Additional Tags Category.":
-				if(document.getElementsByClassName('tag home profile')[0].children[3].innerText =="This tag has not been marked common and can't be filtered on (yet)." ){
+				if(
+					document.getElementsByClassName('tag home profile')[0].children[3].innerText =="This tag has not been marked common and can't be filtered on (yet)."
+					||
+					document.getElementsByClassName('tag home profile')[0].children[2].innerText =="This tag has not been marked common and can't be filtered on (yet)."
+					){
 					my_dic.type="freeform_tag";
 					console.log("FreeForm Tag");
 				}
@@ -134,19 +201,19 @@ async function mine_RATAS (tag_to_mine, page){
 	   	default: 
 			my_dic.type="NAN";
 		}
-		console.log("~~~~~~~~~~~~~");
+		// console.log("~~~~~~~~~~~~~");
 
 	
-		console.log("~~~~~~ParentTags~~~~~~~");
+		// console.log("~~~~~~ParentTags~~~~~~~");
 		let parent_tags =document.getElementsByClassName('parent listbox group')[0]? [].map.call(document.getElementsByClassName('parent listbox group')[0].getElementsByClassName('tags'), (form=>{return form.innerText})).join(', '): "";
 		my_dic.parent_tags=parent_tags.split(',');
-		console.log("~~~~~~~~~~~~~");
+		// console.log("~~~~~~~~~~~~~");
 
 
-		console.log("~~~~~~SynnedTags~~~~~~~");
+		// console.log("~~~~~~SynnedTags~~~~~~~");
 		let synned_tags =document.getElementsByClassName('synonym listbox group')[0]? [].map.call(document.getElementsByClassName('synonym listbox group')[0].getElementsByClassName('tag'), (form=>{return form.innerText})).join(','):"";
 		my_dic.synned_tags=synned_tags.split(',');
-		console.log("~~~~~~~~~~~~~");
+		// console.log("~~~~~~~~~~~~~");
 		function getNodeTree(node) {
 			if (node.children.length>1) {
 				var children = [];
@@ -161,7 +228,7 @@ async function mine_RATAS (tag_to_mine, page){
 			return node.firstChild.innerText;
 		}
 
-		console.log("~~~~~~SubTags~~~~~~~");
+		// console.log("~~~~~~SubTags~~~~~~~");
 		let sub_tags = [];
 		// If there are SUB TAGS
 		if(document.getElementsByClassName('sub listbox group').length>0){
@@ -174,31 +241,6 @@ async function mine_RATAS (tag_to_mine, page){
 				let temp=getNodeTree(first_child_il)
 				sub_tags.push(temp)
 
-				// // If it does not have nested elements
-				// if (first_child_il.children.length==1){
-				// 	// console.log(first_child_il.getElementsByClassName('tag')[0].innerText)
-				// 	sub_tags.push(first_child_il.getElementsByClassName('tag')[0].innerText)
-
-				// }
-				// else{ //If the subtag has nested tags. It only check for two levels
-				// 	let temp=[];
-					
-				// 	grandchilds_ul=first_child_il.children[1]
-				// 	// Iterate for all Nested tags and link only one level to the subtag
-				// 	for (let index = 0; index < grandchilds_ul.children.length; index++) {
-				// 		//Adds the first element (only the grand child not its nested children)
-				// 		temp.push(grandchilds_ul.children[index].firstChild.innerText)
-				// 	}
-				// 	// //This adds all the nested values ( not only the second level) as the 2nd level
-				// 	// for( let i =0; i<first_child_il.getElementsByTagName('li').length; i++){
-				// 	// 	temp.push(first_child_il.getElementsByTagName('li')[i].innerText);
-				// 	// }
-
-				// 	let temp_2={}; 
-				// 	temp_2[first_child_il.children[0].innerText]= temp;
-				// 	// console.log(temp_2);
-				// 	sub_tags.push(temp_2);
-				// }
 				ul_list.removeChild(first_child_il);
 			}
 			// Save the subtags
@@ -207,24 +249,18 @@ async function mine_RATAS (tag_to_mine, page){
 		}
 		else
 			my_dic.subtags=[""];
-		console.log("~~~~~~~~~~~~~");
+		// console.log("~~~~~~~~~~~~~");
 
-		console.log("~~~~~~MetaTags~~~~~~~");		
+		// console.log("~~~~~~MetaTags~~~~~~~");		
 		let list_of_meta_tags =document.getElementsByClassName('meta listbox group').length>0? Array.from(document.getElementsByClassName('meta listbox group')[0].getElementsByTagName('ul')):[''];
 		let meta_tags=list_of_meta_tags[0];
 
-		// // soluiton without casting, do not like it, do not like the idea of infinite loop
-		// while(list_of_meta_tags.length>1){
-			// 	meta_tags.removeChild(list_of_meta_tags[1].parentNode);
-			// }
-		//cast it as an array for iterate without modify it and delete the dependences in meta_tags
-
 		for (let index = 1; index < list_of_meta_tags.length; index++)
-			meta_tags.removeChild(list_of_meta_tags[index].parentNode);
+			list_of_meta_tags[index].parentNode.parentNode==meta_tags? meta_tags.removeChild(list_of_meta_tags[index].parentNode):NaN;
 		meta_tags =meta_tags=="" ?[""] : [].map.call(meta_tags.children, (form=>{return form.innerText}));
 		my_dic.metatags = meta_tags;
 		// console.log(meta_tags);
-		console.log("~~~~~~~~~~~~~");
+		// console.log("~~~~~~~~~~~~~");
 
 		return my_dic;
 	});

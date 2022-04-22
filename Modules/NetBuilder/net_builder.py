@@ -18,17 +18,36 @@ def net_build(data):
             G.nodes[tag]['group']=0
             G.nodes[tag]['title']="<h3>"+tag+"<h3>" 
             # G.nodes[tag]['title']="<h3>"+tag+"<h3>" + "<br> ".join(data[tag]['synned_tags'])
-            # G.nodes[tag]['synned_tags']=data[tag]['synned_tags']
+            G.nodes[tag]['synned_tags']=data[tag]['synned_tags']
             G.nodes[tag]['color']='#2E86C1'
                         
             add_full_subtags(G,data[tag]['subtags'],tag)
             add_metatags(G,data,tag)
+            __add_synned_tags(G,tag,data[tag]['synned_tags'])
 
         elif data[tag]["type"]=="freeform_tag":
             G.add_node(tag) if not G.has_node(tag) else None
             G.nodes[tag]['group']="freeform_tag"
             G.nodes[tag]['title']=tag
+            G.nodes[tag]['color']='#5D6D7E'
     return G
+
+def __add_synned_tags(G:nx.DiGraph, node, synned_tags:list):
+    synned_tag_node=node+'_synned_tags'
+    
+    G.add_node(synned_tag_node)
+    G.add_edge(node,synned_tag_node)
+    G.add_edge(synned_tag_node,node)
+    G.nodes[synned_tag_node]['shape']='square'
+    G.nodes[synned_tag_node]['color']='#8E44AD'
+
+    for tag in synned_tags:
+        G.add_node(tag)
+        G.add_edge(synned_tag_node,tag)
+        G.nodes[tag]['shape']='triangle'
+        G.nodes[tag]['color']='#BB8FCE'
+
+
 
 def add_metatags(G:nx.DiGraph,data, metatag):
     """
@@ -102,7 +121,7 @@ def add_full_subtags(G:nx.DiGraph,data, metatag):
         current_tag = list(current_element.keys())[0]
 
         for item in current_element[current_tag]:
-            if item=='':
+            if item==''or item==None:
                 continue
             if type(item)==str:
                 G.add_node(item) if not G.has_node(item) else None 
