@@ -13,23 +13,26 @@ def net_build(data):
     G = nx.DiGraph()
     for tag in data:
         if data[tag]["type"]=="canonical_tag":
-                       
             G.add_node(tag) if not G.has_node(tag) else None 
+            G.nodes[tag]['type']="canonical_tag"
             G.nodes[tag]['group']=0
             G.nodes[tag]['title']="<h3>"+tag+"<h3>" 
             # G.nodes[tag]['title']="<h3>"+tag+"<h3>" + "<br> ".join(data[tag]['synned_tags'])
             G.nodes[tag]['synned_tags']=data[tag]['synned_tags']
             G.nodes[tag]['color']='#2E86C1'
                         
-            add_full_subtags(G,data[tag]['subtags'],tag)
-            add_metatags(G,data,tag)
+            __add_full_subtags(G,data[tag]['subtags'],tag)
+            __add_metatags(G,data,tag)
             __add_synned_tags(G,tag,data[tag]['synned_tags'])
 
         elif data[tag]["type"]=="freeform_tag":
             G.add_node(tag) if not G.has_node(tag) else None
             G.nodes[tag]['group']="freeform_tag"
+            G.nodes[tag]['type']="freeform_tag"
             G.nodes[tag]['title']=tag
             G.nodes[tag]['color']='#5D6D7E'
+        
+    __update_title(G)
     return G
 
 def __add_synned_tags(G:nx.DiGraph, node, synned_tags:list):
@@ -38,18 +41,20 @@ def __add_synned_tags(G:nx.DiGraph, node, synned_tags:list):
     G.add_node(synned_tag_node)
     G.add_edge(node,synned_tag_node)
     G.add_edge(synned_tag_node,node)
+    G.nodes[synned_tag_node]['type']='connection_node'
+    G.nodes[synned_tag_node]['title']=node+'_synned_tags'
     G.nodes[synned_tag_node]['shape']='square'
     G.nodes[synned_tag_node]['color']='#8E44AD'
 
     for tag in synned_tags:
         G.add_node(tag)
         G.add_edge(synned_tag_node,tag)
+        G.nodes[tag]['type']='synned_tag'
         G.nodes[tag]['shape']='triangle'
         G.nodes[tag]['color']='#BB8FCE'
 
 
-
-def add_metatags(G:nx.DiGraph,data, metatag):
+def __add_metatags(G:nx.DiGraph,data, metatag):
     """
     Given a graph G and the scrapped data from TagScraper (JSON) and a metatag
     adds the metatag to the nodes and all their incoing connections with its tags
@@ -62,6 +67,7 @@ def add_metatags(G:nx.DiGraph,data, metatag):
         G.nodes[item]['group']=min(G.nodes[item]['group'],1) if G.nodes[item].__contains__('group') else 1
         G.nodes[item]['title']=G.nodes[item]['title'] if G.nodes[item].__contains__('title') else item
         G.nodes[item]['color']=G.nodes[item]['color'] if G.nodes[item].__contains__('color') else "#CB4335"
+        G.nodes[item]['type']='canonical_tag'
         G.add_edge(item, metatag)
 
     # for item in data[metatag]["subtags"]:
@@ -90,7 +96,7 @@ def add_metatags(G:nx.DiGraph,data, metatag):
     return G
 
 
-def add_full_subtags(G:nx.DiGraph,data, metatag):
+def __add_full_subtags(G:nx.DiGraph,data, metatag):
     """
     Given a graph G and the scrapped data from TagScraper (JSON) and a metatag
     adds the metatag to the nodes and all their ongoing/ingoing connections with its tags
@@ -102,6 +108,7 @@ def add_full_subtags(G:nx.DiGraph,data, metatag):
         if type(item)==str:
             G.add_node(item) if not G.has_node(item) else None 
             G.add_edge(metatag,item) if not G.has_edge(metatag,item) else None
+            G.nodes[item]['type']='canonical_tag'
             G.nodes[item]['title']=item
             G.nodes[item]['color']='#CA6F1E'
             G.nodes[item]['group']=2
@@ -110,6 +117,7 @@ def add_full_subtags(G:nx.DiGraph,data, metatag):
             current_tag=list(item.keys())[0]
             G.add_node(current_tag) if not G.has_node(current_tag) else None 
             G.add_edge(metatag,current_tag) if not G.has_edge(metatag,current_tag) else None
+            G.nodes[current_tag]['type']='canonical_tag'
             G.nodes[current_tag]['title']=current_tag
             G.nodes[current_tag]['color']="#CA6F1E"
             G.nodes[current_tag]['group']=2
@@ -126,6 +134,7 @@ def add_full_subtags(G:nx.DiGraph,data, metatag):
             if type(item)==str:
                 G.add_node(item) if not G.has_node(item) else None 
                 G.add_edge(current_tag,item) if not G.has_edge(current_tag,item) else None
+                G.nodes[item]['type']='canonical_tag'
                 G.nodes[item]['title']=item
                 G.nodes[item]['color']="#D4AC0D"
                 G.nodes[item]['group']=count_group
@@ -133,6 +142,7 @@ def add_full_subtags(G:nx.DiGraph,data, metatag):
                 next_tag = list(item.keys())[0]
                 G.add_node(next_tag) if not G.has_node(next_tag) else None 
                 G.add_edge(current_tag, next_tag) if not G.has_edge(current_tag,next_tag) else None
+                G.nodes[next_tag]['type']='canonical_tag'
                 G.nodes[next_tag]['title']=next_tag
                 G.nodes[next_tag]['color']="#D4AC0D"
                 G.nodes[next_tag]['group']=count_group
@@ -140,3 +150,15 @@ def add_full_subtags(G:nx.DiGraph,data, metatag):
                 my_stack.append(item)
 
     return G
+
+def __update_title(G:nx.DiGraph):
+    for node in G.nodes:
+        #if it is not a synned tag which are the ones without a title
+        if G.nodes[node]['type']=='canonical_tag' or G.nodes[node]['type']=='freeform_tag':
+            title = "<br> Subtags: "+str(G.out_degree(node))
+            title += "<br> Metatags: "+str(G.in_degree(node))
+            # title += "<br>Subtags: "+G.out_degree(node)
+            G.nodes[node]['title']=G.nodes[node]['title']+title 
+        if  G.nodes[node]['type']=='connection_node':
+            title = "<br> Synned Tags: "+str(G.out_degree(node))
+            G.nodes[node]['title']=G.nodes[node]['title']+title 
