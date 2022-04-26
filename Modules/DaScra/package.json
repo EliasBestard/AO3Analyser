@@ -17,8 +17,10 @@
   },
   "homepage": "https://github.com/RickArora/4088_Final_Project#readme",
   "dependencies": {
-    "excel4node": "^1.7.2",
-    "moment": "^2.29.2",
+    "argparse": "^2.0.1",
+    "cli-progress": "^3.10.0",
+    "exceljs": "^4.3.0",
+    "fs": "0.0.1-security",
     "puppeteer": "^13.5.2"
   }
 }

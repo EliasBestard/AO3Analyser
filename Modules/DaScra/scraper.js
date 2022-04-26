@@ -1,50 +1,128 @@
 "use strict";
+const cliProgress = require('cli-progress');
+const dascra_cli = require('./dascra_cli')
 const puppeteer = require("puppeteer");
-const moment = require("moment");
-const excel = require('excel4node');
+const excel = require('exceljs');
+const fs = require('fs')
 
+
+
+
+// CLI
+let args_mine =dascra_cli.args_mine;
 
 const URLs = 
 {
 	site:
 		"https://archiveofourown.org/",
 	tag:
-		process.argv.length > 2 ? process.argv.slice(2).join("%20") : "How%20I%20Met%20Your%20Father%20(TV%202022)"
+		args_mine.tag,
+		// process.argv.length > 2 ? process.argv.slice(2).join("%20") : "How%20I%20Met%20Your%20Father%20(TV%202022)"
 		// process.argv.length > 2 ? process.argv.slice(2).join("%20") : "Constance%20Raveau"
 };
+
+
+// ?page=
 
 ( async () => 
 {	
 	const browser = await puppeteer.launch(
 	{
-		headless: false,
-		args: ["--no-sandbox", "--disable-setuid-sandbox"],
-		// headers:{
-		// 	'User-Agent': 'bot'
-		//   }
+		headless: !args_mine.headless,
+		args: ["--no-sandbox", "--disable-setuid-sandbox"]
 	});
   
 	try
 	{
-	  
 		const page = await browser.newPage();
-		await page.goto(URLs.site + 'tags/' + URLs.tag + '/works'); 
 		
+		// If continuing an old iteration see where to beguin
+		let row_count=0;
+		var workbook = new excel.Workbook();
+		var ws = NaN;
+		
+		// If continuing an old iteration scraping a certain tag, and the file exists
+		if(args_mine.continue &  fs.existsSync(args_mine.output_path+args_mine.output_file+'.xlsx')){
+			// Read the file and get the count of stories
+			await workbook.xlsx.readFile(args_mine.output_path+args_mine.output_file+'.xlsx')
+			.then(function() {
+					if(args_mine.verbose){
+						console.log("Reading existing file :"+args_mine.output_path+args_mine.output_file+'.xlsx')
+					}
+			        ws = workbook.getWorksheet('Sheet 1');
+			        const rows = ws.getColumn(1);
+					const rowsCount = rows['_worksheet']['_rows'].length;
+					row_count= rowsCount-1
+			    });
+		}else{
+			// If it is a new iteration or the file did not extit
+			// Creates a new file and adds the header
+			if(args_mine.verbose){
+				console.log("Creating/Overwriting file :"+args_mine.output_path+args_mine.output_file+'.xlsx')
+			}
+			ws = workbook.addWorksheet('Sheet 1');
+			const headers = [
+				{ header: 'Title', key: 'title', width: 15, bold:true },
+				{ header: 'AdditionalTags', key: 'at', width: 15 },
+				{ header: 'ArchiveWarning', key: 'aw', width: 15 },
+				{ header: 'Author', key: 'a', width: 15 },
+				{ header: 'Bookmarks', key: 'b', width: 15 },
+				{ header: 'Category', key: 'cat', width: 15 },
+				{ header: 'Chapters', key: 'chapt', width: 15 },
+				{ header: 'Characters', key: 'char', width: 15 },
+				{ header: 'Comments', key: 'com', width: 15 },
+				{ header: 'Fandom', key: 'fan', width: 15 },
+				{ header: 'Hits', key: 'hit', width: 15 },
+				{ header: 'Kudos', key: 'k', width: 15 },
+				{ header: 'Language', key: 'lang', width: 15 },
+				{ header: 'Rating', key: 'rating', width: 15 },
+				{ header: 'Relationship', key: 'rel', width: 15 },
+				{ header: 'Series', key: 'ser', width: 15 },
+				{ header: 'Part', key: 'part', width: 15 },
+				{ header: 'SourceURL', key: 'url', width: 15 },
+				{ header: 'Updated', key: 'updated', width: 15 },
+				{ header: 'Words', key: 'words', width: 15 },
+			];
+			ws.columns = headers;
+			ws.getRow(1).style ={font: {bold: true}};
+		}
+		// Get the page from where to start to get the data and which story to start geting the data 
+		let current_story_number = row_count%20;
+		let work_page = Math.floor(row_count/20);
+		
+		if(args_mine.verbose){
+			console.log('======================')
+			console.log("stored stories-> "+row_count)
+			console.log("starting from page -> "+work_page)
+			console.log("current story-> "+current_story_number)
+			console.log('======================')
+		}
+		
+		// Go to the URL and accept requirements
+		await page.goto(URLs.site + 'tags/' + URLs.tag + '/works?page='+work_page); 
 		await page.waitForTimeout(2000);
 		await page.$eval('input[id="tos_agree"]', check => check.click());
 		await page.waitForTimeout(1000);
 		await page.$eval('button[id="accept_tos"]', btn => btn.click());
 		await page.waitForTimeout(1000);
+		// If it was indicated to sort by kudos
+		if( args_mine.kudo_sorting){
+			await page.select('select[name="work_search[sort_column]"]', 'kudos_count');
+			await page.waitForTimeout(1000);
+			await page.click('input[value="Sort and Filter"]');
+			await page.waitForTimeout(2000);
+		}
 
-		await page.select('select[name="work_search[sort_column]"]', 'kudos_count');
-		await page.waitForTimeout(1000);
-		await page.click('input[value="Sort and Filter"]');
-		await page.waitForTimeout(2000);
-
-		// await page.setUserAgent('bot');
 		var works = [];
-		let max_stories=100
-		// while (true)
+		let max_stories=1000
+		
+		const bar1 = new cliProgress.SingleBar({}, cliProgress.Presets.rect);
+		if(args_mine.verbose){
+			console.log('=================== Scraping ===================')
+			bar1.start(1000, 0);
+
+		}
+		// Scraps 1000 stories per iteration
 		while (max_stories>0)
 		{
 			works = works.concat (await page.evaluate(() => 
@@ -90,7 +168,14 @@ const URLs =
 				return res;
 
 			}));
+
 			max_stories -=20 ;
+			if(args_mine.verbose){
+				let actual_number=1000-max_stories
+				// update the current value in your application..
+				bar1.update(actual_number);
+			}
+			// GO to the next page
 			let next = await page.evaluate(() => 
 			{
 				let nextEl = document.getElementsByClassName('next')[0];
@@ -101,67 +186,56 @@ const URLs =
 				break;
 			await page.goto(URLs.site + next); 
 		}
-	
-		// useful for debugging
-		/* for (let work of works)
-		 {
-			console.log('title:      ' + work.title);
-			console.log('url:        ' + work.url);
-			console.log('author:     ' + work.author);
-			console.log('fandoms:    ' + work.fandoms);
-			console.log('rating:     ' + work.rating);
-			console.log('warning:    ' + work.warning);
-			console.log('category:   ' + work.category);
-			console.log('updated:    ' + work.updated);
-			console.log('characters: ' + work.characters);
-			console.log('language:   ' + work.language);
-			console.log('words:      ' + work.words);
-			console.log('chapters:   ' + work.chapters);
-			console.log('comments:   ' + work.comments);
-			console.log('kudos:      ' + work.kudos);
-			console.log('bookmarks:  ' + work.bookmarks);
-			console.log('hits:       ' + work.hits);
-			console.log('addit. tags:' + work.add_tags);
-			console.log('rel-ships:  ' + work.relationships);
-			console.log('series:     ' + work.series);
-			console.log('part:       ' + work.part);
-			console.log('---------------------------');
-		} */
+		const bar2 = new cliProgress.SingleBar({}, cliProgress.Presets.shades_grey);
 		
-		var workbook = new excel.Workbook();
-		var ws = workbook.addWorksheet('Sheet 1');
-	
-		for (let n = 0; n <= works.length; n++)
-		{
-			let w = works[n - 1];
-			ws.cell(n + 1, 1).string(n ? w.add_tags	: "Additional Tags:");
-			ws.cell(n + 1, 2).string(n ? w.warning 	: "Archive Warning:");
-			ws.cell(n + 1, 3).string(n ? w.author 	: "Author:");
-			ws.cell(n + 1, 4).string(n ? w.bookmarks 	: "Bookmarks:");
-			ws.cell(n + 1, 5).string(n ? w.category 	: "Category:");
-			ws.cell(n + 1, 6).string(n ? w.chapters 	: "Chapters:");
-			ws.cell(n + 1, 7).string(n ? w.characters 	: "Characters:");
-			ws.cell(n + 1, 8).string(n ? w.comments 	: "Comments:");
-			ws.cell(n + 1, 9).string(n ? w.fandoms 		: "Fandom:");
-			ws.cell(n + 1, 10).string(n ? w.hits 		: "Hits:");
-			ws.cell(n + 1, 11).string(n ? w.kudos 		: "Kudos:");
-			ws.cell(n + 1, 12).string(n ? w.language	: "Language:");
-			ws.cell(n + 1, 13).string(n ? w.rating 		: "Rating:");
-			ws.cell(n + 1, 14).string(n ? w.relationships	: "Relationship:");
-			ws.cell(n + 1, 15).string(n ? w.series	 	: "Series:");
-			ws.cell(n + 1, 16).string(n ? w.part	 	: "Part:");
-			ws.cell(n + 1, 17).string(n ? w.url		: "Source URL:");
-			ws.cell(n + 1, 18).string(n ? w.title	 	: "Title:");
-			ws.cell(n + 1, 19).string(n ? w.updated	 	: "Updated:");
-			ws.cell(n + 1, 20).string(n ? w.words	 	: "Words:");
+		if(args_mine.verbose){
+			// stop the progress bar
+			bar1.stop();
+			console.log('=================== Writing ===================')
+			bar2.start(1000, 0);
 		}
+		//write the info in the worksheet
+		for (let n = current_story_number; n < works.length; n++)
+		{
+			let w = works[n];
+			ws.addRow([
+				w.title,
+ 				w.add_tags,
+ 				w.warning,
+ 				w.author,
+ 				w.bookmarks,
+ 				w.category,
+ 				w.chapters,
+ 				w.characters,
+ 				w.comments,
+				w.fandoms,
+				w.hits,
+				w.kudos,
+				w.language,
+				w.rating,
+				w.relationships,
+				w.series,
+				w.part,
+				w.url,
+				w.updated,
+				w.words])
+				if(args_mine.verbose & n%100==0){
+					bar2.update(n);
+					// let lenght_p=process.stdout.columns-15
+					// console.log('='.repeat(Math.floor((n*lenght_p)/1000))+ n +'/1000')
+			}
+		}
+
 		
-		ws.cell(1, 1, 1, 20).style({font: {bold: true}});
+		// ws.getCell(1, 1, 1, 20).style({font: {bold: true}});
 	
-		// await workbook.write(URLs.tag.replace('%20', ' ') + '_' +
-		// 	moment().format('DD_MMM_YYYY') +
-		// 	'.xlsx');
-		await workbook.write("dascra_output.xlsx");
+		await workbook.xlsx.writeFile(args_mine.output_file+".xlsx").then(() => {
+			if(args_mine.verbose){
+				bar2.update(1000)
+				bar2.stop()
+				console.log("========== Successfully stored =========")
+			}
+		  });
 	}
 	catch (e)
 	{

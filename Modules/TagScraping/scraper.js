@@ -1,47 +1,9 @@
 "use strict";
 const puppeteer = require("puppeteer");
 const fs = require("fs");
-const { ArgumentParser } = require('argparse');
+const tagscra_cli = require('./tagscra_cli')
 
-
-const parser = new ArgumentParser({
-	description: 'Argparse example'
-});
-
-parser.add_argument('-of', '--output_file', {
-	type:'str',
-	default:'tag_net',
-	help: 'Name of the output JSON file'
-  });
-
-parser.add_argument('-t', '--tags', {
-	nargs:'+',
-  	required: true,
-  	help: 'Set of tags to scrap',
-  });
-
-parser.add_argument('-op', '--output_path', { 
-    type:'str',
-    default:'./OutputFiles/', 
-    help: 'Path to save the output JSON'
-  });
-
-  parser.add_argument('-av', '--AO3_version', { 
-    type:'str',
-    default:'current', 
-    help: 'verison of AO3 using the waytime machine'
-  });
-
-parser.add_argument('--headless', { 
-    type:'int',
-    default:1, 
-    help: ''
-  });
-
-   
-//   console.dir(parser.parse_args());
-
-let args_mine = parser.parse_args();
+let args_mine = tagscra_cli.parser.parse_args();
 
 // let tag_to_mine = ["Reincarnation",'A lot of past lives','she lived 4 lives already',"Alternate Universe - Canon Divergence"]
 let tag_to_mine = ["Disability"]
@@ -123,8 +85,8 @@ switch (args_mine.AO3_version) {
 			console.log("===================================================================")
 			if(index%50==0 & index>0)
 				await delay(60000);
-			console.log("================= Waiting 3min =================");
 			if(index>99){
+				console.log("================= Waiting 3min =================");
 				if(index%10==0)
 					delay(5000);
 				if(index%50==0)
@@ -152,15 +114,9 @@ switch (args_mine.AO3_version) {
 })();
 
 
-
-
-
 function delay(time) {
 	return new Promise(resolve => setTimeout(resolve, time));
   }
-
-
-
 
 async function mine_RATAS (tag_to_mine, page){
 	//go to "https://archiveofourown.org/tag_to mine"

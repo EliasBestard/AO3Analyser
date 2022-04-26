@@ -1,0 +1,75 @@
+====================================================================================================
+    ====================================================================================================
+    report_info =  Report information of the diff of two Networks
+    report total amount of nodes/edges of both graphs,
+    report nodes/edges that are in G that are not in H,
+    report nodes/edges that are in G that are in H,
+    
+    ====================================================================================================
+    G_name = G_name= Disability 2014
+    G_total_nodes = 84
+    G_total_edges = 100
+    ====================================================================================================
+    H_name = H_name= Disability 2013
+    H_total_nodes = 46
+    H_total_edges = 46
+    ====================================================================================================
+    G_diff_H_total_nodes = 40
+    G_diff_H_total_edges = 13
+    G_diff_H_nodes = Mute Sam, Mute Castiel, Deaf Sam, Blind Dirk, disabilities everywhere, Mute Gavin, Mute Dean Winchester, Mute Harry, Mute Louis, Mute Stiles, Deaf Dean, Canon Disabilities, Blind Sam Winchester, Deaf Karkat Vantas, disabililty, Disabled Sam, dissabilities, Mute Justin, Blind Louis, Mute Dean, Mute Dave Strider, disability!fic, Mute Sam Winchester, Mute Karkat Vantas, Vocal Disability due to Severe Injury, Mute John, desability, Dissability, Disabled Sam Winchester, Mute Dave, Disabled Dean Winchester, Deaf Louis, Blind Liam, Mute Derek, Mute Niall, Disabled Dean, Blind Niall, Disabled Character of Color, Blind Jack, Disabled Castiel
+    G_diff_H_edges = [('Mute Sam', 'Mute Sam Winchester'), ('Disabled Sam', 'Disabled Sam Winchester'), ('Disabled Sam', 'Deaf Sam'), ('Disabled Sam', 'Mute Sam'), ('Mute Dean', 'Mute Dean Winchester'), ('Disabled Sam Winchester', 'Mute Sam Winchester'), ('Disabled Sam Winchester', 'Blind Sam Winchester'), ('Mute Dave', 'Mute Dave Strider'), ('Disabled Dean Winchester', 'Mute Dean Winchester'), ('Disabled Dean', 'Disabled Dean Winchester'), ('Disabled Dean', 'Mute Dean'), ('Disabled Dean', 'Deaf Dean'), ('Disabled Castiel', 'Mute Castiel')]
+    ====================================================================================================
+
+    Mute Sam_diff_in_degree = 2
+
+    Mute Sam_diff_metatags = Muteness,Disabled Sam
+    ====================================================================================================
+
+    Mute Castiel_diff_in_degree = 2
+
+    Mute Castiel_diff_metatags = Muteness,Disabled Castiel
+    ====================================================================================================
+
+    Deaf Sam_diff_in_degree = 2
+
+    Deaf Sam_diff_metatags = Deaf Character,Disabled Sam
+    ====================================================================================================
+
+    Mute Dean Winchester_diff_in_degree = 2
+
+    Mute Dean Winchester_diff_metatags = Mute Dean,Disabled Dean Winchester
+    ====================================================================================================
+
+    Deaf Dean_diff_in_degree = 2
+
+    Deaf Dean_diff_metatags = Deaf Character,Disabled Dean
+    ====================================================================================================
+
+    Blind Sam Winchester_diff_in_degree = 2
+
+    Blind Sam Winchester_diff_metatags = Blind Sam,Disabled Sam Winchester
+    ====================================================================================================
+
+    Deaf Karkat Vantas_diff_in_degree = 2
+
+    Deaf Karkat Vantas_diff_metatags = Deaf,Disabled Character
+    ====================================================================================================
+
+    Mute Dean_diff_in_degree = 2
+
+    Mute Dean_diff_metatags = Muteness,Disabled Dean
+    ====================================================================================================
+
+    Mute Sam Winchester_diff_in_degree = 2
+
+    Mute Sam Winchester_diff_metatags = Mute Sam,Disabled Sam Winchester
+    ====================================================================================================
+    diff_big_nodes = 
+    diff_total_canonical_leaves = 23
+    diff_total_freeform = 0
+    diff_freeform_tags = 
+    diff_total_synned = 8
+    diff_synned_tags = disabilities everywhere, Canon Disabilities, disabililty, dissabilities, disability!fic, Vocal Disability due to Severe Injury, desability, Dissability
+    diff_total_canonical = 32
+    diff_sanonical_tags = Mute Sam, Mute Castiel, Deaf Sam, Blind Dirk, Mute Gavin, Mute Dean Winchester, Mute Harry, Mute Louis, Mute Stiles, Deaf Dean, Blind Sam Winchester, Deaf Karkat Vantas, Disabled Sam, Mute Justin, Blind Louis, Mute Dean, Mute Dave Strider, Mute Sam Winchester, Mute Karkat Vantas, Mute John, Disabled Sam Winchester, Mute Dave, Disabled Dean Winchester, Deaf Louis, Blind Liam, Mute Derek, Mute Niall, Disabled Dean, Blind Niall, Disabled Character of Color, Blind Jack, Disabled Castiel
+    diff_total_canonical_synned_connection_nodes = 0

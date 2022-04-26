@@ -1,0 +1,40 @@
+====================================================================================================
+    ====================================================================================================
+    report_info =  Report Node information of nodes with
+    outdegree greater than 4, or indegree greater than 1
+    report total amount of nodes, edges, leaves, freeform/canonical/synned tags, nodes with more than 4 subtags, 
+    
+    ====================================================================================================
+    name = name
+    ====================================================================================================
+
+    Disability_out_degree = 13
+
+    Disability_in_degree = 1
+    Disability_synned_tags = Disabilities,Disability Issues,disability themes,disabilty,Disable,disabled!stuck,Dsiable,Handicap,impairment,Permanant Injury of Main Character
+    Disability_synned_tags_count = 10
+    ====================================================================================================
+
+    Deaf Character_out_degree = 10
+
+    Deaf Character_in_degree = 1
+    ====================================================================================================
+
+    Blind Character_out_degree = 12
+
+    Blind Character_in_degree = 1
+    ====================================================================================================
+
+    Disability_synned_tags_out_degree = 11
+
+    Disability_synned_tags_in_degree = 1
+    ====================================================================================================
+    big_nodes = Disability, Deaf Character, Blind Character, Disability_synned_tags
+    ====================================================================================================
+    total_nodes = 46
+    total_edges = 46
+    total_canonical_leaves = 32
+    total_freeform = 0
+    total_synned = 10
+    total_canonical = 35
+    total_canonical_synned_connection_nodes = 1

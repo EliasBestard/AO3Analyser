@@ -6,16 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/RickArora/4088_Final_Project.git"
-  },
   "author": "Elias Bestard Lorigados",
-  "license": "ISC",
-  "bugs": {
-    "url": ""
-  },
-  "homepage": "",
   "dependencies": {
     "argparse": "^2.0.1",
     "puppeteer": "^13.5.2"

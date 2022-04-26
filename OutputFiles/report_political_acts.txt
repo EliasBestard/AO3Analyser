@@ -1,0 +1,33 @@
+====================================================================================================
+    ====================================================================================================
+    report_info =  Report information of the Political acts displayed through time being G new version and H old version of the same network
+    new type of tags
+    canonized tags
+    synonized tags
+    removed tags
+    
+    ====================================================================================================
+    G_name = G_name= Disability 2014
+    G_total_nodes = 84
+    G_total_edges = 100
+    ====================================================================================================
+    H_name = H_name= Disability 2013
+    H_total_nodes = 46
+    H_total_edges = 46
+    ====================================================================================================
+    canonized_tags = 
+    canonized_tags_total = 0
+    ====================================================================================================
+    new_canonical_tags = 32
+    new_canonical_tags_total = 32
+    ====================================================================================================
+    synonized_tags = 
+    synonized_tags_total = 0
+    ====================================================================================================
+    new_syn_tags = 8
+    new_syn_tags_total = 8
+    new_freeform_tags = 
+    new_freeform_tags_total = 0
+    ====================================================================================================
+    removed_tags = Deaf Clint, Deaf Clint Barton
+    removed_tags_total = 2
