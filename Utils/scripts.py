@@ -1,7 +1,5 @@
 import json
-from soupsieve import match
-
-from sqlalchemy import case
+import os
 from Modules.NetVisualizer.net_visualizer import *
 from Modules.NetBuilder.net_builder import net_build
 
@@ -240,3 +238,55 @@ def generate_report(info_dic:dict, file_name='report', w_mode='w'):
         else:
             f.write('    '+item+" = "+ str(info)+"\n")
     f.close()
+
+
+
+def read_json_rata(database_path):
+    """
+    Recieves a File/Dir path to build the Networks
+    FILE must be a JSON file with a RATAS mined
+    DIR must be a directory only containing FILES
+
+    return-> a list of networkX Nets
+    """
+    disability_graph_list=[]
+    if os.path.isdir(database_path):
+        for filename in os.listdir(database_path):
+            # Get the path
+            file_path=os.path.join(os.path.abspath(database_path), filename)
+            # Open The JSON
+            with open(file_path, 'r', encoding='utf-8') as f:
+                # Load the JSON
+                current_data = json.load(f)
+            f.close()
+            # Build the Network
+            g= net_build(current_data)
+            # Append it to the list
+            disability_graph_list.append(g)
+    elif os.path.isfile(database_path):
+        with open(database_path, 'r', encoding='utf-8') as f:
+            # Load the JSON
+            current_data = json.load(f)
+        f.close()
+        # Build the Network
+        g= net_build(current_data)
+        # Append it to the list
+        disability_graph_list.append(g)
+    return disability_graph_list
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

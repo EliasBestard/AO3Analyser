@@ -114,12 +114,12 @@ const URLs =
 		}
 
 		var works = [];
-		let max_stories=1000
+		let max_stories=1200
 		
 		const bar1 = new cliProgress.SingleBar({}, cliProgress.Presets.rect);
 		if(args_mine.verbose){
 			console.log('=================== Scraping ===================')
-			bar1.start(1000, 0);
+			bar1.start(max_stories, 0);
 
 		}
 		// Scraps 1000 stories per iteration
@@ -171,7 +171,7 @@ const URLs =
 
 			max_stories -=20 ;
 			if(args_mine.verbose){
-				let actual_number=1000-max_stories
+				let actual_number=1200-max_stories
 				// update the current value in your application..
 				bar1.update(actual_number);
 			}
@@ -192,7 +192,7 @@ const URLs =
 			// stop the progress bar
 			bar1.stop();
 			console.log('=================== Writing ===================')
-			bar2.start(1000, 0);
+			bar2.start(1200, 0);
 		}
 		//write the info in the worksheet
 		for (let n = current_story_number; n < works.length; n++)
@@ -229,9 +229,9 @@ const URLs =
 		
 		// ws.getCell(1, 1, 1, 20).style({font: {bold: true}});
 	
-		await workbook.xlsx.writeFile(args_mine.output_file+".xlsx").then(() => {
+		await workbook.xlsx.writeFile(args_mine.output_path+args_mine.output_file+".xlsx").then(() => {
 			if(args_mine.verbose){
-				bar2.update(1000)
+				bar2.update(1200)
 				bar2.stop()
 				console.log("========== Successfully stored =========")
 			}

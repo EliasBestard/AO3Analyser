@@ -41,7 +41,8 @@ def net_visualize(G:nx.DiGraph, hierarchical_layout=True, node_sizes=False, head
       "layout": {
         "hierarchical": {
           "levelSeparation": 400,
-          "enabled": hierarchical_layout
+          "enabled": hierarchical_layout,
+          "improvedLayout": False
         }
       },
       "physics": {
