@@ -2,7 +2,7 @@ import json
 import os
 from Modules.NetVisualizer.net_visualizer import *
 from Modules.NetBuilder.net_builder import net_build
-
+import pandas as pd
 
 def visualize_ratas_json(ratas_file, hierarchical_layout=False,node_sizes=True, headings='',file_name='nx', show_it=True):
     """
@@ -238,6 +238,57 @@ def generate_report(info_dic:dict, file_name='report', w_mode='w'):
         else:
             f.write('    '+item+" = "+ str(info)+"\n")
     f.close()
+
+def gen_tags_dataset(G:nx.DiGraph, H:nx.DiGraph, generate_csv=True, path='./OutputFiles'):
+    ''' 
+    Generates a dataset with all the tags, its precense in each Graph and its type
+    Tags | H_presence | G_presence | H_type | G_type
+    '''
+    columns={}
+    df = pd.DataFrame(columns=['Tags', 'H_presence', 'G_presence', 'H_type', 'G_type','Action'])
+
+    df.Tags=list(set(G.nodes).union(set(H.nodes)))
+
+
+    for tag in df.Tags:
+        df.loc[df.Tags==tag,'H_presence']= H.has_node(tag)
+        df.loc[df.Tags==tag,'G_presence']= G.has_node(tag)
+        df.loc[df.Tags==tag,'H_type']= H.nodes[tag]['type'] if  H.has_node(tag) else nan
+        df.loc[df.Tags==tag,'G_type']= G.nodes[tag]['type'] if  G.has_node(tag) else nan
+
+        if not H.has_node(tag):
+            df.loc[df.Tags==tag,'Action']= 'addition'
+        elif G.has_node(tag) and (H.nodes[tag]['type']=='freeform_tag' or H.nodes[tag]['type']=='synned_tag') and G.nodes[tag]['type']=='canonical_tag':
+            df.loc[df.Tags==tag,'Action']= 'canonized'
+        elif G.has_node(tag) and (H.nodes[tag]['type']=='freeform_tag' or H.nodes[tag]['type']=='canonical_tag') and G.nodes[tag]['type']=='synned_tag':
+            df.loc[df.Tags==tag,'Action']= 'sinonized'
+        elif not G.has_node(tag):
+            df.loc[df.Tags==tag,'Action']= 'removed'
+
+    if generate_csv:
+        df.to_csv(path+'/G_H_tags_report.csv')    
+    return df
+
+def gen_tags_dataset_list(net_lists:list, generate_csv=True, path='./OutputFiles'):
+    ''' 
+    '''
+    columns=["Tags"]
+    [columns.extend(["G_"+str(i)+"_presence","G_"+str(i)+"_type"]) for i in range(0, len(net_lists))]
+
+    df = pd.DataFrame(columns=columns)
+    tag_set= set(list([]))
+    for element in net_lists:
+        tag_set=tag_set.union(set(element.nodes))
+    df.Tags=list(tag_set)
+
+    for tag in df.Tags:
+        for i in range(0,len(net_lists)):
+            df.loc[df.Tags==tag,columns[1+i*2]]= net_lists[i].has_node(tag)
+            df.loc[df.Tags==tag,columns[1+i*2+1]]= net_lists[i].nodes[tag]['type'] if  net_lists[i].has_node(tag) else nan
+
+    if generate_csv:
+        df.to_csv(path+'/G_H_tags_report.csv')    
+    return df
 
 
 

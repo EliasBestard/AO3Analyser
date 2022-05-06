@@ -1,6 +1,6 @@
 "use strict";
 const cliProgress = require('cli-progress');
-const dascra_cli = require('./dascra_cli')
+const dascra_cli = require('./Utils/dascra_cli')
 const puppeteer = require("puppeteer");
 const excel = require('exceljs');
 const fs = require('fs')

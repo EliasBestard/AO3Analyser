@@ -1,0 +1,40 @@
+@TagScra : 
+    ☐ Add progress bar
+    ✔ Mine non-canonical tags from a tag (different type of output) @done(22-05-06 14:13)
+    ☐ Organize code and reactor
+    ☐ Readme
+    ☐ Documentation
+@DaScra : 
+    ☐ Documentation
+    ☐ readme
+    ☐ Organize and refactor code
+
+@Netbuilder :
+    ☐ Build a Network from a Json (output of TagScra)
+    ☐ Add non-canonical nodes to a Net from @TagScra output
+    ☐ all needed methods to read and handle JSON files from @TagScra to Nets
+
+@Netvisualizer :
+    ☐ Create pyvis of the network
+    ☐ Visuals of difference
+    ☐ visuals of analysis
+
+@NetAnalyzer :
+    ☐ properties of the network
+    ☐ Nets opperations
+    ☐ Generate reports
+    ☐ etc
+
+
+
+Analyzer:
+    ☐ CLI 
+    ☐ connect to @TagScra
+    ☐ connect to @DaScra
+    ☐ connect to a @etBuilder
+    ☐ connect to @Netvisulizer
+    ☐ connect to @NetAnalyser
+    
+    Utils:
+
+

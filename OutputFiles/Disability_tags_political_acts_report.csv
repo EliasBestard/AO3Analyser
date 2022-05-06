@@ -1,0 +1,869 @@
+,Tags,G_0_presence,G_0_type,G_1_presence,G_1_type,G_2_presence,G_2_type,G_3_presence,G_3_type,G_4_presence,G_4_type,G_5_presence,G_5_type,G_6_presence,G_6_type,G_7_presence,G_7_type
+0,Disabled Park Jimin (BTS),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+1,Blind John Laurens,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+2,disabilites,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag
+3,Deaf Sasha Waybright,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+4,Disabled Charles Xavier,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+5,Second gender disabilities,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag
+6,Blind Tim Drake,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+7,Mentions of Permanent Disability,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag
+8,Mute Eren Yeager,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+9,Blind Yagami Light,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+10,Blind Todoroki Shouto,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+11,Mute Mizuki | Selene,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+12,Mute Lán Zhàn | Lán Wàngjī,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+13,Mute Victor Grantz | Postman,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+14,Deaf Dean,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,
+15,Blind Harry,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+16,Mute GeorgeNotFound (Video Blogging RPF),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+17,Blind Choi Junhong | Zelo,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+18,Blind Bellamy Blake,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+19,Mute Henry Stickmin,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+20,Blind Dean,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,,FALSE,
+21,Mute Clay | Dream (Video Blogging RPF),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+22,Deaf Obi-Wan Kenobi,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+23,Blind Morality | Patton Sanders,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+24,Disabled TommyInnit (Video Blogging RPF),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+25,Deaf Sherlock Holmes,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+26,Blind Kim Seokjin | Jin,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+27,Blind Han Jisung | Han,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+28,Deaf Spencer Reid,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+29,Blind Bilbo Baggins,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+30,Mute Boris (Bendy and the Ink Machine),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+31,Deaf Gabriel (Supernatural),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+32,Blind Cecil Palmer,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+33,Blind John Egbert,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+34,Disabled Jeon Jungkook,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+35,Mute Alec Lightwood,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+36,Mute Lucifer (Supernatural),FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+37,Mute Jared Padalecki,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+38,"Mute Maxine ""Max"" Caulfield",FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+39,cw: depiction of disability,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag
+40,Blind Niall,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,
+41,Blind Min Yoongi | Suga,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+42,Deaf Adora (She-Ra),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+43,mild disability,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag
+44,Dyslexic Crowley (Good Omens),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+45,Dyslexic Richie Tozier,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+46,Selectively Mute Toby Smith | Tubbo,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+47,Blind Scott,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+48,Blind Mickey Milkovich,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+49,Mute Loki (Marvel),FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+50,Mute Bendy (Bendy and the Ink Machine),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+51,Deaf Sherlock,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,FALSE,,FALSE,,FALSE,,FALSE,
+52,Blind Kirishima Eijirou,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+53,Blind Akaashi Keiji,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+54,Mute Levi (Shingeki no Kyojin),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,FALSE,
+55,Struggle with Disability,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag
+56,dissabilty,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag
+57,Selectively Mute Chell (Portal),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+58,Mute Inumaki Toge,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+59,"Blind Jonathan ""Jon"" Sims | The Archivist",FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+60,Blind Kanan Jarrus,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+61,Thinking about disability,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag
+62,Blind Hiro Hamada,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+63,Blind Ashton Irwin,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+64,Mute Barry Allen,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+65,Deaf TommyInnit (Video Blogging RPF),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+66,Disabilties,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag
+67,Selectively Mute Clay | Dream (Video Blogging RPF),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+68,Blind Crowley (Good Omens),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+69,Mute Warden (Dragon Age),FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+70,Blind Soldier: 76 | Jack Morrison,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+71,Blind Connor (Detroit: Become Human),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+72,Blind Jack Frost (Guardians of Childhood),FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+73,Disabled Midoriya Izuku,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+74,Disabled Cecil Palmer,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+75,Blind Stiles Stilinski,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+76,Mute Castiel,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,
+77,Disabled James T. Kirk,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+78,Blind Technoblade (Video Blogging RPF),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+79,Jeon Jungkook in a Wheelchair,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+80,Blind John,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+81,Deaf Remus Lupin,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+82,Blind Derek,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,,FALSE,,FALSE,
+83,Disabled Taako (The Adventure Zone),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+84,Mute Dave,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,,FALSE,,FALSE,
+85,"Disabled Creativity | Roman ""Princey"" Sanders",FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+86,Mute Draco Malfoy,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+87,CW: Discussion of Disability,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag
+88,Mute Levi Ackerman,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+89,Deaf Original Percival Graves,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+90,Amputee Eddie Kaspbrak,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+91,Blind Lance (Voltron),FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+92,sudden disability,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag
+93,Selectively Mute Castiel,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,
+94,Deaf Harry,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+95,Mute Bakugou Katsuki,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+96,Blind Deucalion (Teen Wolf),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+97,Blind Frank Iero,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+98,Blind Zayn Malik,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+99,Mute Logic | Logan Sanders,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+100,Various Disabilities,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag
+101,Disabled Kim Taehyung | V,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+102,Blind Kaminari Denki,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+103,Disabled Warrior of Light (Final Fantasy XIV),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+104,Selectively Mute Todoroki Shouto,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+105,Blind Ezra Bridger,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+106,Blind Bruce Wayne,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+107,Blind Character,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+108,Deaf Tim Drake,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+109,Blind Dirk Strider,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+110,Deaf Karkat Vantas,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+111,Selectively Mute Crowley (Good Omens),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+112,Mute Callahan (Video Blogging RPF),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+113,Mute Karkat Vantas,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+114,Blind Floris | Fundy,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+115,Blindness,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+116,Blind Castiel (Supernatural),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+117,Permanent Injury,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+118,Mute Luke,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,
+119,Deaf Sugawara Koushi,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+120,disability is a real thing and i love me some representation,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag
+121,Dyslexic Luke Patterson (Julie and The Phantoms),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+122,Blind Kim Taehyung | V,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+123,Blind James T. Kirk,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+124,Blind V (Mystic Messenger),FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,
+125,Blind Xu Ming Hao | The8,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+126,Blind Astrid Hofferson,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+127,Acquired Disablity,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag
+128,Disablilities,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag
+129,Mute John,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+130,Mute Katsuki Yuuri,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+131,Disabled Adora (She-Ra),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+132,Blind Usopp (One Piece),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+133,Blind Wèi Yīng | Wèi Wúxiàn,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+134,Mute Spencer Reid,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+135,Blind Clay | Dream (Video Blogging RPF),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+136,Deaf Toby Smith | Tubbo,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+137,Deaf Mickey Milkovich,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+138,Dyslexic Okumura Rin,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+139,Mute Cassandra Cain,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+140,Deaf Peter Parker,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+141,Mute Aleksis Kaidanovsky,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+142,Deaf Spock (Star Trek),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+143,Blind Lán Zhàn | Lán Wàngjī,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+144,Disabled Character of Color,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+145,Mute Daryl Dixon,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+146,Blind Bruno Madrigal,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+147,Blind Louis,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,
+148,Blind Armin Arlert,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+149,Mute Mickey Milkovich,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+150,Dyslexic Mollymauk Tealeaf,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+151,Blind Lexa (The 100),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+152,Mute Zhongli (Genshin Impact),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+153,Blind Keith (Voltron),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+154,Blind Tachibana Makoto,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+155,Deaf Jughead Jones,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+156,Deaf Na Jaemin,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+157,Permanent disabilitu,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag
+158,Discapacidad,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag
+159,Selectively Mute Victor Grantz | Postman,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+160,Frank Discussion of Disabilities,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag
+161,disabled!stuck,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag
+162,Deaf Katsuki Yuuri,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+163,Mute Caleb Widogast,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+164,Deaf Inquisitor (Dragon Age),FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+165,Blind Sirius Black,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+166,Mute Richie Tozier,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+167,Deaf Kim Seokjin | Jin,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+168,#disabled,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag
+169,Blind Xiǎo Xīngchén,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+170,Blind Aizawa Shouta | Eraserhead,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+171,Disabiities,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag
+172,Disabled Castiel (Supernatural),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+173,Blind Kara Danvers,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+174,Disabled Inquisitor (Dragon Age),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+175,Blind Gojo Satoru,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+176,Blind Chirrut Îmwe,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+177,Blind Prompto Argentum,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+178,Mute Damian Wayne,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+179,Blind Remus Lupin,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+180,Deaf Dave Strider,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+181,Deaf Ron Weasley,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+182,Blind John Watson,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+183,Blind Hong Jisoo | Joshua,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+184,Blind Inquisitor (Dragon Age),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+185,Disability Narrative,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag
+186,Dissability,FALSE,,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag
+187,Blind Bakugou Katsuki,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+188,Mute Kong | Aether (Genshin Impact),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+189,Deaf Kim Namjoon | RM,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+190,Blind Mark Tuan,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+191,Deaf Clint,TRUE,canonical_tag,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,
+192,Mute My Unit | Byleth,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+193,Mute Mark Fischbach,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+194,Blind Jim Kirk,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,FALSE,,FALSE,,FALSE,
+195,Mute Niall Horan,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+196,Deaf Jim Kirk,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,FALSE,,FALSE,,FALSE,
+197,references to disabilities,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag
+198,Selectively Mute Sam Winchester,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+199,Blind Ian,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,,FALSE,
+200,Blind Sleep | Remy Sanders,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+201,Disabled Anxiety | Virgil Sanders,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+202,Living With a Disability,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag
+203,Dyslexic JJ (Outer Banks),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+204,Mute Dan Howell,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+205,Disability?,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag
+206,Selectively Mute Dean Winchester,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+207,Mute TommyInnit (Video Blogging RPF),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+208,Mute Hyakuya Mikaela,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+209,Disabled Severus Snape,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+210,Selectively Mute Castiel (Supernatural),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+211,Selectively Mute Deceit | Janus Sanders,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+212,Mute Harry Potter,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+213,Mute Prompto Argentum,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+214,Deaf Sam Winchester,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+215,Deaf Feuilly (Les Misérables),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+216,Blind Adrien Agreste | Chat Noir,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+217,Deaf Bellamy Blake,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+218,Other disabilities,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag
+219,Mute Louis,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+220,Blind Ā-Qìng (Módào Zǔshī),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+221,Dyslexic Toby Smith | Tubbo,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+222,mentions of disabillty,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag
+223,Mute Jensen Ackles,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+224,Mute Hank J. Wimbleton,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+225,Deaf Midoriya Izuku,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+226,Mute Gavin Free,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+227,Blind V | Kim Jihyun,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+228,Disabled Wèi Yīng | Wèi Wúxiàn,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+229,Deaf Nanase Haruka,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+230,Blind Uchiha Sasuke,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+231,Deaf Wilbur Soot,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+232,cw: disability,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag
+233,disablity tw,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag
+234,Mute Lucifer,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,FALSE,,FALSE,,FALSE,,FALSE,
+235,Deaf Lán Zhàn | Lán Wàngjī,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+236,Blind Dipper Pines,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+237,Mute Darcy Lewis,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+238,Mute Ashton Irwin,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+239,Mute Michael,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+240,Disability_synned_tags,TRUE,connection_node,TRUE,connection_node,TRUE,connection_node,TRUE,connection_node,TRUE,connection_node,TRUE,connection_node,TRUE,connection_node,TRUE,connection_node
+241,Blind Carmilla Karnstein,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+242,disability mention,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag
+243,Blind Kitagawa Yusuke,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+244,Blind Park Jimin (BTS),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+245,disabilty,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag
+246,disabililty,FALSE,,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag
+247,Blind TommyInnit (Video Blogging RPF),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+248,and tw: disability,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag
+249,prompt - disabilities,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag
+250,Disabled Ranboo (Video Blogging RPF),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+251,Blind Alec Lightwood,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+252,Blind Dave,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,,FALSE,
+253,Disabled Morality | Patton Sanders,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+254,Selectively Mute Persona 5 Protagonist,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+255,Deaf Sirius Black,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+256,Blind Sean McLoughlin,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+257,Blind Kaneki Ken | Sasaki Haise,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+258,Mute Crowley (Good Omens),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+259,Blind Grantaire (Les Misérables),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+260,Mute Zuko (Avatar),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+261,Deaf Kara Danvers,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+262,Mute Harry Styles,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+263,Blind Park Jimin,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,
+264,Deaf Tony Stark,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+265,Disability discussion,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag
+266,Selectively Mute Park Jimin (BTS),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+267,Blind Hanzo Shimada,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+268,Blind Hiccup Horrendous Haddock III,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+269,Mute Louis Tomlinson,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+270,Blind Racetrack Higgins,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+271,Mute Jason Todd,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+272,references to disability,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag
+273,Blind Oikawa Tooru,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+274,Deaf Deceit | Janus Sanders,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+275,Selectively Mute Guardian (Destiny),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+276,Mute Jason Voorhees,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+277,Blind Lena Luthor,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+278,Blind Ashton,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,,FALSE,
+279,badly represented disabilities,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag
+280,Deaf Stiles Stilinski,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+281,Deaf Peter Hale,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+282,Mute Lee Felix (Stray Kids),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+283,Mute Six (Little Nightmares),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+284,Disabled Barry Allen,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+285,Selectively Mute Dan Howell,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+286,Mute Kim Namjoon | RM,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+287,Disabled Zexion,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,,FALSE,
+288,Blind Karkat,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,
+289,Mute Edward Elric,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+290,Deaf Tim Stoker (The Magnus Archives),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+291,Blind Harry Hart,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+292,Blind Zhongli (Genshin Impact),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+293,Blind Sam,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,,FALSE,
+294,Mute Adrien Agreste | Chat Noir,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+295,discussions of disability,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag
+296,Mute Kara Danvers,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+297,Blind Terezi,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,
+298,dis/ability,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag
+299,Past Disability,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag
+300,Mute Harry,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+301,Disabled Hermione Granger,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+302,Disabled Harry,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+303,Mute Neopolitan (RWBY),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+304,Blind Kim Seungmin,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+305,Mute Pyro (Team Fortress 2),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+306,Mute John Egbert,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+307,Mute Min Yoongi | Suga,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+308,Blind Crowley (Supernatural),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+309,Deaf Ben Solo,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+310,Deaf Oswald Cobblepot,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+311,Dyslexic Lambert (The Witcher),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+312,Disabled Ashton Greymoore,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+313,Blind Harry Potter,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+314,And other disabilities,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag
+315,adjusting to a disability,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag
+316,Blind Pure Vanilla Cookie (Cookie Run),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+317,Deaf Alec Lightwood,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+318,"Mute Jonathan ""Jon"" Sims | The Archivist",FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+319,Deaf James T. Kirk,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+320,Blind Jim,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,,FALSE,
+321,disability discussed,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag
+322,"Dyslexic Creativity | Roman ""Princey"" Sanders",FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+323,Disabled Eddie Kaspbrak,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+324,Mute Kozume Kenma,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+325,"Dyslexic Evan ""Buck"" Buckley",FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+326,Deaf Park Jimin (BTS),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+327,Disabled Crowley (Good Omens),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+328,Deaf Hinata,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+329,Blind Anders (Dragon Age),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+330,Mute Drifter (Hyper Light Drifter),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+331,Mute Jung Hoseok | J-Hope,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+332,Deaf Clarke Griffin,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+333,niepełnosprawność,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag
+334,disabilities everywhere,FALSE,,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag
+335,Disability,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+336,Blind Sòng Lán | Sòng Zǐchēn,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+337,Permanant Injury of Main Character,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag
+338,Blind Kurosaki Ichigo,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+339,Handicap,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag
+340,Disabled Harry Styles,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+341,Mute Chell (Portal),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+342,Deaf Soldier (Team Fortress 2),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+343,Blind Blaine,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,,FALSE,
+344,kinda disabled i guess,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag
+345,Deaf Stiles,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,,FALSE,,FALSE,
+346,Mute Mollymauk Tealeaf,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+347,Blind Scott Summers,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+348,Deaf Jeremy Heere,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+349,Mute Marinette Dupain-Cheng | Ladybug,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+350,Mute Joseph Wilson,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+351,Mute Sam Winchester,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+352,Mute Danny Fenton,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+353,Deaf Mikey Way,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+354,Blind Zayn,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,
+355,Disabled Aziraphale (Good Omens),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+356,Blind Nitori Aiichirou,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+357,Mute Anakin Skywalker,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+358,Selectively Mute Jason Todd,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+359,Mute Dean Winchester,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+360,canon-typical disability,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag
+361,Mute Remus Lupin,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+362,Blind Q (James Bond),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+363,Vision Disibiilty in a side character,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag
+364,Blind Matsuno Karamatsu,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+365,Mute Wilbur Soot,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+366,Mute Junior,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,
+367,Selectively Mute Min Yoongi | Suga,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+368,Blind Ranboo (Video Blogging RPF),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+369,Mute Nanase Haruka,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+370,Blind Sam Winchester,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+371,(spoiler) disability,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag
+372,Mute Link (Legend of Zelda),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+373,Blind Kozume Kenma,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+374,Learn To Live With Handicap,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag
+375,Deaf Derek,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,
+376,Deaf Marinette Dupain-Cheng,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+377,Disabled Remus Lupin,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+378,Blind Laura Hollis,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+379,Mute Persona 5 Protagonist,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+380,Eddie Kaspbrak in a Wheelchair,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+381,Mute Marco Bott,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+382,Blind Yoo Kihyun,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+383,Deaf Courfeyrac (Les Misérables),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+384,Disabled Character,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+385,Blind Marinette Dupain-Cheng,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+386,Disabled Eren Yeager,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+387,Mentioned Disability,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag
+388,Deaf Clint Barton,TRUE,canonical_tag,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,
+389,Blind Dirk,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,,FALSE,,FALSE,
+390,Disabled Inquisitor,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,
+391,Blind Phil Lester,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+392,Blind Jack,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+393,Mute Phil Lester,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+394,Mute Aziraphale (Good Omens),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+395,Disabled Jake Dillinger,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+396,Deaf Jean Kirstein,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+397,Disabled Richie Tozier,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+398,Deaf Zuko (Avatar),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+399,Blind Iwaizumi Hajime,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+400,Mute Michael (Supernatural),FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+401,"Mute Dark Creativity | Remus ""The Duke"" Sanders",FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+402,Blind Loki (Marvel),FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+403,Mute Josh Dun,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+404,Mute Todoroki Shouto,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+405,Mute Nico di Angelo,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+406,Deaf Bilbo Baggins,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+407,Deaf Min Yoongi | Suga,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+408,tw: disability,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag
+409,Mute Flower Kid (Smile For Me),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+410,Blind Soldier: 76,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+411,Deaf Anxiety | Virgil Sanders,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+412,Mute Victoria (Cats),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+413,Mute Katniss Everdeen,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+414,Blind Barry Allen,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+415,Mute Dirk Strider,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+416,Deaf Character,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+417,Mute Nakajima Atsushi (Bungou Stray Dogs),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+418,Disabled Anduin Wrynn,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+419,Disability Issues,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag
+420,Deaf Victoria (Cats),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+421,Blind Ian Gallagher,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+422,Blind Senju Tobirama,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+423,disablity fic,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag
+424,mentions of disability,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag
+425,Deaf Ruby,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,
+426,Deaf Calum Hood,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+427,Johnny Joestar is Still Disabled,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+428,Deaf Dan Howell,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+429,Mentions of a disability,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag
+430,Deaf Marco Bott,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+431,and discussion of disability,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag
+432,Mute Hinata Shouyou,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+433,Blind Nick,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,,FALSE,,FALSE,
+434,Mute Loki,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,,FALSE,,FALSE,
+435,Dyslexic Clint Barton,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+436,Deaf Jung Hoseok | J-Hope,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+437,Blind Roy Mustang,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+438,Blind Geralt z Rivii | Geralt of Rivia,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+439,Deaf Dean Winchester,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+440,Mute Gabriel,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,,FALSE,
+441,Deaf Eren Yeager,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+442,Mute Ian Gallagher,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+443,Blind Roxanne Wolf (Five Nights at Freddy's),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+444,Disabled Marco Bott,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+445,Blind Tony Stark,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+446,Mention of different disabilities,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag
+447,Dyslexic Dewey Duck,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,FALSE,
+448,Blind Yamaguchi Tadashi,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+449,Mute Niall,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,
+450,Mute Link,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,
+451,Deaf Eddie Kaspbrak,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+452,mention of canon disability,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag
+453,Learning Disabilities,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+454,Disabled Catra (She-Ra),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+455,Deaf Sam,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,,FALSE,
+456,Blind Draco Malfoy,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+457,Mute Shinsou Hitoshi,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+458,Deaf Carmilla,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+459,Blind Erwin Smith,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+460,Blind Toph Beifong,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+461,Character disability stays,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag
+462,Mute Steve Rogers,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+463,Blind Deceit | Janus Sanders,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+464,Blind Will Graham,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+465,Blind Ishimaru Kiyotaka,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+466,Blind Takumi (Fire Emblem),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+467,Disabled Bakugou Katsuki,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+468,Blind Karkat Vantas,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+469,Blind Sherlock,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,,FALSE,,FALSE,
+470,Mute Harry Hart,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+471,Mute Stanley (The Stanley Parable),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+472,Disabled Castiel,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,
+473,Permanent disability mentioned,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag
+474,Deaf Alexander Hamilton,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+475,Selectively Mute Warrior of Light (Final Fantasy XIV),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+476,Blind Ben Solo,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+477,Visually Impaired Ezra Bridger,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+478,Deaf Hartley Rathaway,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+479,Selectively Mute Stanley (The Stanley Parable),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+480,Blind Kim Namjoon | RM,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+481,Mute Stiles,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,
+482,Mute Kim Seokjin | Jin,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+483,Blind Logic | Logan Sanders,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+484,Mute Sòng Lán | Sòng Zǐchēn,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+485,Mute Sleep | Remy Sanders,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+486,Deaf Blaine Anderson,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+487,Deaf Will Graham,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+488,Selectively Mute Wild (Linked Universe),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+489,Deaf Roxas (Kingdom Hearts),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+490,残疾表现,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag
+491,Deaf Racetrack Higgins,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+492,Deaf Tsukishima Kei,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+493,Dyslexic Kaminari Denki,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+494,Blind Jaskier | Dandelion,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+495,Blind Mickey,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,,FALSE,
+496,Blind Liam,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+497,Mute Justin,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+498,Blind Merlin (Merlin),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+499,phys,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag
+500,Blind Bucky Barnes,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+501,disabiliy,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag
+502,Selectively Mute Six (Little Nightmares),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+503,Deaf Laura Hollis,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+504,Deaf Jason Todd,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+505,Disabled Harry Potter,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+506,Blind Bill Cipher,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+507,Mute Anxiety | Virgil Sanders,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+508,Dyslexic Jaime Lannister,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+509,Deaf Louis Tomlinson,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+510,Blind Castiel,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,
+511,Deaf Jirou Kyouka,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+512,"Blind Kent ""Parse"" Parson",FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+513,инвалидность,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag
+514,Deaf Dave,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,,FALSE,,FALSE,
+515,Mute Technoblade (Video Blogging RPF),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+516,Deaf Im Changkyun | I.M,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+517,Mute Uchiha Sasuke,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+518,Deaf Dick Grayson,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+519,TW : mention de handicap causé par un accident de voiture,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag
+520,Deaf John Watson,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+521,"Mute Creativity | Roman ""Princey"" Sanders",FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+522,Deaf Isak Valtersen,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+523,Mute Eddie Kaspbrak,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+524,disability group,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag
+525,Blind Michael Clifford,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+526,Deaf Evil Queen | Regina Mills,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+527,includes disabilities,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag
+528,impairment,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag
+529,Deaf Jason,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,
+530,Blind Jensen,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,
+531,mentions to disability,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag
+532,Blind Nishinoya Yuu,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+533,Mute Lexa (The 100),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+534,"Selectively Mute Jonathan ""Jon"" Sims | The Archivist",FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+535,Dsiable,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag
+536,Mute Sherlock,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+537,Blind Scott McCall,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,,FALSE,
+538,dissabilites,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag
+539,undefined disability,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag
+540,disabillity,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag
+541,Deaf Bakugou Katsuki,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+542,Mute Merlin (Merlin),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+543,Deaf John,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+544,Mute Michael Clifford,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+545,Disabled Geralt z Rivii | Geralt of Rivia,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+546,Disabled Ryan | GoodTimesWithScar,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+547,Mute The Meta | Agent Maine,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+548,Blind Do Kyungsoo | D.O,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+549,Disablity,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag
+550,"Deaf Leonard ""Bones"" McCoy",FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+551,Dyslexic Dewey Duck (Disney),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+552,Mute Bucky Barnes,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+553,Blind Dick Grayson,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+554,Disabled Sam Winchester,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+555,invalidez,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag
+556,Mute Germany (Hetalia),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+557,Blind Eren Yeager,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+558,Blind Louis Tomlinson,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+559,Blind Hatake Kakashi,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+560,角色伤残注意,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag
+561,Dyslexic Kirishima Eijirou,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+562,Deaf Root | Samantha Groves,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+563,hinted disability,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag
+564,Mute Sam,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,,FALSE,
+565,Deaf Keith (Voltron),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+566,Blind Katsuki Yuuri,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+567,Disabled Essek Thelyss,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+568,Blind Noctis Lucis Caelum,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+569,Disabilities,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag
+570,Mute Ryan Haywood,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+571,Mute Blaine Anderson,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+572,Blind Peter Parker,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+573,Kalectwo,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag
+574,Mute Liam Payne,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+575,Blind Nico di Angelo,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+576,Mute Luke Hemmings,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+577,Mute Gabriel (Supernatural),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+578,dissabilities,FALSE,,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag
+579,Blind Dave Strider,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+580,Blind Sawada Tsunayoshi,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+581,Mute Aizawa Shouta | Eraserhead,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+582,Mute Park Jimin (BTS),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+583,Blind Dean Winchester,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+584,description of disability,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag
+585,Mute Ranboo (Video Blogging RPF),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+586,Small Disability,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag
+587,Deaf Dazai Osamu (Bungou Stray Dogs),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+588,Blind Hinata Shouyou,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+589,desability,FALSE,,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag
+590,Blind Light,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,
+591,Mute Derek Hale,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+592,Mute Tony Stark,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+593,Deaf Akaashi Keiji,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+594,Selectively Mute Hunter (Bloodborne),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+595,Deaf Steve Rogers,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+596,Deaf Lance (Voltron),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+597,Deaf Lee Felix (Stray Kids),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+598,realistic disabilities,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag
+599,Deaf Lexa (The 100),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+600,Technically a Disability Fic I Guess,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag
+601,Blind Jeon Jungkook,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+602,Deaf Klaus Hargreeves,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+603,Deaf Morality | Patton Sanders,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+604,Blind Kageyama Tobio,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+605,Deaf Gabriel,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,FALSE,,FALSE,,FALSE,
+606,Blind Toby Smith | Tubbo,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+607,Blind Niall Horan,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+608,Deaf Merlin (Merlin),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+609,Mute Dean,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,
+610,Blind James Potter,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+611,Blind Eddie Kaspbrak,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+612,Disabled Levi Ackerman,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+613,Mute Logan Walker,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+614,Mute Zayn,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,
+615,Blind Midoriya Izuku,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+616,Dyslexic Ron Weasley,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+617,Deaf Harry Styles,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+618,Deaf Castiel (Supernatural),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+619,Deaf Jeon Jungkook,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+620,Major warning for a character getting severly hurt and being disabled,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag
+621,Blind Terezi Pyrope,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+622,Blind Melanie King,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+623,Dyslexic Scout (Team Fortress 2),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+624,Mute Noctis Lucis Caelum,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+625,Selectively Mute Jeon Jungkook,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+626,Canon Disabled Character,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+627,Mute Toby Smith | Tubbo,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+628,Deaf Link (Legend of Zelda),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+629,Deaf Ian,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,,FALSE,
+630,Mute Trafalgar D. Water Law,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+631,Mute Kurosaki Ichigo,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+632,Mute Jensen,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,
+633,Blind America (Hetalia),FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+634,Blind Y'shtola Rhul,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+635,Mute Tyler Joseph,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+636,Deaf Castiel,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,
+637,Implied/Referenced Disabilities,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag
+638,Mute Jeon Jungkook,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+639,With added disabilities,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag
+640,Hidden Disabiltys,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag
+641,disability!fic,FALSE,,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag
+642,diability,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag
+643,Blind Severus Snape,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+644,Blind Brian May,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+645,Deaf Bilbo,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,,FALSE,,FALSE,
+646,Deaf Specs (Newsies),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+647,Paralyzed Charles Xavier,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+648,Mute Midoriya Izuku,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+649,Blind Derek Hale,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+650,Blind Luke Hemmings,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+651,Blind Tartaglia | Childe (Genshin Impact),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+652,Mute Player (Stardew Valley),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+653,Deaf Harry Potter,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+654,disabled,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag
+655,Disabled Draco Malfoy,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+656,Charles Xavier in a Wheelchair,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+657,Dyslexic Harry Potter,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+658,Deaf Louis,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,
+659,Dyslexia,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+660,Blind Dan Howell,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+661,Deaf Miyuki Kazuya,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+662,Selectively Mute Ranboo (Video Blogging RPF),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+663,Deaf Bokuto Koutarou,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+664,Blind Adrien Agreste,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,FALSE,,FALSE,
+665,Lisiado,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag
+666,Deaf Sawamura Daichi,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+667,Disabled Stiles Stilinski,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+668,Blind Roy,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+669,trigger warning: disabilities,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag
+670,Blind Armitage Hux,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+671,Deaf Peter,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,FALSE,,FALSE,,FALSE,,FALSE,
+672,Deaf Din Djarin,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+673,Selectively Mute Tommyinnit (Video Blogging RPF),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+674,Blind Levi Ackerman,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+675,Disabled Marcy Wu,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+676,Dyslexic Steve Harrington,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+677,Disabled Dean Winchester,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+678,Mention of dissability,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag
+679,Mute Upgraded Connor | RK900,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+680,Blind Locus | Samuel Ortez,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+681,Blind Anxiety | Virgil Sanders,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+682,Blind Violet (Walking Dead: Done Running),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+683,Visual disibility with an OC,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag
+684,Blind Sollux Captor,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+685,Mute Dick Grayson,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+686,Blind Jensen Ackles,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+687,Blind Clarke Griffin,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+688,Blind Sherlock Holmes,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+689,Blind Shiro (Voltron),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+690,Deaf Levi (Shingeki no Kyojin),FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,
+691,Deaf Jason Grace,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+692,Deaf Remus,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,FALSE,,FALSE,,FALSE,,FALSE,
+693,Blind Liam Payne,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+694,Disabled Sam,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,,FALSE,
+695,Certain Disability,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag
+696,Mute Bumblebee (Transformers),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+697,Disabled Kakyoin Noriaki,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+698,disability themes,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag
+699,Disabled Sherlock Holmes,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+700,Mute Stiles Stilinski,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+701,Mute Connor (Detroit: Become Human),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+702,Blind Prussia (Hetalia),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+703,Blind Obi-Wan Kenobi,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+704,Deaf Scott McCall (Teen Wolf),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+705,Deaf Park Jimin,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,
+706,Deaf Matt Murdock,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+707,Selectively Mute Pyro (Team Fortress 2),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+708,Disabled Steve Rogers,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+709,Disability via Accident,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag
+710,Blind GeorgeNotFound (Video Blogging RPF),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+711,Disabled Min Yoongi | Suga,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+712,Blind Luke,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,
+713,Deaf Regulus Black,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+714,Blind Frisk (Undertale),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+715,Deaf Ethan Green,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+716,Mute Keith (Voltron),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+717,Blind Jung Hoseok | J-Hope,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+718,Dyslexic Wylan Van Eck,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+719,Deaf Wooley (Star Wars),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+720,Mute Deceit | Janus Sanders,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+721,Deaf Kim Jongin | Kai,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+722,Mute Dipper Pines,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+723,Selectively Mute Cassandra Cain,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+724,Mute Derek,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,
+725,Blind Wilbur Soot,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+726,Deaf Iwaizumi Hajime,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+727,Blind Eret (Video Blogging RPF),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+728,Vocal Disability due to Severe Injury,FALSE,,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag
+729,Park Jimin in a Wheelchair (BTS),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+730,Mute Jaskier | Dandelion,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+731,Selectively Mute Henry Stickmin,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+732,Blind Thranduil,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+733,"Deaf Creativity | Roman ""Princey"" Sanders",FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+734,handikapeco,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag
+735,Blind Ying | Lumine (Genshin Impact),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+736,Deaf Phil Lester,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+737,Dyslexic Dean Winchester,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+738,Blind Erik Lehnsherr,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+739,Deaf Zayn Malik,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+740,basically me giving these caharacters disabilities,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag
+741,sarcasm about disabilities,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag
+742,Discussion on Disability,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag
+743,Disabled Lance (Voltron),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+744,Mute Lance (Voltron),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+745,Muteness,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+746,Mute Ariel (Disney),FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+747,Blind Loki,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,,FALSE,,FALSE,
+748,Mute Dave Strider,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+749,Disbility,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag
+750,Deaf Kim Taehyung | V,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+751,Dyslexic Jane Seymour,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+752,Blind Portgas D. Ace,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+753,long term injury related disability,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag
+754,Life-altering Disabilities,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag
+755,disibility,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag
+756,dealing with her disability,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag
+757,Sullo sfondo: disabilità,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag
+758,Deaf Barry Allen,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+759,Disabled Hinata Shouyou,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+760,Blind Aziraphale (Good Omens),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+761,Deaf Yamada Hizashi | Present Mic,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+762,girl with a disibility,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag
+763,"Disabled Jonathan ""Jon"" Sims | The Archivist",FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+764,Mute Warrior of Light (Final Fantasy XIV),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+765,Mute Kim Taehyung | V,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+766,Deaf Logic | Logan Sanders,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+767,Blind Jack Kline,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+768,Deaf Hermione Granger,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+769,Deaf Grantaire (Les Misérables),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+770,Dyslexic Eren Yeager,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+771,Mute Wild (Linked Universe),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+772,Blind Harry Styles,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+773,Blind Nakahara Chuuya (Bungou Stray Dogs),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+774,Mute Kaeya (Genshin Impact),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+775,Mute Gavin,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,,FALSE,,FALSE,
+776,Blind Jared Padalecki,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+777,Blind Jean Kirstein,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+778,Selectively Mute Dean,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,
+779,Mute Jean Kirstein,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+780,Dyslexic Inquisitor (Dragon Age),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+781,Blind Hagakure Tooru,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+782,Dyslexic Dean,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,
+783,Canon Disabilities,FALSE,,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag
+784,"Deaf Jonathan ""Jon"" Sims | The Archivist",FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+785,Blind Kurt Hummel,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+786,Selectively Mute Logic | Logan Sanders,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+787,Mute Pete Wentz,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+788,disability content,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag
+789,Deaf Ian Gallagher,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+790,mental and physical disabilities,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag
+791,Disable,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag
+792,Blind Steve Rogers,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+793,Mute Castiel (Supernatural),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+794,Mute Akaashi Keiji,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+795,Fake/real disabilities,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag
+796,Blind Byun Baekhyun,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+797,Blind Eli Clark | Seer,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+798,Blind Ignis Scientia,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+799,Blind Nico,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,,FALSE,
+800,Mute Bruno Madrigal,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+801,Dyslexic Ethan Green,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+802,Blind Locus,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,
+803,Selectively Mute Anxiety | Virgil Sanders,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+804,Dyslexic Reggie Peters (Julie and The Phantoms),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+805,Mute Ryan,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,FALSE,,FALSE,,FALSE,,FALSE,
+806,Deaf Jim,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,FALSE,,FALSE,,FALSE,,FALSE,
+807,Implied Disability,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag
+808,Deaf Derek Hale,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+809,Blind Gavin,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,,FALSE,,FALSE,
+810,Deaf Hanamaki Takahiro,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+811,and also disabilities,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag
+812,Deaf Lee Jooheon (Monsta X),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+813,Blind Blaine Anderson,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+814,Mute Hannibal Lecter,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+815,Blind Rey (Star Wars),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+816,Blind Scott McCall (Teen Wolf),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+817,Blind Fox Alistair,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+818,Deaf Percy,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,FALSE,,FALSE,,FALSE,,FALSE,
+819,Disability of sorts,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag
+820,Dyslexic Mickey Milkovich,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+821,Dyslexic Harry Styles,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+822,Talk of and Dealing with Disabilities,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag
+823,Mute Peter Parker,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+824,Mute Guardian (Destiny),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+825,Blind Clarke,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,
+826,Deaf Todoroki Shouto,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+827,Blind Enjolras (Les Misérables),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+828,Deaf Mickey,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,
+829,Mute Severus Snape,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+830,Blind Stiles,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,
+831,Selectively Mute Wilbur Soot,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+832,disabilities mention,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag
+833,disability au bc we need more of that,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag,FALSE,,FALSE,
+834,Blind Takami Keigo | Hawks,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+835,Blind Levi (Shingeki no Kyojin),FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,
+836,Long term/permanent disability,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag
+837,Deaf Andrew Minyard,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+838,discussion of disability,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag
+839,Discapacidades,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag
+840,Logic | Logan Sanders In A Wheelchair,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+841,Mute Neil Josten,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+842,Deaf Neil Josten,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+843,All three girls are disabled,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag
+844,disable?,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag
+845,Disabled Noctis Lucis Caelum,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+846,Physical Disability,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+847,Deaf,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+848,Selectively Mute Mirabel Madrigal,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+849,Blind Kong | Aether (Genshin Impact),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+850,Disabled Derek Hale,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+851,Mute Kamado Nezuko,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+852,Mute Zayn Malik,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+853,"Selectively Mute Creativity | Roman ""Princey"" Sanders",FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+854,Implied Disabilities,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag
+855,Deaf Levi Ackerman,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+856,Mute Junior (Red vs. Blue),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+857,Blind Hawke (Dragon Age),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+858,Blind Zuko (Avatar),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+859,Selectively Mute Technoblade (Video Blogging RPF),FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+860,trigger warning: disability,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag
+861,Blind Marco Bott,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag
+862,mention of disabilites,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,synned_tag,TRUE,synned_tag,TRUE,synned_tag
+863,"Blind Creativity | Roman ""Princey"" Sanders",FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag
+864,Disabled Logic | Logan Sanders,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag
+865,Blind Gabriel,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,,FALSE,
+866,Disabled Dean,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,TRUE,canonical_tag,FALSE,,FALSE,
+867,Selectively Mute Jung Hoseok | J-Hope,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,TRUE,canonical_tag,TRUE,canonical_tag

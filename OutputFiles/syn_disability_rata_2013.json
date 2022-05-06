@@ -1,0 +1,174 @@
+{
+    "Deaf": {
+        "type": "canonical_tag",
+        "parent_tags": [
+            "No Fandom"
+        ],
+        "synned_tags": [
+            "Actual Deaf issues in Deaf culture",
+            "ddaf",
+            "DEAF!",
+            "Deaf!stuck",
+            "deaf!verse",
+            "deafness",
+            "Disability- hearing loss",
+            "Disability: Deaf",
+            "Disability: Deafness",
+            "Going deaf",
+            "Hard of Hearing",
+            "Partially Deaf",
+            "SHE WILL GO DEAF SHUT UPPPPPP",
+            "They are also both deaf"
+        ],
+        "subtags": [
+            {
+                "Deaf Character": [
+                    "Deaf Dave",
+                    {
+                        "Deaf Derek": [
+                            "Deaf Derek Hale"
+                        ]
+                    },
+                    "Deaf John",
+                    "Deaf Bilbo",
+                    "Deaf Castiel",
+                    "Deaf Stiles",
+                    {
+                        "Deaf Dean": [
+                            "Deaf Dean Winchester"
+                        ]
+                    },
+                    "Deaf Sam",
+                    "Deaf Louis",
+                    "Deaf Marco Bott"
+                ]
+            },
+            "Deaf Karkat Vantas"
+        ],
+        "metatags": [
+            "Disability"
+        ]
+    },
+    "Deaf Character": {
+        "type": "canonical_tag",
+        "parent_tags": [
+            "No Fandom"
+        ],
+        "synned_tags": [
+            "Canon Deaf Character",
+            "Deaf Character(s)",
+            "Pre-lingually deaf character",
+            "prelingually deaf character",
+            "глухой персонаж"
+        ],
+        "subtags": [
+            "Deaf Dave",
+            {
+                "Deaf Derek": [
+                    "Deaf Derek Hale"
+                ]
+            },
+            "Deaf John",
+            "Deaf Bilbo",
+            "Deaf Castiel",
+            "Deaf Stiles",
+            {
+                "Deaf Dean": [
+                    "Deaf Dean Winchester"
+                ]
+            },
+            "Deaf Sam",
+            "Deaf Louis"
+        ],
+        "metatags": [
+            "Deaf",
+            "Disabled Character"
+        ]
+    },
+    "Blindness": null,
+    "Blind Character": null,
+    "Disabilities": {
+        "type": "freeform_tag",
+        "parent_tags": [
+            "No Fandom"
+        ],
+        "synned_tags": [
+            ""
+        ],
+        "subtags": [
+            ""
+        ],
+        "metatags": [
+            ""
+        ]
+    },
+    "Disability Issues": null,
+    "disability themes": null,
+    "disabilty": {
+        "type": "synned_tag",
+        "cannonical_tag": "Disability",
+        "parent_tags": [
+            "No Fandom"
+        ],
+        "synned_tags": [
+            ""
+        ],
+        "subtags": [
+            ""
+        ],
+        "metatags": [
+            ""
+        ]
+    },
+    "Disable": {
+        "type": "synned_tag",
+        "cannonical_tag": "Disability",
+        "parent_tags": [
+            "No Fandom"
+        ],
+        "synned_tags": [
+            ""
+        ],
+        "subtags": [
+            ""
+        ],
+        "metatags": [
+            ""
+        ]
+    },
+    "disabled!stuck": {
+        "type": "synned_tag",
+        "cannonical_tag": "Disability",
+        "parent_tags": [
+            "HomestuckNo Fandom"
+        ],
+        "synned_tags": [
+            ""
+        ],
+        "subtags": [
+            ""
+        ],
+        "metatags": [
+            ""
+        ]
+    },
+    "Dsiable": null,
+    "Handicap": {
+        "type": "synned_tag",
+        "cannonical_tag": "Disability",
+        "parent_tags": [
+            "No Fandom"
+        ],
+        "synned_tags": [
+            ""
+        ],
+        "subtags": [
+            ""
+        ],
+        "metatags": [
+            ""
+        ]
+    },
+    "impairment": null,
+    "Permanant Injury of Main Character": null
+}

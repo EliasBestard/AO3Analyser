@@ -12,18 +12,25 @@ def net_build(data):
     """
     G = nx.DiGraph()
     for tag in data:
+        if tag=='Mute Michael Clifford':
+            print("her")
+        tag=tag.strip()
         if data[tag]["type"]=="canonical_tag":
+            
+            data[tag]["synned_tags"].remove('') if '' in data[tag]["synned_tags"] else None
+
             G.add_node(tag) if not G.has_node(tag) else None 
             G.nodes[tag]['type']="canonical_tag"
             G.nodes[tag]['group']=0
+            G.nodes[tag]['synned_tags']=data[tag]['synned_tags']
             G.nodes[tag]['title']="<h3>"+tag+"<h3>" 
             # G.nodes[tag]['title']="<h3>"+tag+"<h3>" + "<br> ".join(data[tag]['synned_tags'])
-            G.nodes[tag]['synned_tags']=data[tag]['synned_tags']
             G.nodes[tag]['color']='#2E86C1'
-                        
-            __add_full_subtags(G,data[tag]['subtags'],tag)
+            
+
+            __add_full_subtags(G,data[tag]['subtags'],tag) 
             __add_metatags(G,data,tag)
-            __add_synned_tags(G,tag,data[tag]['synned_tags'])
+            __add_synned_tags(G,tag,data[tag]['synned_tags'])  if len(data[tag]['synned_tags'])>0 else None
 
         elif data[tag]["type"]=="freeform_tag":
             G.add_node(tag) if not G.has_node(tag) else None
@@ -31,6 +38,23 @@ def net_build(data):
             G.nodes[tag]['type']="freeform_tag"
             G.nodes[tag]['title']=tag
             G.nodes[tag]['color']='#5D6D7E'
+        
+        elif data[tag]["type"]=="synned_tag":
+            G.add_node(tag) if not G.has_node(tag) else None
+            G.nodes[tag]['group']="synned_tag"
+            G.nodes[tag]['type']="synned_tag"
+            G.nodes[tag]['shape']='triangle'
+            G.nodes[tag]['color']='#BB8FCE'
+
+            canonical_tag=data[tag]["cannonical_tag"]
+            if not G.has_node(data[tag]["cannonical_tag"]):
+                G.add_node(canonical_tag) 
+                G.nodes[canonical_tag]['type']="canonical_tag"
+                G.nodes[canonical_tag]['group']=0
+                G.nodes[canonical_tag]['title']="<h3>"+canonical_tag+"<h3>" 
+                G.nodes[canonical_tag]['color']='#2E86C1'
+            __add_synned_tags(G,canonical_tag,[tag])
+
         
     __update_title(G)
     return G

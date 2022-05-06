@@ -1,12 +1,12 @@
 "use strict";
 const puppeteer = require("puppeteer");
 const fs = require("fs");
-const tagscra_cli = require('./tagscra_cli')
+const tagscra_cli = require('./Utils/tagscra_cli');
+const { mine_non_canonicals } = require("./Utils/utils_scraper");
+const mine_RATAS = require('./Utils/utils_scraper').mine_RATAS
 
-let args_mine = tagscra_cli.parser.parse_args();
 
-// let tag_to_mine = ["Reincarnation",'A lot of past lives','she lived 4 lives already',"Alternate Universe - Canon Divergence"]
-let tag_to_mine = ["Disability"]
+let args_mine = tagscra_cli.args_mine;
 
 //TODO: Build a CLI
 const URLs = {
@@ -22,9 +22,9 @@ switch (args_mine.AO3_version) {
 	  URLs.site = "https://archiveofourown.org/";
 	  break;
 	case '2021':
-		// URLs.site = "https://web.archive.org/web/20210125165441/https://archiveofourown.org/";
+		URLs.site = "https://web.archive.org/web/20210125165441/https://archiveofourown.org/";
 		// Ableism
-		URLs.site = "https://web.archive.org/web/20210125101651/https://archiveofourown.org/";
+		// URLs.site = "https://web.archive.org/web/20210125101651/https://archiveofourown.org/";
 		break;
 	case '2018':
 		URLs.site = "https://web.archive.org/web/20180205161503/https://archiveofourown.org/";
@@ -36,9 +36,9 @@ switch (args_mine.AO3_version) {
 		URLs.site = "https://web.archive.org/web/20160217094435/https://archiveofourown.org/";
 		break;
 	case '2015':
-		// URLs.site = "https://web.archive.org/web/20150105080944/https://archiveofourown.org/";
+		URLs.site = "https://web.archive.org/web/20150105080944/https://archiveofourown.org/";
 		// Ableism
-		URLs.site = "https://web.archive.org/web/20151122021416/https://archiveofourown.org/";
+		// URLs.site = "https://web.archive.org/web/20151122021416/https://archiveofourown.org/";
 		break;
 	case '2014':
 		URLs.site = "https://web.archive.org/web/20140911124210/https://archiveofourown.org/";
@@ -54,44 +54,105 @@ switch (args_mine.AO3_version) {
 	  text = "https://archiveofourown.org/";
   }
 
+// If only mining the non-canonical tags from a TAG
+if(args_mine.freeforms){
+	URLs.site="https://archiveofourown.org/tags/search?tag_search%5Bname%5D="+URLs.tag+"&tag_search%5Bfandoms%5D=&tag_search%5Btype%5D=Freeform&tag_search%5Bcanonical%5D=F&tag_search%5Bsort_column%5D=name&tag_search%5Bsort_direction%5D=asc&commit=Search+Tags"
+}
 
 // console.log(URLs.tag)
 
 
-
+//  https://archiveofourown.org/tags/search?tag_search%5Bname%5D=Disability&tag_search%5Bfandoms%5D=&tag_search%5Btype%5D=Freeform&tag_search%5Bcanonical%5D=F&tag_search%5Bsort_column%5D=name&tag_search%5Bsort_direction%5D=asc&commit=Search+Tags
 
 ( async () => {	
 	const browser = await puppeteer.launch({
 		headless: args_mine.headless,
 		args: ["--no-sandbox", "--disable-setuid-sandbox"]
 	});
-
+	
+	if(args_mine.freeforms){
+		let non_can_tags=[];
+		try {
+			if(args_mine.verbose)
+			    console.log("========================= Scraping NonCanonical Tags ================================");
+			const page = await browser.newPage();
+			non_can_tags= await mine_non_canonicals(URLs.site,page);		
+		} catch (error) {
+			console.error(error);
+		}
+		finally{
+			fs.writeFile(args_mine.output_path+args_mine.output_file+".json", non_can_tags.toString(),function(err, result) {
+				if(err) console.log('error', err);
+			});
+			//Close browser
+			// await browser.close();
+			return;
+			// process.exit(0);
+		}
+	}
+	
 	let mined_tags={};
+	if (args_mine.continue & fs.existsSync(args_mine.output_path+args_mine.output_file+'.json')){
+		if(args_mine.verbose)
+			console.log("Reading existing JSON :"+args_mine.output_path+args_mine.output_file+'.json')
+		// fs.readFile(args_mine.output_path+args_mine.output_file+'.json', (err, data) => {
+		// 	if (err) throw err;
+		// 	mined_tags = JSON.parse(data);
+		// });
+		let rawdata = fs.readFileSync(args_mine.output_path+args_mine.output_file+'.json');
+		mined_tags = JSON.parse(rawdata);
+	}
+	else{
+		// If it is a new iteration or the file did not extit
+		// Creates a new file and adds the header
+		if(args_mine.verbose)
+			console.log("Creating/Overwriting JSON :"+args_mine.output_path+args_mine.output_file+'.json')
+	}
+	
+	
+	
 	const page = await browser.newPage();
 
 	// Passing the output to the cmd
-	page.on('console', (msg) => console[msg._type]('PAGE LOG:', msg._text));
+	// page.on('console', (msg) => console[msg._type]('PAGE LOG:', msg._text));
 	
 	try{
 		for (let index = 0; index < URLs.tag.length; index++) {
-			console.log("================= "+(index+1)+"/"+URLs.tag.length+" =================");
-			console.log("================= MINING TAG: "+URLs.tag[index]+" =================");
+			if(Object.keys(mined_tags).includes(URLs.tag[index])){
+				if(args_mine.verbose){
+					console.log("================= "+(index+1)+"/"+URLs.tag.length+" =================");
+					console.log("================= ALREADY MINNED TAG: "+URLs.tag[index]+" =================");	
+					console.log("====================================================================")
+				}
+				continue;
+			}
 			
-			let temp = await mine_RATAS(URLs.tag[index], page)
+			// verbose
+			if(args_mine.verbose){
+				console.log("================= "+(index+1)+"/"+URLs.tag.length+" =================");
+				console.log("================= MINING TAG: "+URLs.tag[index]+" =================");	
+			}
+			
+			// let temp = await mine_RATAS(URLs.tag[index], page, true)
+			let temp = await mine_RATAS(URLs.site + 'tags/' +URLs.tag[index], page, true)
 			if(temp==NaN)
 				continue;
 			mined_tags[URLs.tag[index]]= temp;
 			
-			console.log("===================================================================")
-			if(index%50==0 & index>0)
-				await delay(60000);
-			if(index>99){
-				console.log("================= Waiting 3min =================");
-				if(index%10==0)
-					delay(5000);
-				if(index%50==0)
-					delay(60000);
-			}	
+			if(args_mine.verbose)
+				console.log("====================================================================")
+
+			// if(index%51==0 & index>0){
+			// 	if(args_mine.verbose)
+			// 		console.log("========================== Waiting 4 mins ==========================")
+			// 	await page.waitForTimeout(40000);
+			// }
+			// if(index>99 &index%25==0){
+			// 	if(args_mine.verbose)
+			// 		console.log("========================== Waiting 4 mins ==========================");
+			// 	await page.waitForTimeout(40000);
+			// }
+
 		}		
 	}
 	catch (e){
@@ -103,130 +164,13 @@ switch (args_mine.AO3_version) {
 		// write the JSON 
 		
 		// fs.writeFile("./"+URLs.file_name+".json", dictstring,function(err, result) {
-		fs.writeFile(args_mine.output_path+args_mine.output_file+"_"+args_mine.AO3_version+".json", dictstring,function(err, result) {
+		fs.writeFile(args_mine.output_path+args_mine.output_file+".json", dictstring,function(err, result) {
 			if(err) console.log('error', err);
 		});
 
 		//Close browser
 		await browser.close();
 	}
-		process.exit(0);
+	
+	process.exit(0);
 })();
-
-
-function delay(time) {
-	return new Promise(resolve => setTimeout(resolve, time));
-  }
-
-async function mine_RATAS (tag_to_mine, page){
-	//go to "https://archiveofourown.org/tag_to mine"
-	await page.goto(URLs.site + 'tags/' + tag_to_mine ); 
-
-	
-
-	//conditions
-	// await page.waitForTimeout(2000);
-	// await page.$eval('input[id="tos_agree"]', check => check.click());
-	await page.waitForTimeout(1000);
-	// await page.$eval('button[id="accept_tos"]', btn => btn.click());
-	
-	// Mine the RATAS of the current tag
-	let current_tag = await page.evaluate(() => {
-		let my_dic={};
-
-		if(document.getElementById('error'))
-			return NaN
-		console.log("Type of TAG");
-		let type_of_tag = document.getElementsByClassName('tag home profile')[0].children[1].innerText;
-		// console.log(type_of_tag);
-		switch (type_of_tag)
-		{
-			case "This tag belongs to the Additional Tags Category. It's a common tag. You can use it to filter works and to filter bookmarks.":	
-				console.log("canonical_tag Tag") 		
-				my_dic.type="canonical_tag";
-				break;
-			case "This tag belongs to the Additional Tags Category.":
-				if(
-					document.getElementsByClassName('tag home profile')[0].children[3].innerText =="This tag has not been marked common and can't be filtered on (yet)."
-					||
-					document.getElementsByClassName('tag home profile')[0].children[2].innerText =="This tag has not been marked common and can't be filtered on (yet)."
-					){
-					my_dic.type="freeform_tag";
-					console.log("FreeForm Tag");
-				}
-				else{
-				console.log("SYNNED Tag");
-				  my_dic.type="synned_tag";
-				my_dic.cannonical_tag= document.getElementsByClassName('merger module')[0].children[1].innerText.split(".")[0].split("has been made a synonym of")[1]
-			}
-
-			break;
-	   
-	   	default: 
-			my_dic.type="NAN";
-		}
-		// console.log("~~~~~~~~~~~~~");
-
-	
-		// console.log("~~~~~~ParentTags~~~~~~~");
-		let parent_tags =document.getElementsByClassName('parent listbox group')[0]? [].map.call(document.getElementsByClassName('parent listbox group')[0].getElementsByClassName('tags'), (form=>{return form.innerText})).join(', '): "";
-		my_dic.parent_tags=parent_tags.split(',');
-		// console.log("~~~~~~~~~~~~~");
-
-
-		// console.log("~~~~~~SynnedTags~~~~~~~");
-		let synned_tags =document.getElementsByClassName('synonym listbox group')[0]? [].map.call(document.getElementsByClassName('synonym listbox group')[0].getElementsByClassName('tag'), (form=>{return form.innerText})).join(','):"";
-		my_dic.synned_tags=synned_tags.split(',');
-		// console.log("~~~~~~~~~~~~~");
-		function getNodeTree(node) {
-			if (node.children.length>1) {
-				var children = [];
-				for (var j = 0; j < node.childNodes[1].childNodes.length; j++) {
-					children.push(getNodeTree(node.childNodes[1].childNodes[j]));
-				}
-				let temp={}
-				temp[node.firstChild.innerText]=children
-				return temp
-			}
-		
-			return node.firstChild.innerText;
-		}
-
-		// console.log("~~~~~~SubTags~~~~~~~");
-		let sub_tags = [];
-		// If there are SUB TAGS
-		if(document.getElementsByClassName('sub listbox group').length>0){
-			// Get the list of sub tags
-			let ul_list=document.getElementsByClassName('sub listbox group')[0].getElementsByTagName('ul')[0];
-			// Iterate for all subtags
-			while (ul_list.childElementCount>0) {
-				let first_child_il =ul_list.firstElementChild; 
-				
-				let temp=getNodeTree(first_child_il)
-				sub_tags.push(temp)
-
-				ul_list.removeChild(first_child_il);
-			}
-			// Save the subtags
-			my_dic.subtags=sub_tags;
-
-		}
-		else
-			my_dic.subtags=[""];
-		// console.log("~~~~~~~~~~~~~");
-
-		// console.log("~~~~~~MetaTags~~~~~~~");		
-		let list_of_meta_tags =document.getElementsByClassName('meta listbox group').length>0? Array.from(document.getElementsByClassName('meta listbox group')[0].getElementsByTagName('ul')):[''];
-		let meta_tags=list_of_meta_tags[0];
-
-		for (let index = 1; index < list_of_meta_tags.length; index++)
-			list_of_meta_tags[index].parentNode.parentNode==meta_tags? meta_tags.removeChild(list_of_meta_tags[index].parentNode):NaN;
-		meta_tags =meta_tags=="" ?[""] : [].map.call(meta_tags.children, (form=>{return form.innerText}));
-		my_dic.metatags = meta_tags;
-		// console.log(meta_tags);
-		// console.log("~~~~~~~~~~~~~");
-
-		return my_dic;
-	});
-	return current_tag
-}
