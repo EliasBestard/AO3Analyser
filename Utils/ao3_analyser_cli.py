@@ -1,84 +1,135 @@
 import argparse
 import os
+import Utils.scraper_script as scraper
+import Modules.NetBuilder.net_builder as net_builder
+import Modules.NetVisualizer.net_visualizer as net_visualizer
 
-parser = argparse.ArgumentParser(prog="")
-parser.add_argument("-f", "--file",
-                    help="The path of the file to analize")
-# parser.add_argument("-o","--out", help="Name of the result of the procces")
+# # CLI
 
-parser.add_argument("-dg", "--data_generator", help='''To Generate many files of data to analize, depends of the parse of your choice ex:'p_label_value,p_series_list' ''',
+parser = argparse.ArgumentParser(prog="ao3_analyser")
+
+# ## TagScra
+parser.add_argument("-ts", "--TagScra",
+                    help="Call TagScra Module witht the list of Tags as arguments to mine and genereate a JSON with the RATAS",
+                    nargs='+'
+                    )
+parser.add_argument("-ao3_v", "--AO3Version",
+                    help="Version (year) for which scrap AO3 the tag when calling TagScra",
+                    type=str,
+                    default='current'
+                    )
+parser.add_argument("--NonCanonical",
+                    help="Call TagScra Module witht the list of Tags as arguments to mine and genereate all non canonical tags under each tag",
+                    action='store_true',
+                    default=False
+                    )
+
+# ## DaScra
+parser.add_argument("-ds", "--DaScra",
+                    help="Call DaScra Module witht the Tag to mine all its works and genereate a JSON with the RATAS",
+                    type=str
+                    # default='Disability'
+                    )
+parser.add_argument("--StoryNumber", help="Number of stories to scrap when calling DaScra ",
+                    type=int,
+                    default=1000)
+
+# ## TagScra & DaScra0
+parser.add_argument("-o","--OutputName", help="Name of the file result",
+                    type=str,
+                    default='default_name')
+parser.add_argument("-op","--OutputPath", help="Path of the output",
+                    type=str,
+                    default='./OutputFiles/')
+# ##
+parser.add_argument("--ExpandRATAS", help="""Read RATA JSON file expands it mining all the canonical tags to get they sub tags and synned tags """,
+                    type=str)
+parser.add_argument("--ExpandFullRATAS", help="""Read RATA JSON file expands it adding all the non canonical tags from a non_canonical file outputed by TagScra""",
+                    nargs=2)
+
+# ## Netbuilder & Visualizer
+parser.add_argument("-gn","--GenerateNetwork", help="Read a RATA JSON file and build the Network representation and creates its visualization. Receives the path of the JSON file",
                     type=str)
 
+# ## Visualizer -- Net Diff, Intersection, etc
+parser.add_argument("-gs","--GenerateSimilarites", help="Given two RATAS JSON files generates boths visualiations highlighting the similarities assuming the first one is an old version of the second one",
+                    nargs=2)
+parser.add_argument("-gd","--GenerateDifferences", help="""Given two RATAS JSON files generates one visualization that highlights the differences of two RATAS
+                     Blue Nodes represents nodes in the difference (in the second file that are not in the first file)
+                     Red Nodes represents nodes in the intersection (in the second file and the first file) """,
+                    nargs=2)
+
+
 def parse():
+    """
+    Parse the arguments in the CLI and call the methods
+    """
     args = parser.parse_args()
-    config = Config()
-    config.set_available_parsers_graphs(args.parser,args.graph)
-    config.set_data_generated_list(args.data_generator)
-    config.set_output_file(args.out)
-    config.set_parsers_help(args.parsers_help)
-    
-    if args.parsers_help:
-        parsers_help()
-        return []
-    elif args.parsers_list:
-        [print(item) for item in config.parsers]
-        return []
-    elif args.graphs_list:
-        [print(item) for item in config.graphs]
-        return []
-    elif args.data_generator:
-        data_generator()
-        return []
-    
-    #adquiriendo los valores a procesar en data=STRING
-    data=""
-    # args.file = "text.txt"
-    if args.file:   #Si recibo los datos de un FILE
-        data=[]
-        if os.path.isdir(args.file):
-            for item in os.listdir(args.file):
-                temp = open(args.file+item, "r")
-                data.append(temp.read())
-                temp.close()
-        else:
-            data = [open(args.file, "r").read()]
-    else:   #Si recibo los datos por la consola hasta que no escriba una linea en blanco
-        print("write the data. To finish it write a blank line")
-        temp = input()
-        while not temp=="":
-            data+=temp
-            temp=input()
-            data+="\n" if not temp=="" else ""
-            data=[data]
-    #ya con data lleno
-    
-    return data
 
-def parsers_help():
-    ''' Lista todos los parsers definidos y un ejemplo de los mismos '''
-    print("="*20)
-    for item in Config().prarsers_help:
-        class_name = Config().get_parser_class_name(item)
-        print(item)
-        import_module = compile(
-            "from api.parsers."+item+" import "+class_name, 'e', mode='exec')
-        exec(import_module)
-        print(eval(str(class_name+"().help()")))
-        print("="*20)
+    print()
 
-def data_generator(amount=5, on_top=50, below=100):
-    ''' Lista todos los parsers definidos y un ejemplo de los mismos '''
-    print("="*20)
-    #Recorrer todos los parsers que quiere ser procesados
-    for item in Config().data_generated:
-        #Adquirir el nombre de la clase dentro del file item
-        print(item)
-        class_name = Config().get_parser_class_name(item)
-        import_module = compile(
-            "from api.parsers."+item+" import "+class_name, 'e', mode='exec')
-        exec(import_module)
-        try:
-            eval(str(class_name+"().data_generator(amount, on_top,below)"))
-        except:
-            print("WARNING-- THE PARSER "+item+" DOES NOT HAVE THE METHOD data_generator")
-        print("="*20)
+    if args.TagScra and not args.NonCanonical :
+        print('='*15 + " Invoking TagScra " + '='*15)
+        scraper.tagscra_list(args.TagScra,out_path=args.OutputPath,out_name=args.OutputName, av=args.AO3Version)
+        return []
+    elif args.TagScra and args.NonCanonical:
+        scraper.tagscra_non_canonical(args.TagScra,out_path=args.OutputPath,out_name=args.OutputName, av=args.AO3Version)
+        return []
+    elif args.DaScra:
+        print('='*15 + " Invoking DaScra " + '='*15)
+        scraper.dascra_whole_tag_works(args.DaScra,out_path=args.OutputPath,out_name=args.OutputName, story_number=args.StoryNumber)
+        return []
+    elif args.ExpandRATAS:
+        print(" Expanding RATAS "+args.ExpandRATAS)
+        scraper.expand_rata(args.ExpandRATAS, create_new_file='expanded_rata')
+    elif args.ExpandFullRATAS:
+        print(" Expanding to FULL RATAS "+args.ExpandFullRATAS[0])
+        file_name= os.path.basename(args.ExpandFullRATAS[0])[:-5]+'_full' if args.OutputName=="default_name" else args.OutputName
+        scraper.expand_to_full_rata(args.ExpandFullRATAS[0],args.ExpandFullRATAS[1], create_new_file=file_name)
+    elif args.GenerateNetwork:
+        print(" Invoking NetBuilder and NetVisualizer")
+        rata_json= scraper.read_JSON(args.GenerateNetwork)
+        g= net_builder.net_build(rata_json)
+        file_name = os.path.basename(args.GenerateNetwork)[:-5] if args.OutputName=="default_name" else args.OutputName
+        heading="File: "+args.GenerateNetwork+'<br>'+file_name
+        
+        net_visualizer.net_visualize(g, 
+                            headings=heading,
+                            file_name=file_name)
+    elif args.GenerateSimilarites:
+        print(" Invoking NetBuilder and NetVisualizer ~~ Similarities ")
+        
+        rata_json_a= scraper.read_JSON(args.GenerateSimilarites[0])
+        G= net_builder.net_build(rata_json_a)
+        file_name_a = os.path.basename(args.GenerateSimilarites[0])[:-5] if args.OutputName=="default_name" else args.OutputName
+        heading_a="File: "+args.GenerateSimilarites[0]+'<br>'+file_name_a
+        G.name=file_name_a
+
+        rata_json_b= scraper.read_JSON(args.GenerateSimilarites[1])
+        H= net_builder.net_build(rata_json_b)
+        file_name_b = os.path.basename(args.GenerateSimilarites[1])[:-5] if args.OutputName=="default_name" else args.OutputName
+        heading_b="File: "+args.GenerateSimilarites[1]+'<br>'+file_name_b
+        H.name=file_name_b
+
+        net_visualizer.get_visuals_older_vs_newest(G,H,headings=[heading_a,heading_b],file_names=[file_name_a,file_name_b], number_comparison=5)
+    elif args.GenerateDifferences:
+        print(" Invoking NetBuilder and NetVisualizer ~~ Diff ")
+        
+        rata_json_a= scraper.read_JSON(args.GenerateDifferences[0])
+        G= net_builder.net_build(rata_json_a)
+        
+        file_name_a = os.path.basename(args.GenerateDifferences[0])[:-5] if args.OutputName=="default_name" else args.OutputName
+        file_name_b = os.path.basename(args.GenerateDifferences[1])[:-5] if args.OutputName=="default_name" else args.OutputName
+        heading_a="Files: "+args.GenerateDifferences[0]+'<br>'+args.GenerateDifferences[1]+'<br> Disaplaying diff from: '+file_name_a+ " to: "+file_name_b
+        heading_b="Files: "+args.GenerateDifferences[1]+'<br>'+args.GenerateDifferences[0]+'<br> Disaplaying diff from: '+file_name_b+ " to: "+file_name_a
+
+        rata_json_b= scraper.read_JSON(args.GenerateDifferences[1])
+        H= net_builder.net_build(rata_json_b)
+
+        net_visualizer.get_vis_G_diff_H(G,H,title=heading_a, file_name='diff_'+file_name_a+'_'+file_name_b)
+        net_visualizer.get_vis_G_diff_H(H,G,title=heading_b,file_name='diff_'+file_name_b+'_'+file_name_a)
+    
+
+
+    
+    print()

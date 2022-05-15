@@ -1,20 +1,29 @@
 @TagScra : 
-    ☐ Add progress bar
+    ✔ Mine the RATA of a tag (all subtags and inmediate metatag) @done
     ✔ Mine non-canonical tags from a tag (different type of output) @done(22-05-06 14:13)
+    ✔ CLI @done
+    ☐ Add progress bar
     ☐ Organize code and reactor
     ☐ Readme
     ☐ Documentation
 @DaScra : 
+    ✔ Mine stories for a TAG @done
     ☐ Documentation
     ☐ readme
     ☐ Organize and refactor code
 
-@Netbuilder :
-    ☐ Build a Network from a Json (output of TagScra)
+@NetBuilder :
+    CLI:
+        ☐ Read Json
+        ☐ Build Network from a file (File-> NetworkX)
+        ☐ Build Networks from directory(Directory-> list of Networks)
+        ☐ Read non-canonical TagScra's output and add nodes to a Network(RATAS)
+        
+    ✔ Build a Network from a Json (output of TagScra) @done(22-05-09 13:34)
     ☐ Add non-canonical nodes to a Net from @TagScra output
     ☐ all needed methods to read and handle JSON files from @TagScra to Nets
 
-@Netvisualizer :
+@NetVisualizer :
     ☐ Create pyvis of the network
     ☐ Visuals of difference
     ☐ visuals of analysis
@@ -31,8 +40,8 @@ Analyzer:
     ☐ CLI 
     ☐ connect to @TagScra
     ☐ connect to @DaScra
-    ☐ connect to a @etBuilder
-    ☐ connect to @Netvisulizer
+    ☐ connect to a @NetBuilder
+    ☐ connect to @NetVisualizer
     ☐ connect to @NetAnalyser
     
     Utils:

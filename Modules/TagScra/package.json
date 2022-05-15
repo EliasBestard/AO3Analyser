@@ -1,0 +1,15 @@
+{
+  "name": "tag_scra",
+  "version": "1.0.0",
+  "description": "dependencies for scraper.js",
+  "main": "scraper.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Elias Bestard Lorigados",
+  "dependencies": {
+    "argparse": "^2.0.1",
+    "cli-progress": "^3.11.0",
+    "puppeteer": "^13.5.2"
+  }
+}
