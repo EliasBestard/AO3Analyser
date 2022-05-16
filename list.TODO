@@ -2,7 +2,7 @@
     ✔ Mine the RATA of a tag (all subtags and inmediate metatag) @done
     ✔ Mine non-canonical tags from a tag (different type of output) @done(22-05-06 14:13)
     ✔ CLI @done
-    ☐ Add progress bar
+    ✔ Add progress bar @done(22-05-15 15:42)
     ☐ Organize code and reactor
     ☐ Readme
     ☐ Documentation
@@ -14,34 +14,39 @@
 
 @NetBuilder :
     CLI:
-        ☐ Read Json
-        ☐ Build Network from a file (File-> NetworkX)
+        ✔ Read Json @done(22-05-15 15:42)
+        ✔ Build Network from a file (File-> NetworkX) @done(22-05-15 15:42)
         ☐ Build Networks from directory(Directory-> list of Networks)
-        ☐ Read non-canonical TagScra's output and add nodes to a Network(RATAS)
+        ✔ Read non-canonical TagScra's output and add nodes to a Network(RATAS) @done(22-05-15 15:43)
         
     ✔ Build a Network from a Json (output of TagScra) @done(22-05-09 13:34)
-    ☐ Add non-canonical nodes to a Net from @TagScra output
+    ✔ Add non-canonical nodes to a Net from @TagScra output @done(22-05-15 15:43)
     ☐ all needed methods to read and handle JSON files from @TagScra to Nets
+    ☐ Build ALL the Defined Networks
 
 @NetVisualizer :
-    ☐ Create pyvis of the network
-    ☐ Visuals of difference
+    ✔ Create pyvis of the network @done(22-05-15 15:43)
+    ✔ Visuals of difference @done(22-05-15 15:43)
     ☐ visuals of analysis
 
 @NetAnalyzer :
     ☐ properties of the network
     ☐ Nets opperations
-    ☐ Generate reports
+    Generate reports:
+        ✔ Properties of a RATAS @done(22-05-15 21:58)
+        ☐ Political acts
+        ☐ Differences between two RATAS
+        ☐ Differences between different RATAS over time
     ☐ etc
 
 
 
 Analyzer:
     ☐ CLI 
-    ☐ connect to @TagScra
-    ☐ connect to @DaScra
-    ☐ connect to a @NetBuilder
-    ☐ connect to @NetVisualizer
+    ✔ connect to @TagScra @done(22-05-15 15:44)
+    ✔ connect to @DaScra @done(22-05-15 15:44)
+    ✔ connect to a @NetBuilder @done(22-05-15 15:44)
+    ✔ connect to @NetVisualizer @done(22-05-15 15:44)
     ☐ connect to @NetAnalyser
     
     Utils:

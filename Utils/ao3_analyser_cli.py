@@ -3,7 +3,7 @@ import os
 import Utils.scraper_script as scraper
 import Modules.NetBuilder.net_builder as net_builder
 import Modules.NetVisualizer.net_visualizer as net_visualizer
-
+import Modules.NetAnalyser.net_analyser as net_analiser
 # # CLI
 
 parser = argparse.ArgumentParser(prog="ao3_analyser")
@@ -59,6 +59,10 @@ parser.add_argument("-gd","--GenerateDifferences", help="""Given two RATAS JSON 
                      Red Nodes represents nodes in the intersection (in the second file and the first file) """,
                     nargs=2)
 
+
+# ## Reports
+parser.add_argument("--GenerateRATASProperties", help="""""",
+                    nargs=2)
 
 def parse():
     """
@@ -128,7 +132,13 @@ def parse():
 
         net_visualizer.get_vis_G_diff_H(G,H,title=heading_a, file_name='diff_'+file_name_a+'_'+file_name_b)
         net_visualizer.get_vis_G_diff_H(H,G,title=heading_b,file_name='diff_'+file_name_b+'_'+file_name_a)
-    
+    elif args.GenerateRATASProperties:
+        print(" Invoking NetBuilder-NetAnalyser")
+        rata= scraper.read_JSON(args.GenerateRATASProperties[0])
+        net= net_builder.net_build(rata)
+        dfs=net_analiser.get_G_properties(net)
+        net_analiser.save_xls(dfs,args.GenerateRATASProperties[1])
+
 
 
     

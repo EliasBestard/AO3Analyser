@@ -1,0 +1,1 @@
+from Modules.NetAnalyser.DataGeneration.script import get_G_properties,save_xls

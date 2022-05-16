@@ -1,58 +1,103 @@
-import json
-import os
-
 from Modules.NetVisualizer.net_visualizer import *
 from Modules.NetBuilder.net_builder import net_build
 import pandas as pd
 
 
-def get_G_info(G:nx.DiGraph, g_name='name', w_mode='w'):
-    info_dic={}
+def get_G_properties(G:nx.DiGraph):
+    """get_G_properties mine the main properties of a RATAS and generate 4 main datasets with the general info
+    
+    generates 4 datasets:
+    df_nodes_large_in: all nodes with more than 1 indegree, their parents and their indegree
+    df_canonical_nodes_with_syn: all canonical tags that have a syn group attached with their synned_tags
+    df_nodes_large_out: all nodes with more than 4 outdegree, their outdegree and indegree
+    df_general_inf: General information of the RATAS as a graph, number of nodes, edges, etc.
 
-    info_dic['report_info']= ''' Report Node information of nodes with
-    outdegree greater than 4, or indegree greater than 1
-    report total amount of nodes, edges, leaves, freeform/canonical/synned tags, nodes with more than 4 subtags, 
-    '''
-    info_dic['name']= g_name
+    :param G: RATAS DiGraph
+    :return: dict with the name of the dataset as key and the datasets with the RATAS information in
+    """    
+    # df with the general information of the graph
+    df_general_inf = pd.DataFrame(columns=['Properties','Values'])
+    
+    dict_info={'Properties':'information','Values':''' Report Node information of nodes with
+        outdegree greater than 4, or indegree greater than 1
+        report total amount of nodes, edges, leaves, freeform/canonical/synned tags, nodes with more than 4 subtags, 
+        '''}
+    df_general_inf.append(dict_info, ignore_index = True)
     
     big_nodes=[]
-    leaves_count=0
+    leafs_count=0
     freeform_tags_count=0
     synned_tags_count=0
     canonical_tags_count=0
     conection_node_count=0
 
+    #Store nodes with more than one parent
+    df_nodes_large_in=pd.DataFrame(columns=['Node','in_degree', 'Metatags'])
+    #canonical nodes with synned tags
+    df_canonical_nodes_with_syn=pd.DataFrame(columns=['Node','Count','SynnedTags'])
+    # NOdes with outdegree greater than 4 
+    df_nodes_large_out=pd.DataFrame(columns=['Node','out_degree', 'in_degree'])
+
     for node in G.nodes:
+        big_nodes.append(node) if G.out_degree(node)>4 else None
+        
         if G.out_degree(node)>4:
-            big_nodes.append(node)
-        if G.out_degree(node)>4 and G.in_degree(node)<=1:
-            info_dic[node+"_out_degree"]=G.out_degree(node)
-            info_dic[node+"_in_degree"]=G.in_degree(node)
+            df_nodes_large_out=df_nodes_large_out.append({
+                'Node':node,
+                'out_degree':G.out_degree(node),
+                'in_degree':G.in_degree(node)
+            }, ignore_index = True)
         if G.in_degree(node)>1:
-            info_dic[node+"_in_degree"]=G.in_degree(node)
-            info_dic[node+"_metatags"]=','.join([y for y in G.predecessors(node)])
-        if 'synned_tags' in G.nodes[node]:
-            info_dic[node+"_synned_tags"]=','.join(G.nodes[node]['synned_tags'])
-            info_dic[node+"_synned_tags_count"]=len(G.nodes[node]['synned_tags'])
-
-
-        leaves_count = leaves_count +1 if G.in_degree(node)!=0 and G.out_degree(node)==0 and G.nodes[node]['type']=='canonical_tag' else leaves_count
+            df_nodes_large_in=df_nodes_large_in.append({
+                'Node':node,
+                'Metatags':','.join([y for y in G.predecessors(node)]),
+                'in_degree':G.in_degree(node)
+            }, ignore_index = True)
+        if 'synned_tags' in G.nodes[node] and len(G.nodes[node]['synned_tags'])>0:
+            df_canonical_nodes_with_syn=df_canonical_nodes_with_syn.append({
+                'Node':node,
+                'SynnedTags':','.join(G.nodes[node]['synned_tags']),
+                'Count':len(G.nodes[node]['synned_tags'])
+                }, ignore_index = True)
+        
+        leafs_count = leafs_count +1 if G.in_degree(node)!=0 and G.out_degree(node)==0 and G.nodes[node]['type']=='canonical_tag' else leafs_count
         freeform_tags_count = freeform_tags_count +1 if G.nodes[node]['type']=='freeform_tag' else freeform_tags_count
         synned_tags_count = synned_tags_count +1 if G.nodes[node]['type']=='synned_tag' else synned_tags_count
         canonical_tags_count = canonical_tags_count +1 if G.nodes[node]['type']=='canonical_tag' else canonical_tags_count
         conection_node_count = conection_node_count +1 if G.nodes[node]['type']=='connection_node' else conection_node_count
 
-    info_dic["big_nodes"]=', '.join(big_nodes)
-    info_dic["total_nodes"]=G.nodes.__len__()
-    info_dic["total_edges"]=G.edges.__len__()
-    info_dic['total_canonical_leaves'] = leaves_count
-    info_dic['total_freeform'] = freeform_tags_count
-    info_dic['total_synned'] = synned_tags_count
-    info_dic['total_canonical'] = canonical_tags_count
-    info_dic['total_canonical_synned_connection_nodes'] = conection_node_count
+    df_general_inf=df_general_inf.append({'Properties':"big_nodes",
+        'Values':', '.join(big_nodes)
+        }, ignore_index = True)
+    df_general_inf=df_general_inf.append({'Properties':"total_nodes",
+        'Values':G.nodes.__len__()
+        }, ignore_index = True)
+    df_general_inf=df_general_inf.append({'Properties':"total_edges",
+        'Values':G.edges.__len__()
+        }, ignore_index = True)
+    df_general_inf=df_general_inf.append({'Properties':"total_canonical_leafs",
+        'Values':leafs_count
+        }, ignore_index = True)
+    df_general_inf=df_general_inf.append({'Properties':"total_freeform",
+        'Values':freeform_tags_count
+        }, ignore_index = True)
+    df_general_inf=df_general_inf.append({'Properties':"total_synned",
+        'Values':synned_tags_count
+        }, ignore_index = True)
+    df_general_inf=df_general_inf.append({'Properties':"total_canonical",
+        'Values':canonical_tags_count
+        }, ignore_index = True)
+    df_general_inf=df_general_inf.append({'Properties':"total_canonical_synned_connection_nodes",
+        'Values':conection_node_count
+        }, ignore_index = True)
+    
 
-    generate_report(info_dic,'report_G', w_mode)
-    return info_dic
+    return {
+        'general_information':df_general_inf,
+        'large_indegree_nodes':df_nodes_large_in,
+        'large_outdegree_nodes':df_nodes_large_out,
+        'canonical_nodes_with_synset':df_canonical_nodes_with_syn
+    }
 
 def get_G_diff_H_info(G:nx.DiGraph, H:nx.DiGraph, g_name='G_name', h_name='H_name', w_mode='w'):
     '''G-H= the subgraph of the nodes that are in G and not in H'''
@@ -276,3 +321,13 @@ def gen_tags_dataset_list(net_lists:list, generate_csv=True, path='./OutputFiles
         df.to_csv(path+'/G_H_tags_report.csv')    
     return df
 
+def save_xls(list_dfs:dict, xls_path):
+    """save_xls Save a list of data frame into different sheets of a xlsx
+
+    :param list_dfs: _description_
+    :param xls_path: _description_
+    """    
+
+    with pd.ExcelWriter(xls_path+'.xlsx') as writer:
+        for name, df in list_dfs.items():
+            df.to_excel(writer,name,index=False)
