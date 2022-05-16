@@ -229,29 +229,23 @@ def read_json_rata(database_path):
     return-> a list of networkX Nets
     """
     disability_graph_list=[]
+    net_names=[]
     if os.path.isdir(database_path):
         for filename in os.listdir(database_path):
             # Get the path
             file_path=os.path.join(os.path.abspath(database_path), filename)
-            # Open The JSON
-            with open(file_path, 'r', encoding='utf-8') as f:
-                # Load the JSON
-                current_data = json.load(f)
-            f.close()
+            if not filename[-5:]=='.json':
+                continue
             # Build the Network
-            g= net_build(current_data)
+            g= net_build(read_JSON(file_path))
             # Append it to the list
             disability_graph_list.append(g)
+            net_names.append(filename[:-5])
     elif os.path.isfile(database_path):
-        with open(database_path, 'r', encoding='utf-8') as f:
-            # Load the JSON
-            current_data = json.load(f)
-        f.close()
-        # Build the Network
-        g= net_build(current_data)
+        g=net_build(read_JSON(database_path))
         # Append it to the list
         disability_graph_list.append(g)
-    return disability_graph_list
+    return (disability_graph_list,net_names)
 
 # tag,story_number=sys.argv[1:]
 # dascra_whole_tag_works(tag, int(story_number))

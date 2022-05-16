@@ -4,13 +4,13 @@
     ✔ CLI @done
     ✔ Add progress bar @done(22-05-15 15:42)
     ☐ Organize code and reactor
-    ☐ Readme
-    ☐ Documentation
+    ☐ Readme/Documentation
+    ☐ Comments
 @DaScra : 
     ✔ Mine stories for a TAG @done
-    ☐ Documentation
-    ☐ readme
-    ☐ Organize and refactor code
+    ☐ Organize code and reactor
+    ☐ Readme/Documentation
+    ☐ Comments
 
 @NetBuilder :
     CLI:
@@ -22,33 +22,43 @@
     ✔ Build a Network from a Json (output of TagScra) @done(22-05-09 13:34)
     ✔ Add non-canonical nodes to a Net from @TagScra output @done(22-05-15 15:43)
     ☐ all needed methods to read and handle JSON files from @TagScra to Nets
-    ☐ Build ALL the Defined Networks
+    ☐ Build ALL the Defined Networks Chapt3.1
 
 @NetVisualizer :
     ✔ Create pyvis of the network @done(22-05-15 15:43)
     ✔ Visuals of difference @done(22-05-15 15:43)
     ☐ visuals of analysis
+    ☐ visualize Defined Netowrks Chapt 3.1
 
 @NetAnalyzer :
-    ☐ properties of the network
+    properties of the network:
+        See Obsidian net properties
+        ☐ k_components (components that will be disconected after removing k nodes)
+        ☐ strongly/weakly connected components
+        ☐ triangles/motif/clique
+        ☐ power law degree
+        ☐ cycles
+        ☐ models
+        Interesting nodes (center of a RATAS):
+            ☐ node's eccentricity: Diamiter-Radius
     ☐ Nets opperations
     Generate reports:
+        ☐ have a look at rata_disability_current_expanded, get_G_H_political_acts_info, add that info to the others reports
         ✔ Properties of a RATAS @done(22-05-15 21:58)
-        ☐ Political acts
-        ☐ Differences between two RATAS
-        ☐ Differences between different RATAS over time
-    ☐ etc
+        ✔ Political acts @done(22-05-16 13:07)
+        ✔ TAg differences between two RATAS csv @done(22-05-15 23:46)
+        ✔ TAg differences between multiple RATAS over time csv @done(22-05-15 23:46)
+    ☐ Analyse Defined Networks Chapt 3.1
 
 
 
-Analyzer:
-    ☐ CLI 
-    ✔ connect to @TagScra @done(22-05-15 15:44)
-    ✔ connect to @DaScra @done(22-05-15 15:44)
-    ✔ connect to a @NetBuilder @done(22-05-15 15:44)
-    ✔ connect to @NetVisualizer @done(22-05-15 15:44)
-    ☐ connect to @NetAnalyser
+ao3_analyser:
+    CLI: 
+        ✔ connect to @TagScra @done(22-05-15 15:44)
+        ✔ connect to @DaScra @done(22-05-15 15:44)
+        ✔ connect to a @NetBuilder @done(22-05-15 15:44)
+        ✔ connect to @NetVisualizer @done(22-05-15 15:44)
+        ✔ connect to @NetAnalyser @done(22-05-16 15:20)
     
-    Utils:
 
 

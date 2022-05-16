@@ -1,5 +1,7 @@
 import argparse
 import os
+
+from sympy import arg
 import Utils.scraper_script as scraper
 import Modules.NetBuilder.net_builder as net_builder
 import Modules.NetVisualizer.net_visualizer as net_visualizer
@@ -62,8 +64,11 @@ parser.add_argument("-gd","--GenerateDifferences", help="""Given two RATAS JSON 
 
 # ## Reports
 parser.add_argument("--GenerateRATASProperties", help="""""",
+                    nargs=1)
+parser.add_argument("--GenTagDiff", help="""""",
                     nargs=2)
-
+parser.add_argument("--GenTagDiffDir", help="""""",
+                    nargs=1)
 def parse():
     """
     Parse the arguments in the CLI and call the methods
@@ -133,13 +138,43 @@ def parse():
         net_visualizer.get_vis_G_diff_H(G,H,title=heading_a, file_name='diff_'+file_name_a+'_'+file_name_b)
         net_visualizer.get_vis_G_diff_H(H,G,title=heading_b,file_name='diff_'+file_name_b+'_'+file_name_a)
     elif args.GenerateRATASProperties:
-        print(" Invoking NetBuilder-NetAnalyser")
+        print(" Invoking NetBuilder-NetAnalyser~ Generating RATAS Properties")
         rata= scraper.read_JSON(args.GenerateRATASProperties[0])
         net= net_builder.net_build(rata)
         dfs=net_analiser.get_G_properties(net)
-        net_analiser.save_xls(dfs,args.GenerateRATASProperties[1])
+
+        file_path=args.OutputPath+args.OutputName if not args.OutputName=='default_name' else args.OutputPath+'rata_properties'
+
+        net_analiser.save_xls(dfs,file_path)
+    elif args.GenTagDiff:
+        print(" Invoking NetBuilder-NetAnalyser~Generating Tag Differences between Two RATAS")
+        
+        rata_a= scraper.read_JSON(args.GenTagDiff[0])
+        net_a= net_builder.net_build(rata_a)
+        net_a.name=os.path.basename(args.GenTagDiff[0])[:-5]
 
 
+        rata_b= scraper.read_JSON(args.GenTagDiff[1])
+        net_b= net_builder.net_build(rata_b)
+        net_b.name=os.path.basename(args.GenTagDiff[1])[:-5]
+        
+        file_name=args.OutputName if not args.OutputName=='default_name' else 'rata_properties'
+        
 
+        net_analiser.generate_tag_diff_dataset(net_a,net_b, path=args.OutputPath, file_name=file_name)
+    elif args.GenTagDiffDir:
+        print(" Invoking NetBuilder-NetAnalyser~Generating Tag Differences between Multiple RATAS tp get Political Acts")
+        
+        # read_json_rata
+        if not  os.path.isdir(args.GenTagDiffDir[0]):
+            print()
+            print("The argument needs to be a Dir with only JSON RATAS")
+            return
+        net_list, net_names= scraper.read_json_rata(args.GenTagDiffDir[0])
+        
+        file_name=args.OutputName if not args.OutputName=='default_name' else 'rata_properties'
+        
+
+        net_analiser.gen_tags_dataset_list(net_list, net_names=net_names, path=args.OutputPath, file_name=file_name)
     
     print()
