@@ -1,3 +1,4 @@
+from itertools import cycle
 from Modules.NetVisualizer.net_visualizer import *
 from Modules.NetBuilder.net_builder import net_build
 import pandas as pd
@@ -93,13 +94,63 @@ def get_G_properties(G:nx.DiGraph):
     
 
     return {
+        'net_properties': __net_analysis(G),
         'general_information':df_general_inf,
         'large_indegree_nodes':df_nodes_large_in,
         'large_outdegree_nodes':df_nodes_large_out,
         'canonical_nodes_with_synset':df_canonical_nodes_with_syn
     }
 
+def __net_analysis(g):
+    df_general_inf = pd.DataFrame(columns=['Properties','Values'])
+    
+    
+    df_general_inf=df_general_inf.append({'Properties':"is_strongly_connected",
+        'Values':nx.is_strongly_connected(g)
+        }, ignore_index = True)
+    df_general_inf=df_general_inf.append({'Properties':"is_weakly_connected",
+        'Values':nx.is_weakly_connected(g)
+        }, ignore_index = True)
+    df_general_inf=df_general_inf.append({'Properties':"diameter",
+        'Values':nx.diameter(g) 
+        }, ignore_index = True) if nx.is_strongly_connected(g) else df_general_inf.append({'Properties':"diameter_undirected",
+        'Values':nx.diameter(g.to_undirected()) 
+        }, ignore_index = True)
+    df_general_inf=df_general_inf.append({'Properties':"radius",
+        'Values':nx.radius(g) 
+        }, ignore_index = True) if nx.is_strongly_connected(g) else df_general_inf.append({'Properties':"radius_undirected",
+        'Values':nx.radius(g.to_undirected()) 
+        }, ignore_index = True)
+    df_general_inf=df_general_inf.append({'Properties':"center_RATAS_undirected",
+        'Values':nx.center(g.to_undirected())
+        }, ignore_index = True)
 
+    try:
+        cycles= nx.find_cycle(g)
+    except print(0):
+        cycles=''
+    
+    df_general_inf=df_general_inf.append({'Properties':"has_cycles",
+        'Values':cycles
+        }, ignore_index = True)
+    
+    try:
+        cycles= nx.find_cycle(g.to_undirected())
+    except print(0):
+        cycles=''
+
+
+    a= nx.k_components(g.to_undirected())
+
+    df_general_inf=df_general_inf.append({'Properties':"k_components",
+        'Values':a.keys()
+        }, ignore_index = True)
+    for k,v in a.items():
+        df_general_inf=df_general_inf.append({'Properties':str(k)+"_components",
+        'Values':v
+        }, ignore_index = True) if k>1 else df_general_inf
+
+    return df_general_inf
 
 def get_G_diff_H_info(G:nx.DiGraph, H:nx.DiGraph, g_name='G_name', h_name='H_name', w_mode='w'):
     '''G-H= the subgraph of the nodes that are in G and not in H'''
@@ -181,7 +232,6 @@ def get_G_diff_H_info(G:nx.DiGraph, H:nx.DiGraph, g_name='G_name', h_name='H_nam
 
     generate_report(info_dic, 'report_diff_G_H', w_mode)
     return info_dic
-
 
 def get_G_H_political_acts_info(G:nx.DiGraph, H:nx.DiGraph, g_name='G_name', h_name='H_name'):
     ''' 

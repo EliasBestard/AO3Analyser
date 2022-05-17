@@ -29,7 +29,7 @@
 @REM python.exe .\ao3_analyser.py -gd .\OutputFiles\disability\rata_disability_2013.json .\OutputFiles\disability\rata_disability_current_expanded_full.json
 
 @REM @REM Generate report of properties of a disability RATAS current
-@REM python .\ao3_analyser.py --GenerateRATASProperties .\OutputFiles\disability\rata_disability_current_expanded_full.json .\report_disability_expanded_full
+python .\ao3_analyser.py --GenerateRATASProperties ./OutputFiles/disability_ratas_current/rata_disability_current_expanded.json -o .\report_disability_expanded
 
 @REM @REM Generate report of political acts/ differences between two different Verions of disability RATAS 2013 vs current
 @REM python .\ao3_analyser.py --GenTagDiff .\OutputFiles\disability\rata_disability_current_expanded_full.json .\OutputFiles\disability\rata_disability_2013.json -o reports_diff_disability_current_2013

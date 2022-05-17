@@ -33,14 +33,14 @@
 @NetAnalyzer :
     properties of the network:
         See Obsidian net properties
-        ☐ k_components (components that will be disconected after removing k nodes)
-        ☐ strongly/weakly connected components
+        ✔ k_components (components that will be disconected after removing k nodes) @done(22-05-17 15:48)
+        ✔ strongly/weakly connected components @done(22-05-17 15:48)
         ☐ triangles/motif/clique
         ☐ power law degree
-        ☐ cycles
+        ✔ cycles @done(22-05-17 15:48)
         ☐ models
         Interesting nodes (center of a RATAS):
-            ☐ node's eccentricity: Diamiter-Radius
+            ✔ node's eccentricity: Diamiter-Radius @done(22-05-17 15:48)
     ☐ Nets opperations
     Generate reports:
         ☐ have a look at rata_disability_current_expanded, get_G_H_political_acts_info, add that info to the others reports
