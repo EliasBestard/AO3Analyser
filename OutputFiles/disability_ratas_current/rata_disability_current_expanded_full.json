@@ -27,7 +27,7 @@
             "desability",
             "description of disability",
             "diability",
-            "dis/ability",
+            "dis*s*ability",
             "Disabiities",
             "disabililty",
             "disabilites",
@@ -46,13 +46,13 @@
             "disability themes",
             "Disability via Accident",
             "disability!fic",
-            "Disability?",
+            "Disability*q*",
             "disabiliy",
             "disabillity",
             "Disabilties",
             "disabilty",
             "Disable",
-            "disable?",
+            "disable*q*",
             "disabled",
             "disabled!stuck",
             "Disablilities",
@@ -71,7 +71,7 @@
             "Dissability",
             "dissabilty",
             "Dsiable",
-            "Fake/real disabilities",
+            "Fake*s*real disabilities",
             "Frank Discussion of Disabilities",
             "girl with a disibility",
             "Handicap",
@@ -81,7 +81,7 @@
             "impairment",
             "Implied Disabilities",
             "Implied Disability",
-            "Implied/Referenced Disabilities",
+            "Implied*s*Referenced Disabilities",
             "includes disabilities",
             "invalidez",
             "Kalectwo",
@@ -91,7 +91,7 @@
             "Lisiado",
             "Living With a Disability",
             "long term injury related disability",
-            "Long term/permanent disability",
+            "Long term*s*permanent disability",
             "Major warning for a character getting severly hurt and being disabled",
             "mental and physical disabilities",
             "mention of canon disability",
@@ -191,7 +191,7 @@
                             "Blind Roy Mustang",
                             "Blind Dipper Pines",
                             "Blind Barry Allen",
-                            "Blind Portgas D. Ace",
+                            "Blind Portgas D*d* Ace",
                             "Blind Jean Kirstein",
                             "Blind Marco Bott",
                             "Blind Iwaizumi Hajime",
@@ -209,7 +209,7 @@
                             "Blind Dirk Strider",
                             "Blind Oikawa Tooru",
                             "Blind Byun Baekhyun",
-                            "Blind Do Kyungsoo | D.O",
+                            "Blind Do Kyungsoo | D*d*O",
                             "Blind Kim Seokjin | Jin",
                             "Blind Katsuki Yuuri",
                             "Blind Phil Lester",
@@ -359,7 +359,7 @@
                     "Blind Uchiha Sasuke",
                     "Blind Bucky Barnes",
                     "Blind Sirius Black",
-                    "Blind James T. Kirk",
+                    "Blind James T*d* Kirk",
                     "Blind Astrid Hofferson",
                     "Blind Merlin (Merlin)",
                     "Blind Niall Horan",
@@ -432,7 +432,7 @@
                             "Blind Roy Mustang",
                             "Blind Dipper Pines",
                             "Blind Barry Allen",
-                            "Blind Portgas D. Ace",
+                            "Blind Portgas D*d* Ace",
                             "Blind Jean Kirstein",
                             "Blind Marco Bott",
                             "Blind Iwaizumi Hajime",
@@ -450,7 +450,7 @@
                             "Blind Dirk Strider",
                             "Blind Oikawa Tooru",
                             "Blind Byun Baekhyun",
-                            "Blind Do Kyungsoo | D.O",
+                            "Blind Do Kyungsoo | D*d*O",
                             "Blind Kim Seokjin | Jin",
                             "Blind Katsuki Yuuri",
                             "Blind Phil Lester",
@@ -616,7 +616,7 @@
                             "Deaf Eren Yeager",
                             "Deaf Marco Bott",
                             "Deaf Peter Parker",
-                            "Deaf James T. Kirk",
+                            "Deaf James T*d* Kirk",
                             "Deaf Carmilla",
                             "Deaf Mikey Way",
                             "Deaf Hinata",
@@ -671,7 +671,7 @@
                             "Deaf Bokuto Koutarou",
                             "Deaf Akaashi Keiji",
                             "Deaf Todoroki Shouto",
-                            "Deaf Im Changkyun | I.M",
+                            "Deaf Im Changkyun | I*d*M",
                             "Deaf Park Jimin (BTS)",
                             "Deaf Hermione Granger",
                             "Deaf Na Jaemin",
@@ -752,9 +752,9 @@
                     "Disabled Midoriya Izuku",
                     "Disabled Stiles Stilinski",
                     {
-                        "Disabled James T. Kirk": [
-                            "Deaf James T. Kirk",
-                            "Blind James T. Kirk"
+                        "Disabled James T*d* Kirk": [
+                            "Deaf James T*d* Kirk",
+                            "Blind James T*d* Kirk"
                         ]
                     },
                     "Disabled Castiel (Supernatural)",
@@ -940,7 +940,7 @@
                     "Mute Ian Gallagher",
                     "Mute Mickey Milkovich",
                     "Mute Kim Taehyung | V",
-                    "Mute Junior (Red vs. Blue)",
+                    "Mute Junior (Red vs*d* Blue)",
                     "Mute The Meta | Agent Maine",
                     "Mute Jared Padalecki",
                     "Mute Bakugou Katsuki",
@@ -1118,7 +1118,7 @@
                         ]
                     },
                     "Mute Bumblebee (Transformers)",
-                    "Mute Hank J. Wimbleton",
+                    "Mute Hank J*d* Wimbleton",
                     "Mute Noctis Lucis Caelum",
                     {
                         "Mute Ranboo (Video Blogging RPF)": [
@@ -1132,7 +1132,7 @@
                         ]
                     },
                     "Selectively Mute Mirabel Madrigal",
-                    "Mute Trafalgar D. Water Law",
+                    "Mute Trafalgar D*d* Water Law",
                     "Mute Dark Creativity | Remus \"The Duke\" Sanders",
                     "Mute Katniss Everdeen",
                     "Mute Uchiha Sasuke",
@@ -1164,7 +1164,7 @@
                             "Deaf Eren Yeager",
                             "Deaf Marco Bott",
                             "Deaf Peter Parker",
-                            "Deaf James T. Kirk",
+                            "Deaf James T*d* Kirk",
                             "Deaf Carmilla",
                             "Deaf Mikey Way",
                             "Deaf Hinata",
@@ -1219,7 +1219,7 @@
                             "Deaf Bokuto Koutarou",
                             "Deaf Akaashi Keiji",
                             "Deaf Todoroki Shouto",
-                            "Deaf Im Changkyun | I.M",
+                            "Deaf Im Changkyun | I*d*M",
                             "Deaf Park Jimin (BTS)",
                             "Deaf Hermione Granger",
                             "Deaf Na Jaemin",
@@ -1375,9 +1375,9 @@
             "Blindness - Freeform",
             "Blindness trouble",
             "blindness tw",
-            "blindness.",
-            "blindness/vision loss",
-            "blindness?",
+            "blindness*d*",
+            "blindness*s*vision loss",
+            "blindness*q*",
             "Brief and Referenced Blindness",
             "But really I think they're just blind",
             "cego",
@@ -1505,7 +1505,7 @@
                     "Blind Roy Mustang",
                     "Blind Dipper Pines",
                     "Blind Barry Allen",
-                    "Blind Portgas D. Ace",
+                    "Blind Portgas D*d* Ace",
                     "Blind Jean Kirstein",
                     "Blind Marco Bott",
                     "Blind Iwaizumi Hajime",
@@ -1523,7 +1523,7 @@
                     "Blind Dirk Strider",
                     "Blind Oikawa Tooru",
                     "Blind Byun Baekhyun",
-                    "Blind Do Kyungsoo | D.O",
+                    "Blind Do Kyungsoo | D*d*O",
                     "Blind Kim Seokjin | Jin",
                     "Blind Katsuki Yuuri",
                     "Blind Phil Lester",
@@ -1674,7 +1674,7 @@
             "Blind Uchiha Sasuke",
             "Blind Bucky Barnes",
             "Blind Sirius Black",
-            "Blind James T. Kirk",
+            "Blind James T*d* Kirk",
             "Blind Astrid Hofferson",
             "Blind Merlin (Merlin)",
             "Blind Niall Horan",
@@ -1713,7 +1713,7 @@
             "Characters with a disability",
             "characters with disabilities",
             "Cripple Character",
-            "Differently abled character pog?",
+            "Differently abled character pog*q*",
             "Dipictions of handicapped characters",
             "disable character",
             "Disable Protagonist",
@@ -1738,7 +1738,7 @@
             "Disabled side characters",
             "disablednatura",
             "discapacitado",
-            "Does that count as disabled character?",
+            "Does that count as disabled character*q*",
             "Handicapped Characters",
             "I mean theyre all disabled",
             "impaired character",
@@ -1835,7 +1835,7 @@
                     "Blind Roy Mustang",
                     "Blind Dipper Pines",
                     "Blind Barry Allen",
-                    "Blind Portgas D. Ace",
+                    "Blind Portgas D*d* Ace",
                     "Blind Jean Kirstein",
                     "Blind Marco Bott",
                     "Blind Iwaizumi Hajime",
@@ -1853,7 +1853,7 @@
                     "Blind Dirk Strider",
                     "Blind Oikawa Tooru",
                     "Blind Byun Baekhyun",
-                    "Blind Do Kyungsoo | D.O",
+                    "Blind Do Kyungsoo | D*d*O",
                     "Blind Kim Seokjin | Jin",
                     "Blind Katsuki Yuuri",
                     "Blind Phil Lester",
@@ -2020,7 +2020,7 @@
                     "Deaf Eren Yeager",
                     "Deaf Marco Bott",
                     "Deaf Peter Parker",
-                    "Deaf James T. Kirk",
+                    "Deaf James T*d* Kirk",
                     "Deaf Carmilla",
                     "Deaf Mikey Way",
                     "Deaf Hinata",
@@ -2075,7 +2075,7 @@
                     "Deaf Bokuto Koutarou",
                     "Deaf Akaashi Keiji",
                     "Deaf Todoroki Shouto",
-                    "Deaf Im Changkyun | I.M",
+                    "Deaf Im Changkyun | I*d*M",
                     "Deaf Park Jimin (BTS)",
                     "Deaf Hermione Granger",
                     "Deaf Na Jaemin",
@@ -2158,9 +2158,9 @@
             "Disabled Midoriya Izuku",
             "Disabled Stiles Stilinski",
             {
-                "Disabled James T. Kirk": [
-                    "Deaf James T. Kirk",
-                    "Blind James T. Kirk"
+                "Disabled James T*d* Kirk": [
+                    "Deaf James T*d* Kirk",
+                    "Blind James T*d* Kirk"
                 ]
             },
             "Disabled Castiel (Supernatural)",
@@ -2258,11 +2258,11 @@
             "forgot to put that in there but he's mute here",
             "guess seletive mutism",
             "He goes mute",
-            "He is a mute.",
+            "He is a mute*d*",
             "he is selectively mute",
             "He kinda loses the ability to speak",
             "he's mute",
-            "he’s also mute???",
+            "he’s also mute*q**q**q*",
             "I mean he never talks so I'm assuming he's mute",
             "Implied Muteness",
             "implied mutism",
@@ -2282,7 +2282,7 @@
             "Mute Character (for a little bit)",
             "Mute Character (not naturally)",
             "mute character sort of",
-            "Mute character?",
+            "Mute character*q*",
             "mute characters",
             "mute charactor",
             "Mute chararcter",
@@ -2299,19 +2299,19 @@
             "Mute(ish) character",
             "mutefic",
             "Muteism",
-            "Muteness (temporary?)",
+            "Muteness (temporary*q*)",
             "Muteness Caused by Trauma",
             "Mutes",
             "mutisim",
             "Mutism",
-            "mutism/voice_loss",
+            "mutism*s*voice_loss",
             "Mutisme",
             "Mutismo",
             "Mutual Mutes",
             "not being able to talk",
             "oh and he doesn't have a voice",
-            "or more just mute??",
-            "partially mute?",
+            "or more just mute*q**q*",
+            "partially mute*q*",
             "Past mute behaviour",
             "Past Mutism",
             "physically mute",
@@ -2328,8 +2328,8 @@
             "selective mutisim",
             "selective mutism",
             "Selective mutism with an OC",
-            "selective/trauma induced mutism",
-            "selective/trauma induced mutsim",
+            "selective*s*trauma induced mutism",
+            "selective*s*trauma induced mutsim",
             "Selectively mute",
             "Selectively Mute Characters",
             "selectively mute oc",
@@ -2338,10 +2338,10 @@
             "shes also mute",
             "Situational Mutism",
             "some characters are mute",
-            "some kind of muteness?",
+            "some kind of muteness*q*",
             "some people are mute",
             "Sort of mute",
-            "sudden/temporary voice loss",
+            "sudden*s*temporary voice loss",
             "Temporarily Mute",
             "Temporary loss of voice",
             "Temporary Muteness",
@@ -2477,7 +2477,7 @@
             "Mute Ian Gallagher",
             "Mute Mickey Milkovich",
             "Mute Kim Taehyung | V",
-            "Mute Junior (Red vs. Blue)",
+            "Mute Junior (Red vs*d* Blue)",
             "Mute The Meta | Agent Maine",
             "Mute Jared Padalecki",
             "Mute Bakugou Katsuki",
@@ -2655,7 +2655,7 @@
                 ]
             },
             "Mute Bumblebee (Transformers)",
-            "Mute Hank J. Wimbleton",
+            "Mute Hank J*d* Wimbleton",
             "Mute Noctis Lucis Caelum",
             {
                 "Mute Ranboo (Video Blogging RPF)": [
@@ -2669,7 +2669,7 @@
                 ]
             },
             "Selectively Mute Mirabel Madrigal",
-            "Mute Trafalgar D. Water Law",
+            "Mute Trafalgar D*d* Water Law",
             "Mute Dark Creativity | Remus \"The Duke\" Sanders",
             "Mute Katniss Everdeen",
             "Mute Uchiha Sasuke",
@@ -2696,8 +2696,8 @@
             "and deaf at the same time",
             "bc he's deaf :)",
             "being deaf",
-            "D/deaf - Freeform",
-            "D/deafness",
+            "D*s*deaf - Freeform",
+            "D*s*deafness",
             "ddaf",
             "deaf fanfic",
             "Deaf in one ear",
@@ -2706,7 +2706,7 @@
             "deaf!verse",
             "deafness",
             "Deafness & Hearing Loss",
-            "Deafness/Hard of Hearing",
+            "Deafness*s*Hard of Hearing",
             "Disability- hearing loss",
             "Disability: Deaf",
             "Disability: Deafness",
@@ -2758,7 +2758,7 @@
                     "Deaf Eren Yeager",
                     "Deaf Marco Bott",
                     "Deaf Peter Parker",
-                    "Deaf James T. Kirk",
+                    "Deaf James T*d* Kirk",
                     "Deaf Carmilla",
                     "Deaf Mikey Way",
                     "Deaf Hinata",
@@ -2813,7 +2813,7 @@
                     "Deaf Bokuto Koutarou",
                     "Deaf Akaashi Keiji",
                     "Deaf Todoroki Shouto",
-                    "Deaf Im Changkyun | I.M",
+                    "Deaf Im Changkyun | I*d*M",
                     "Deaf Park Jimin (BTS)",
                     "Deaf Hermione Granger",
                     "Deaf Na Jaemin",
@@ -2910,7 +2910,7 @@
             "physically disabled",
             "Physically Disabled Representation",
             "physically impaired",
-            "slight physical disability?",
+            "slight physical disability*q*",
             "Warning - Physical Disability",
             "有肢体残缺",
             "残疾",
@@ -2935,9 +2935,9 @@
         "synned_tags": [
             "hinted learning disability",
             "Implied Learning Disability",
-            "Implied/Referenced Learning Disability",
+            "Implied*s*Referenced Learning Disability",
             "Learning Difficulties",
-            "Learning Disabilities (sorta?)",
+            "Learning Disabilities (sorta*q*)",
             "learning disabilities mentioned",
             "Learning Disability Au",
             "learning disablilities",
@@ -3079,7 +3079,7 @@
             "Blind Papa II",
             "blind!charakter",
             "Blind!Dilan AU",
-            "Blind/severly visually impaired OC",
+            "Blind*s*severly visually impaired OC",
             "blindgirl",
             "brief mention of blind character",
             "bro theyre just both blind",
@@ -3105,7 +3105,7 @@
             "Partially Blind Character(s)",
             "Personaje ciego",
             "Personnage aveugle",
-            "reader is blind?",
+            "reader is blind*q*",
             "some are blind",
             "The Blind Boy",
             "there was an accident and he's blind",
@@ -3164,7 +3164,7 @@
             "Blind Roy Mustang",
             "Blind Dipper Pines",
             "Blind Barry Allen",
-            "Blind Portgas D. Ace",
+            "Blind Portgas D*d* Ace",
             "Blind Jean Kirstein",
             "Blind Marco Bott",
             "Blind Iwaizumi Hajime",
@@ -3182,7 +3182,7 @@
             "Blind Dirk Strider",
             "Blind Oikawa Tooru",
             "Blind Byun Baekhyun",
-            "Blind Do Kyungsoo | D.O",
+            "Blind Do Kyungsoo | D*d*O",
             "Blind Kim Seokjin | Jin",
             "Blind Katsuki Yuuri",
             "Blind Phil Lester",
@@ -3438,7 +3438,7 @@
     "Blind Sirius Black": {
         "type": "canonical_tag",
         "parent_tags": [
-            "Harry Potter - J. K. Rowling"
+            "Harry Potter - J*d* K*d* Rowling"
         ],
         "synned_tags": [
             "Blind Sirius",
@@ -3466,7 +3466,7 @@
         ],
         "metatags": [
             "Blindness",
-            "Disabled James T. Kirk"
+            "Disabled James T*d* Kirk"
         ]
     },
     "Blind Astrid Hofferson": {
@@ -3668,22 +3668,22 @@
             "No Fandom"
         ],
         "synned_tags": [
-            "(D)deaf/HoH Character(s)",
+            "(D)deaf*s*HoH Character(s)",
             "Alternate Universe - Deaf Character",
             "and VERY deaf",
-            "but it is canon. he is deaf.",
+            "but it is canon*d* he is deaf*d*",
             "Canon Deaf Character",
             "Canonical Deaf Character",
             "cause he's deaf",
-            "D/deaf character",
+            "D*s*deaf character",
             "Deaf background character",
             "deaf character (Progression)",
             "deaf character AU",
             "Deaf character for a chapter",
             "deaf character if you squint",
-            "deaf character written by deaf/hoh author",
+            "deaf character written by deaf*s*hoh author",
             "Deaf Character(s)",
-            "deaf character/characters",
+            "deaf character*s*characters",
             "Deaf Characters - Freeform",
             "deaf charactor",
             "Deaf Child Character",
@@ -3692,8 +3692,8 @@
             "Deaf! Character",
             "Deaf! Reader",
             "deaf!character",
-            "Deaf/Hard-of-Hearing",
-            "Deaf/HOH character",
+            "Deaf*s*Hard-of-Hearing",
+            "Deaf*s*HOH character",
             "Def Character",
             "Everyone is Deaf",
             "half deaf oc",
@@ -3704,7 +3704,7 @@
             "Hearing impaired characters",
             "Hearing-impaired Character",
             "HOH character",
-            "Implied/Referenced Deaf/Hearing Impaired Character",
+            "Implied*s*Referenced Deaf*s*Hearing Impaired Character",
             "like big D Deaf",
             "many deaf characters",
             "Minor Deaf Character",
@@ -3744,7 +3744,7 @@
             "Deaf Eren Yeager",
             "Deaf Marco Bott",
             "Deaf Peter Parker",
-            "Deaf James T. Kirk",
+            "Deaf James T*d* Kirk",
             "Deaf Carmilla",
             "Deaf Mikey Way",
             "Deaf Hinata",
@@ -3799,7 +3799,7 @@
             "Deaf Bokuto Koutarou",
             "Deaf Akaashi Keiji",
             "Deaf Todoroki Shouto",
-            "Deaf Im Changkyun | I.M",
+            "Deaf Im Changkyun | I*d*M",
             "Deaf Park Jimin (BTS)",
             "Deaf Hermione Granger",
             "Deaf Na Jaemin",
@@ -3980,7 +3980,7 @@
     "Disabled Remus Lupin": {
         "type": "canonical_tag",
         "parent_tags": [
-            "Harry Potter - J. K. Rowling"
+            "Harry Potter - J*d* K*d* Rowling"
         ],
         "synned_tags": [
             "Disabled Remus",
@@ -4050,7 +4050,7 @@
     "Disabled Jake Dillinger": {
         "type": "canonical_tag",
         "parent_tags": [
-            "Be More Chill - Iconis/Tracz"
+            "Be More Chill - Iconis*s*Tracz"
         ],
         "synned_tags": [],
         "subtags": [
@@ -4094,7 +4094,7 @@
     "Disabled Hermione Granger": {
         "type": "canonical_tag",
         "parent_tags": [
-            "Harry Potter - J. K. Rowling"
+            "Harry Potter - J*d* K*d* Rowling"
         ],
         "synned_tags": [
             "Disabled Hermione"
@@ -4155,8 +4155,8 @@
             "disabled jim"
         ],
         "subtags": [
-            "Deaf James T. Kirk",
-            "Blind James T. Kirk"
+            "Deaf James T*d* Kirk",
+            "Blind James T*d* Kirk"
         ],
         "metatags": [
             "Disabled Character"
@@ -4382,7 +4382,7 @@
     "Disabled Draco Malfoy": {
         "type": "canonical_tag",
         "parent_tags": [
-            "Harry Potter - J. K. Rowling"
+            "Harry Potter - J*d* K*d* Rowling"
         ],
         "synned_tags": [
             "disabled Draco",
@@ -4536,7 +4536,7 @@
     "Disabled Severus Snape": {
         "type": "canonical_tag",
         "parent_tags": [
-            "Harry Potter - J. K. Rowling"
+            "Harry Potter - J*d* K*d* Rowling"
         ],
         "synned_tags": [
             "disabled snape"
@@ -5024,7 +5024,7 @@
     "Mute Gavin Free": {
         "type": "canonical_tag",
         "parent_tags": [
-            "Rooster Teeth/Achievement Hunter RPF"
+            "Rooster Teeth*s*Achievement Hunter RPF"
         ],
         "synned_tags": [
             "Gavin is mute!AU",
@@ -5077,7 +5077,7 @@
     "Mute Dan Howell": {
         "type": "canonical_tag",
         "parent_tags": [
-            "Phandom/The Fantastic Foursome (YouTube RPF)"
+            "Phandom*s*The Fantastic Foursome (YouTube RPF)"
         ],
         "synned_tags": [
             "Dan is Mute",
@@ -5102,7 +5102,7 @@
             "Mute James \"Bucky\" Barnes",
             "mute!bucky",
             "mute!Bucky Barnes",
-            "mute(?) bucky",
+            "mute(*q*) bucky",
             "partially mute bucky"
         ],
         "subtags": [
@@ -5226,7 +5226,7 @@
             "방탄소년단 | Bangtan Boys | BTS"
         ],
         "synned_tags": [
-            "I guess Mute Yoongi?",
+            "I guess Mute Yoongi*q*",
             "Mute Yoongi",
             "Mute! Min Yoongi",
             "Mute! Yoongi",
@@ -5256,7 +5256,7 @@
             "jungkook is mute",
             "Jungkook is non-verbal",
             "Jungkook is nonverbal",
-            "Mute Jeon Jungkook (?)",
+            "Mute Jeon Jungkook (*q*)",
             "Mute Jeongguk",
             "Mute Jungkook",
             "Mute kook",
@@ -5279,7 +5279,7 @@
     "Mute Draco Malfoy": {
         "type": "canonical_tag",
         "parent_tags": [
-            "Harry Potter - J. K. Rowling"
+            "Harry Potter - J*d* K*d* Rowling"
         ],
         "synned_tags": [
             "and not because of Draco's muteness",
@@ -5303,7 +5303,7 @@
             "Ariel is mute",
             "Mute Ariel",
             "Mute!Ariel",
-            "What if Ariel was mute?"
+            "What if Ariel was mute*q*"
         ],
         "subtags": [
             ""
@@ -5347,7 +5347,7 @@
     "Mute Ryan Haywood": {
         "type": "canonical_tag",
         "parent_tags": [
-            "Rooster Teeth/Achievement Hunter RPF"
+            "Rooster Teeth*s*Achievement Hunter RPF"
         ],
         "synned_tags": [
             "Mute Ryan",
@@ -5364,7 +5364,7 @@
     "Mute Severus Snape": {
         "type": "canonical_tag",
         "parent_tags": [
-            "Harry Potter - J. K. Rowling"
+            "Harry Potter - J*d* K*d* Rowling"
         ],
         "synned_tags": [
             "Mute Severus",
@@ -5703,7 +5703,7 @@
     "Mute Phil Lester": {
         "type": "canonical_tag",
         "parent_tags": [
-            "Phandom/The Fantastic Foursome (YouTube RPF)"
+            "Phandom*s*The Fantastic Foursome (YouTube RPF)"
         ],
         "synned_tags": [
             "Mute Phil",
@@ -5905,7 +5905,7 @@
     "Mute Junior (Red vs*d* Blue)": {
         "type": "canonical_tag",
         "parent_tags": [
-            "Red vs. Blue"
+            "Red vs*d* Blue"
         ],
         "synned_tags": [
             "Mute Junior",
@@ -5921,7 +5921,7 @@
     "Mute The Meta | Agent Maine": {
         "type": "canonical_tag",
         "parent_tags": [
-            "Red vs. Blue"
+            "Red vs*d* Blue"
         ],
         "synned_tags": [
             "Mute Maine",
@@ -5977,7 +5977,7 @@
         "synned_tags": [
             "Mute Neo",
             "Mute Neopolitan",
-            "Mute Neopolitan/Neo",
+            "Mute Neopolitan*s*Neo",
             "mute!Neo",
             "Neo doesn't talk",
             "Neo is a mute",
@@ -6025,7 +6025,7 @@
             "Link muet",
             "Mute Link",
             "mute link (best link)",
-            "Mute Link (kind of?)",
+            "Mute Link (kind of*q*)",
             "mute link my beloved",
             "mute! Link",
             "Mute!Link",
@@ -6999,7 +6999,7 @@
             "Henry Stickmin Series (Video Games)"
         ],
         "synned_tags": [
-            "henry is like half mute ?",
+            "henry is like half mute *q*",
             "Henry is mostly mute",
             "Henry is selectively mute",
             "Henry's a man of few words",
@@ -7016,7 +7016,7 @@
     "Mute Remus Lupin": {
         "type": "canonical_tag",
         "parent_tags": [
-            "Harry Potter - J. K. Rowling"
+            "Harry Potter - J*d* K*d* Rowling"
         ],
         "synned_tags": [
             "Mute Remus",
@@ -7152,10 +7152,10 @@
             "第五人格 | Identity V (Video Game)"
         ],
         "synned_tags": [
-            "i push onto you..... mute victor",
+            "i push onto you*d**d**d**d**d* mute victor",
             "Mute Victor",
             "Mute Victor Grantz",
-            "Mute victor...",
+            "Mute victor*d**d**d*",
             "Mute!Victor",
             "Postman is mute",
             "Victor can't talk",
@@ -7473,7 +7473,7 @@
     "Mute Victoria (Cats)": {
         "type": "canonical_tag",
         "parent_tags": [
-            "Cats (1998)Cats (2019)Cats - Andrew Lloyd WebberOld Possum's Book of Practical Cats - T. S. Eliot"
+            "Cats (1998)Cats (2019)Cats - Andrew Lloyd WebberOld Possum's Book of Practical Cats - T*d* S*d* Eliot"
         ],
         "synned_tags": [
             "Mute Victoria",
@@ -7751,7 +7751,7 @@
     "Deaf Jeremy Heere": {
         "type": "canonical_tag",
         "parent_tags": [
-            "Be More Chill - Iconis/Tracz"
+            "Be More Chill - Iconis*s*Tracz"
         ],
         "synned_tags": [
             "deaf jeremy",
@@ -7810,7 +7810,7 @@
             "descriptions of permanent injuries",
             "Heavy Permanent Injuries",
             "implied permanent injury",
-            "Implied/Referenced Permanent Injury",
+            "Implied*s*Referenced Permanent Injury",
             "injury induced disabilites",
             "Mention of Permanent Injury",
             "mentions of permanent injury",
@@ -7823,7 +7823,7 @@
             "Permanent Injury of a Minor Character",
             "Permanent Injury Side Effects",
             "permanent injury to a character",
-            "Permanent physical injury.",
+            "Permanent physical injury*d*",
             "permenant injury",
             "Permenent major character injury",
             "physical lasting injury",
@@ -7851,7 +7851,7 @@
             "No Fandom"
         ],
         "synned_tags": [
-            "also ft. dyslexia",
+            "also ft*d* dyslexia",
             "also has dylexia",
             "also she's low key dyslexic",
             "and dyslexia",
@@ -7860,7 +7860,7 @@
             "Dislexic",
             "dyselxic",
             "Dyslexia Mention",
-            "dyslexia/learning disabilities",
+            "dyslexia*s*learning disabilities",
             "Dyslexic",
             "dyslexic Au",
             "dyslexic character",
@@ -7954,7 +7954,7 @@
         ],
         "synned_tags": [
             "amputee eddie",
-            "Eddie is alive and missing an arm.",
+            "Eddie is alive and missing an arm*d*",
             "Eddie Kaspbrak Loses an Arm",
             "Eddie Kaspbrak Lost His Arm",
             "eddie loses an arm instead of dying",
@@ -7971,9 +7971,9 @@
             "he lost an arm",
             "I chose for eddie to lose his arm like in the book",
             "Just Realized I Should Mention Eddie Has a Prosthetic Arm",
-            "OH mention of eddie's severed arm??",
+            "OH mention of eddie's severed arm*q**q*",
             "One-Armed Eddie Kaspbrak",
-            "why won't any film adaptation take his arm??"
+            "why won't any film adaptation take his arm*q**q*"
         ],
         "subtags": [
             ""
@@ -8138,7 +8138,7 @@
             "Blind Stiles",
             "Blind! Stiles",
             "blind!Stiles",
-            "blind!Stiles (temporarily?)",
+            "blind!Stiles (temporarily*q*)",
             "blind!stiles fun",
             "BlindStiles",
             "I just had an urge to read blind stiles",
@@ -8696,7 +8696,7 @@
     "Blind Draco Malfoy": {
         "type": "canonical_tag",
         "parent_tags": [
-            "Harry Potter - J. K. Rowling"
+            "Harry Potter - J*d* K*d* Rowling"
         ],
         "synned_tags": [
             "Blind Draco",
@@ -8819,7 +8819,7 @@
     "Blind Phil Lester": {
         "type": "canonical_tag",
         "parent_tags": [
-            "Phandom/The Fantastic Foursome (YouTube RPF)"
+            "Phandom*s*The Fantastic Foursome (YouTube RPF)"
         ],
         "synned_tags": [
             "Blind!Phil",
@@ -8837,7 +8837,7 @@
     "Blind Dan Howell": {
         "type": "canonical_tag",
         "parent_tags": [
-            "Phandom/The Fantastic Foursome (YouTube RPF)"
+            "Phandom*s*The Fantastic Foursome (YouTube RPF)"
         ],
         "synned_tags": [
             "blind dan",
@@ -9034,7 +9034,7 @@
             "Blind!Ignis",
             "blind!Ignis Scientia",
             "but Ignis is still blind",
-            "Ignis blind/disabled",
+            "Ignis blind*s*disabled",
             "Ignis is Blind",
             "Ignis is blind now",
             "Ignis Learns how to be blind",
@@ -9117,7 +9117,7 @@
             "blind!jjk",
             "Blind!Jungkook",
             "blindkook",
-            "Cuz hello?? Jungkook is literally blind?? lmao??",
+            "Cuz hello*q**q* Jungkook is literally blind*q**q* lmao*q**q*",
             "Jeon Jungkook is blind",
             "jeongguk is blind",
             "jjk is blind",
@@ -9238,7 +9238,7 @@
             "Percy Jackson and the Olympians & Related Fandoms - All Media TypesPercy Jackson and the Olympians - Rick Riordan"
         ],
         "synned_tags": [
-            "basically a rewrite of the series from nico's perspective w/ him blind",
+            "basically a rewrite of the series from nico's perspective w*s* him blind",
             "Blind Nico",
             "Blind! Nico",
             "blind! nico AU",
@@ -9309,7 +9309,7 @@
     "Blind Remus Lupin": {
         "type": "canonical_tag",
         "parent_tags": [
-            "Harry Potter - J. K. Rowling"
+            "Harry Potter - J*d* K*d* Rowling"
         ],
         "synned_tags": [
             "blind Remus",
@@ -9533,7 +9533,7 @@
     "Blind Locus | Samuel Ortez": {
         "type": "canonical_tag",
         "parent_tags": [
-            "Red vs. Blue"
+            "Red vs*d* Blue"
         ],
         "synned_tags": [
             "Blind Locus",
@@ -9789,7 +9789,7 @@
             "Supernatural (TV 2005)"
         ],
         "synned_tags": [
-            "blind au cas?",
+            "blind au cas*q*",
             "Blind Cas",
             "Blind Castiel",
             "Blind Castiel (Temporarily)",
@@ -9830,7 +9830,7 @@
     "Blind Choi Junhong | Zelo": {
         "type": "canonical_tag",
         "parent_tags": [
-            "B.A.P"
+            "B*d*A*d*P"
         ],
         "synned_tags": [
             "Blind Zelo"
@@ -9968,7 +9968,7 @@
     "Blind Severus Snape": {
         "type": "canonical_tag",
         "parent_tags": [
-            "Harry Potter - J. K. Rowling"
+            "Harry Potter - J*d* K*d* Rowling"
         ],
         "synned_tags": [
             "Blind Snape",
@@ -10174,7 +10174,7 @@
     "Blind Racetrack Higgins": {
         "type": "canonical_tag",
         "parent_tags": [
-            "Newsies!: the Musical - Fierstein/Menken"
+            "Newsies!: the Musical - Fierstein*s*Menken"
         ],
         "synned_tags": [
             "Blind Race",
@@ -10497,7 +10497,7 @@
     "Blind James Potter": {
         "type": "canonical_tag",
         "parent_tags": [
-            "Harry Potter - J. K. Rowling"
+            "Harry Potter - J*d* K*d* Rowling"
         ],
         "synned_tags": [
             "Blind James",
@@ -10535,7 +10535,7 @@
         ],
         "synned_tags": [
             "Song Lan is blind",
-            "song lan is blind for about half of this?",
+            "song lan is blind for about half of this*q*",
             "СЛ был ослеплен раньше"
         ],
         "subtags": [
@@ -10669,8 +10669,8 @@
         "synned_tags": [
             "\"Blind\" Dream AU",
             "Blind Dream",
-            "Blind Dream pog?",
-            "Blind Dream...",
+            "Blind Dream pog*q*",
+            "Blind Dream*d**d**d*",
             "blind!dream",
             "dream is blind",
             "Half-blind Dream",
@@ -10991,7 +10991,7 @@
             "blind!tubbo",
             "blindbo",
             "Tubbo Got Blinded During The Festival",
-            "tubbo's going blind.",
+            "tubbo's going blind*d*",
             "WHY IS BLIND TOMMY A TAG BUT BLIND TUBBO IS NOT"
         ],
         "subtags": [
@@ -11088,8 +11088,8 @@
         ],
         "synned_tags": [
             "(obviously Toph is a blind character duh)",
-            "because... Toph is blind",
-            "Because...Toph is Blind",
+            "because*d**d**d* Toph is blind",
+            "Because*d**d**d*Toph is Blind",
             "blind toph",
             "remembering that toph is blind",
             "Toph Beifong Is Still Blind",
@@ -11162,7 +11162,7 @@
             "Blind GeorgeNotFound",
             "blind!george",
             "george is blind",
-            "george is blind. he doesnt have eyes"
+            "george is blind*d* he doesnt have eyes"
         ],
         "subtags": [
             ""
@@ -11383,7 +11383,7 @@
             "Supernatural (TV 2005)"
         ],
         "synned_tags": [
-            "ambiguously deaf dean?",
+            "ambiguously deaf dean*q*",
             "Deaf Dean",
             "Deaf!Dean",
             "Dean is deaf",
@@ -11451,7 +11451,7 @@
     "Deaf Ron Weasley": {
         "type": "canonical_tag",
         "parent_tags": [
-            "Harry Potter - J. K. Rowling"
+            "Harry Potter - J*d* K*d* Rowling"
         ],
         "synned_tags": [
             "Deaf Ron"
@@ -11560,13 +11560,13 @@
         ],
         "metatags": [
             "Deaf Character",
-            "Disabled James T. Kirk"
+            "Disabled James T*d* Kirk"
         ]
     },
     "Deaf Carmilla": {
         "type": "canonical_tag",
         "parent_tags": [
-            "Carmilla (Web Series)Carmilla - J. Sheridan Le Fanu"
+            "Carmilla (Web Series)Carmilla - J*d* Sheridan Le Fanu"
         ],
         "synned_tags": [
             "another deaf carmilla",
@@ -11608,7 +11608,7 @@
             "DEAF HINATA IS SO IMPORTANT",
             "deaf! Hinata",
             "Deaf!Hinata",
-            "deaf/hoh hinata",
+            "deaf*s*hoh hinata",
             "its a deaf hinata au",
             "Plus the idea od deaf Hinata is very interesting",
             "yeah hinata is deaf fight me i dare you"
@@ -11669,12 +11669,12 @@
     "Deaf Sirius Black": {
         "type": "canonical_tag",
         "parent_tags": [
-            "Harry Potter - J. K. Rowling"
+            "Harry Potter - J*d* K*d* Rowling"
         ],
         "synned_tags": [
             "Deaf Sirius",
             "Deaf!Sirius",
-            "Deaf/HoH Sirius Black",
+            "Deaf*s*HoH Sirius Black",
             "Hard of Hearing Sirius",
             "Sirius deaf"
         ],
@@ -11688,7 +11688,7 @@
     "Deaf Remus Lupin": {
         "type": "canonical_tag",
         "parent_tags": [
-            "Harry Potter - J. K. Rowling"
+            "Harry Potter - J*d* K*d* Rowling"
         ],
         "synned_tags": [
             "Deaf Remus",
@@ -11853,7 +11853,7 @@
     "Deaf Dan Howell": {
         "type": "canonical_tag",
         "parent_tags": [
-            "Phandom/The Fantastic Foursome (YouTube RPF)"
+            "Phandom*s*The Fantastic Foursome (YouTube RPF)"
         ],
         "synned_tags": [
             "Deaf Dan",
@@ -11978,9 +11978,9 @@
             "Deaf! Keith",
             "Deaf!Keith",
             "eventual deaf keith",
-            "HoH/deaf!Keith",
+            "HoH*s*deaf!Keith",
             "keith is deaf",
-            "Keith is deaf/HoH",
+            "Keith is deaf*s*HoH",
             "keith is hard of hearing",
             "keith's deaf",
             "sort of deaf Keith (Voltron)"
@@ -12011,7 +12011,7 @@
     "Deaf Phil Lester": {
         "type": "canonical_tag",
         "parent_tags": [
-            "Phandom/The Fantastic Foursome (YouTube RPF)"
+            "Phandom*s*The Fantastic Foursome (YouTube RPF)"
         ],
         "synned_tags": [
             "Deaf Phil",
@@ -12158,11 +12158,11 @@
             "deaf!Hizashi Yamada",
             "i don't think it's explicitly mentioned but mic is deaf",
             "mics deaf too",
-            "mics like kinda deaf i guess?",
+            "mics like kinda deaf i guess*q*",
             "Paritally Deaf Present Mic",
             "Partially Deaf Present Mic",
             "Present Mic is deaf",
-            "Yamada is deaf/deaf adjacent"
+            "Yamada is deaf*s*deaf adjacent"
         ],
         "subtags": [
             ""
@@ -12326,7 +12326,7 @@
     "Deaf Racetrack Higgins": {
         "type": "canonical_tag",
         "parent_tags": [
-            "Newsies!: the Musical - Fierstein/Menken"
+            "Newsies!: the Musical - Fierstein*s*Menken"
         ],
         "synned_tags": [
             "deaf race",
@@ -12587,7 +12587,7 @@
     "Deaf Hermione Granger": {
         "type": "canonical_tag",
         "parent_tags": [
-            "Harry Potter - J. K. Rowling"
+            "Harry Potter - J*d* K*d* Rowling"
         ],
         "synned_tags": [
             "deaf Hermione",
@@ -13002,7 +13002,7 @@
     "Deaf Specs (Newsies)": {
         "type": "canonical_tag",
         "parent_tags": [
-            "Newsies!: the Musical - Fierstein/Menken"
+            "Newsies!: the Musical - Fierstein*s*Menken"
         ],
         "synned_tags": [
             "deaf Specs",
@@ -13040,7 +13040,7 @@
             "Deaf Roman Sanders",
             "hard of hearing Roman",
             "hard of hearing!roman",
-            "hoh/deaf!roman"
+            "hoh*s*deaf!roman"
         ],
         "subtags": [
             ""
@@ -13334,7 +13334,7 @@
     "Deaf Victoria (Cats)": {
         "type": "canonical_tag",
         "parent_tags": [
-            "Cats (1998)Cats (2019)Cats - Andrew Lloyd WebberOld Possum's Book of Practical Cats - T. S. Eliot"
+            "Cats (1998)Cats (2019)Cats - Andrew Lloyd WebberOld Possum's Book of Practical Cats - T*d* S*d* Eliot"
         ],
         "synned_tags": [
             "Deaf Victoria",
@@ -13366,7 +13366,7 @@
     "Deaf Regulus Black": {
         "type": "canonical_tag",
         "parent_tags": [
-            "Harry Potter - J. K. Rowling"
+            "Harry Potter - J*d* K*d* Rowling"
         ],
         "synned_tags": [
             "Deaf Regulus",
@@ -13513,7 +13513,7 @@
     "Disabled Harry Potter": {
         "type": "canonical_tag",
         "parent_tags": [
-            "Harry Potter - J. K. Rowling"
+            "Harry Potter - J*d* K*d* Rowling"
         ],
         "synned_tags": [
             "disability!harry",
@@ -13698,11 +13698,11 @@
     "Mute Harry Potter": {
         "type": "canonical_tag",
         "parent_tags": [
-            "Harry Potter - J. K. Rowling"
+            "Harry Potter - J*d* K*d* Rowling"
         ],
         "synned_tags": [
-            "Fav. Mute Harry",
-            "Ft. Mute!Harry (which honestly is this a thing)",
+            "Fav*d* Mute Harry",
+            "Ft*d* Mute!Harry (which honestly is this a thing)",
             "harry is a mute",
             "Harry is mute",
             "harry is selective mute",
@@ -13804,7 +13804,7 @@
     "Selectively Mute Dan Howell": {
         "type": "canonical_tag",
         "parent_tags": [
-            "Phandom/The Fantastic Foursome (YouTube RPF)"
+            "Phandom*s*The Fantastic Foursome (YouTube RPF)"
         ],
         "synned_tags": [
             "Selective Mute Dan Howell",
@@ -14212,7 +14212,7 @@
     "Dyslexic Ron Weasley": {
         "type": "canonical_tag",
         "parent_tags": [
-            "Harry Potter - J. K. Rowling"
+            "Harry Potter - J*d* K*d* Rowling"
         ],
         "synned_tags": [],
         "subtags": [
@@ -14305,7 +14305,7 @@
     "Dyslexic Jaime Lannister": {
         "type": "canonical_tag",
         "parent_tags": [
-            "A Song of Ice and Fire - George R. R. MartinGame of Thrones (TV)"
+            "A Song of Ice and Fire - George R*d* R*d* MartinGame of Thrones (TV)"
         ],
         "synned_tags": [
             "Jaime's mild dyslexia"
@@ -14371,7 +14371,7 @@
     "Dyslexic Harry Potter": {
         "type": "canonical_tag",
         "parent_tags": [
-            "Harry Potter - J. K. Rowling"
+            "Harry Potter - J*d* K*d* Rowling"
         ],
         "synned_tags": [
             "Harry Potter has dyslexia"
@@ -14464,7 +14464,7 @@
     "Dyslexic Jane Seymour": {
         "type": "canonical_tag",
         "parent_tags": [
-            "Six - Marlow/Moss"
+            "Six - Marlow*s*Moss"
         ],
         "synned_tags": [],
         "subtags": [
@@ -14734,7 +14734,7 @@
     "Blind Harry Potter": {
         "type": "canonical_tag",
         "parent_tags": [
-            "Harry Potter - J. K. Rowling"
+            "Harry Potter - J*d* K*d* Rowling"
         ],
         "synned_tags": [
             "Blind Hazel Potter",
@@ -14966,7 +14966,7 @@
     "Deaf Harry Potter": {
         "type": "canonical_tag",
         "parent_tags": [
-            "Harry Potter - J. K. Rowling"
+            "Harry Potter - J*d* K*d* Rowling"
         ],
         "synned_tags": [
             "Almost completely deaf Harry Potter",
@@ -15198,7 +15198,7 @@
             ""
         ]
     },
-    "Adaptive sex due to injury or disability/figuring out how to get a partner off in different ways": {
+    "Adaptive sex due to injury or disability*s*figuring out how to get a partner off in different ways": {
         "type": "freeform_tag",
         "parent_tags": [
             "No Fandom"
@@ -15318,7 +15318,7 @@
             ""
         ]
     },
-    "all of the kids have a sort of disability/Mental disorder": {
+    "all of the kids have a sort of disability*s*Mental disorder": {
         "type": "freeform_tag",
         "parent_tags": [
             "No Fandom"
@@ -15378,7 +15378,7 @@
             ""
         ]
     },
-    "also btw this fic is strongly disability positive.": {
+    "also btw this fic is strongly disability positive*d*": {
         "type": "freeform_tag",
         "parent_tags": [
             "No Fandom"
@@ -15513,7 +15513,7 @@
             ""
         ]
     },
-    "and by the time i can get DISABILITY: C O N F I R M E D???": {
+    "and by the time i can get DISABILITY: C O N F I R M E D*q**q**q*": {
         "type": "freeform_tag",
         "parent_tags": [
             "No Fandom"
@@ -15573,7 +15573,7 @@
             ""
         ]
     },
-    "and that often takes years as long as u r... plagued by a rare disability.": {
+    "and that often takes years as long as u r*d**d**d* plagued by a rare disability*d*": {
         "type": "freeform_tag",
         "parent_tags": [
             "No Fandom"
@@ -15858,7 +15858,7 @@
             ""
         ]
     },
-    "Barbara Gordon is in her wheelchair and Cassandra Cain is mute because why erase disability?": {
+    "Barbara Gordon is in her wheelchair and Cassandra Cain is mute because why erase disability*q*": {
         "type": "freeform_tag",
         "parent_tags": [
             "No Fandom"
@@ -16068,7 +16068,7 @@
             ""
         ]
     },
-    "briefly mentioned joint pain/physical disability": {
+    "briefly mentioned joint pain*s*physical disability": {
         "type": "freeform_tag",
         "parent_tags": [
             "No Fandom"
@@ -16158,7 +16158,7 @@
             ""
         ]
     },
-    "can disability be used to justify abusive tendencies and behaviors?": {
+    "can disability be used to justify abusive tendencies and behaviors*q*": {
         "type": "freeform_tag",
         "parent_tags": [
             "No Fandom"
@@ -16398,7 +16398,7 @@
             ""
         ]
     },
-    "character with chronic pain / a physical disability": {
+    "character with chronic pain *s* a physical disability": {
         "type": "freeform_tag",
         "parent_tags": [
             "No Fandom"
@@ -16788,7 +16788,7 @@
             ""
         ]
     },
-    "Coping with new disability/Mobility Issues": {
+    "Coping with new disability*s*Mobility Issues": {
         "type": "freeform_tag",
         "parent_tags": [
             "No Fandom"
@@ -16863,7 +16863,7 @@
             ""
         ]
     },
-    "Day5 Scars/Disability": {
+    "Day5 Scars*s*Disability": {
         "type": "freeform_tag",
         "parent_tags": [
             "No Fandom"
@@ -16923,7 +16923,7 @@
             ""
         ]
     },
-    "dean might have a learning disability?": {
+    "dean might have a learning disability*q*": {
         "type": "freeform_tag",
         "parent_tags": [
             "No Fandom"
@@ -18048,7 +18048,7 @@
             ""
         ]
     },
-    "DISABILITY NONSENSE (...SORT OF!)": {
+    "DISABILITY NONSENSE (*d**d**d*SORT OF!)": {
         "type": "freeform_tag",
         "parent_tags": [
             "No Fandom"
@@ -18078,7 +18078,7 @@
             ""
         ]
     },
-    "disability or chronic pain centric///hurt/comfort": {
+    "disability or chronic pain centric*s**s**s*hurt*s*comfort": {
         "type": "freeform_tag",
         "parent_tags": [
             "No Fandom"
@@ -18798,7 +18798,7 @@
             ""
         ]
     },
-    "Disability/Hearing Loss": {
+    "Disability*s*Hearing Loss": {
         "type": "freeform_tag",
         "parent_tags": [
             "No Fandom"
@@ -19053,7 +19053,7 @@
             ""
         ]
     },
-    "Emmett Cullen is a Squib/Vampire with a Special Needs Disability": {
+    "Emmett Cullen is a Squib*s*Vampire with a Special Needs Disability": {
         "type": "freeform_tag",
         "parent_tags": [
             "No Fandom"
@@ -19068,7 +19068,7 @@
             ""
         ]
     },
-    "Eventual Phil/Clint; captured; torture; missing 14 months; permanent disability": {
+    "Eventual Phil*s*Clint; captured; torture; missing 14 months; permanent disability": {
         "type": "freeform_tag",
         "parent_tags": [
             "No Fandom"
@@ -19758,7 +19758,7 @@
             ""
         ]
     },
-    "Hurt/Comfort - Trying to cope with new disability": {
+    "Hurt*s*Comfort - Trying to cope with new disability": {
         "type": "freeform_tag",
         "parent_tags": [
             "No Fandom"
@@ -19938,7 +19938,7 @@
             ""
         ]
     },
-    "if u consider chonic pain a disability which. it Is": {
+    "if u consider chonic pain a disability which*d* it Is": {
         "type": "freeform_tag",
         "parent_tags": [
             "No Fandom"
@@ -20433,7 +20433,7 @@
             ""
         ]
     },
-    "kind of like. A study on Quirk and Disability interacting for him": {
+    "kind of like*d* A study on Quirk and Disability interacting for him": {
         "type": "freeform_tag",
         "parent_tags": [
             "No Fandom"
@@ -20448,7 +20448,7 @@
             ""
         ]
     },
-    "kink with disability/Neurodiversity": {
+    "kink with disability*s*Neurodiversity": {
         "type": "freeform_tag",
         "parent_tags": [
             "No Fandom"
@@ -20913,7 +20913,7 @@
             ""
         ]
     },
-    "Major Character injury/disability": {
+    "Major Character injury*s*disability": {
         "type": "freeform_tag",
         "parent_tags": [
             "No Fandom"
@@ -21003,7 +21003,7 @@
             ""
         ]
     },
-    "Me projecting my disability onto Shin? More likely than you think": {
+    "Me projecting my disability onto Shin*q* More likely than you think": {
         "type": "freeform_tag",
         "parent_tags": [
             "No Fandom"
@@ -21123,7 +21123,7 @@
             ""
         ]
     },
-    "Mention of Mental Retardation/Intellecutal Disability": {
+    "Mention of Mental Retardation*s*Intellecutal Disability": {
         "type": "freeform_tag",
         "parent_tags": [
             "No Fandom"
@@ -21138,7 +21138,7 @@
             ""
         ]
     },
-    "Mentioned Ableism/ discussion of disability": {
+    "Mentioned Ableism*s* discussion of disability": {
         "type": "freeform_tag",
         "parent_tags": [
             "No Fandom"
@@ -21273,7 +21273,7 @@
             ""
         ]
     },
-    "mentions of disability/paraplegia/spinal injury": {
+    "mentions of disability*s*paraplegia*s*spinal injury": {
         "type": "freeform_tag",
         "parent_tags": [
             "No Fandom"
@@ -21288,7 +21288,7 @@
             ""
         ]
     },
-    "mentions of Gai's disability/injury": {
+    "mentions of Gai's disability*s*injury": {
         "type": "freeform_tag",
         "parent_tags": [
             "No Fandom"
@@ -21453,7 +21453,7 @@
             ""
         ]
     },
-    "More disability headcanons..!": {
+    "More disability headcanons*d**d*!": {
         "type": "freeform_tag",
         "parent_tags": [
             "No Fandom"
@@ -21588,7 +21588,7 @@
             ""
         ]
     },
-    "Neku With a Slight Mental/Sensing Disability That I Think I Have Tbh": {
+    "Neku With a Slight Mental*s*Sensing Disability That I Think I Have Tbh": {
         "type": "freeform_tag",
         "parent_tags": [
             "No Fandom"
@@ -21603,7 +21603,7 @@
             ""
         ]
     },
-    "neurodivergence/disability/lgbt identities handled with care and experience": {
+    "neurodivergence*s*disability*s*lgbt identities handled with care and experience": {
         "type": "freeform_tag",
         "parent_tags": [
             "No Fandom"
@@ -21798,7 +21798,7 @@
             ""
         ]
     },
-    "OC may have a mental and/or learning disability/illness": {
+    "OC may have a mental and*s*or learning disability*s*illness": {
         "type": "freeform_tag",
         "parent_tags": [
             "No Fandom"
@@ -21948,7 +21948,7 @@
             ""
         ]
     },
-    "Parental illness/disability": {
+    "Parental illness*s*disability": {
         "type": "freeform_tag",
         "parent_tags": [
             "No Fandom"
@@ -22098,7 +22098,7 @@
             ""
         ]
     },
-    "Permanent Injury/Disability": {
+    "Permanent Injury*s*Disability": {
         "type": "freeform_tag",
         "parent_tags": [
             "No Fandom"
@@ -22173,7 +22173,7 @@
             ""
         ]
     },
-    "Peter has a mobility/walking disability": {
+    "Peter has a mobility*s*walking disability": {
         "type": "freeform_tag",
         "parent_tags": [
             "No Fandom"
@@ -22278,7 +22278,7 @@
             ""
         ]
     },
-    "Physical/Mental Disability": {
+    "Physical*s*Mental Disability": {
         "type": "freeform_tag",
         "parent_tags": [
             "No Fandom"
@@ -22368,7 +22368,7 @@
             ""
         ]
     },
-    "Possibly Resulting in Disability?": {
+    "Possibly Resulting in Disability*q*": {
         "type": "freeform_tag",
         "parent_tags": [
             "No Fandom"
@@ -22968,7 +22968,7 @@
             ""
         ]
     },
-    "Scars/Disability": {
+    "Scars*s*Disability": {
         "type": "freeform_tag",
         "parent_tags": [
             "No Fandom"
@@ -23148,7 +23148,7 @@
             ""
         ]
     },
-    "sickness/disability but not really": {
+    "sickness*s*disability but not really": {
         "type": "freeform_tag",
         "parent_tags": [
             "No Fandom"
@@ -23373,7 +23373,7 @@
             ""
         ]
     },
-    "Some self loathing related to injury recovery/adjusting to disability": {
+    "Some self loathing related to injury recovery*s*adjusting to disability": {
         "type": "freeform_tag",
         "parent_tags": [
             "No Fandom"
@@ -23493,7 +23493,7 @@
             ""
         ]
     },
-    "Struggles with disability acceptance/identity": {
+    "Struggles with disability acceptance*s*identity": {
         "type": "freeform_tag",
         "parent_tags": [
             "No Fandom"
@@ -23553,7 +23553,7 @@
             ""
         ]
     },
-    "Tear this disability representation from my Glenn-cold body.": {
+    "Tear this disability representation from my Glenn-cold body*d*": {
         "type": "freeform_tag",
         "parent_tags": [
             "No Fandom"
@@ -23613,7 +23613,7 @@
             ""
         ]
     },
-    "temporal disability/blindness": {
+    "temporal disability*s*blindness": {
         "type": "freeform_tag",
         "parent_tags": [
             "No Fandom"
@@ -24138,7 +24138,7 @@
             ""
         ]
     },
-    "unspecified chronic illness/disability": {
+    "unspecified chronic illness*s*disability": {
         "type": "freeform_tag",
         "parent_tags": [
             "No Fandom"
@@ -24213,7 +24213,7 @@
             ""
         ]
     },
-    "Viktor's Canonical Disability/Chronic Illness": {
+    "Viktor's Canonical Disability*s*Chronic Illness": {
         "type": "freeform_tag",
         "parent_tags": [
             "No Fandom"
@@ -24333,7 +24333,7 @@
             ""
         ]
     },
-    "What about people with a disability?": {
+    "What about people with a disability*q*": {
         "type": "freeform_tag",
         "parent_tags": [
             "No Fandom"
@@ -24363,7 +24363,7 @@
             ""
         ]
     },
-    "what would disability be like in Hogwarts?": {
+    "what would disability be like in Hogwarts*q*": {
         "type": "freeform_tag",
         "parent_tags": [
             "No Fandom"
@@ -24378,7 +24378,7 @@
             ""
         ]
     },
-    "what you thought because this was a silly one it wasn't going to also be about disability?": {
+    "what you thought because this was a silly one it wasn't going to also be about disability*q*": {
         "type": "freeform_tag",
         "parent_tags": [
             "No Fandom"
@@ -24393,7 +24393,7 @@
             ""
         ]
     },
-    "WHERE R ALL THE FICS THAT TALKS ABOUT TOPH'S DISABILITY??": {
+    "WHERE R ALL THE FICS THAT TALKS ABOUT TOPH'S DISABILITY*q**q*": {
         "type": "freeform_tag",
         "parent_tags": [
             "No Fandom"
@@ -24423,7 +24423,7 @@
             ""
         ]
     },
-    "wing disability?": {
+    "wing disability*q*": {
         "type": "freeform_tag",
         "parent_tags": [
             "No Fandom"
@@ -24438,7 +24438,7 @@
             ""
         ]
     },
-    "with some dark bits/the realities of adjusting to disability/etc.": {
+    "with some dark bits*s*the realities of adjusting to disability*s*etc*d*": {
         "type": "freeform_tag",
         "parent_tags": [
             "No Fandom"
@@ -24483,7 +24483,7 @@
             ""
         ]
     },
-    "zagreus inevitable cycle of death as an analogy for chronic illness/disability": {
+    "zagreus inevitable cycle of death as an analogy for chronic illness*s*disability": {
         "type": "freeform_tag",
         "parent_tags": [
             "No Fandom"
@@ -24528,7 +24528,7 @@
             ""
         ]
     },
-    "“Fixed” Disability/Incapacitating Injury": {
+    "“Fixed” Disability*s*Incapacitating Injury": {
         "type": "freeform_tag",
         "parent_tags": [
             "No Fandom"

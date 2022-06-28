@@ -6,7 +6,7 @@ import random
 import json
 import os
 from Modules.NetBuilder.net_builder import net_build
-
+import pandas as pd
 
 def dascra_whole_tag_works(tag='Disability', story_number=20, **kwargs):
     '''
@@ -246,6 +246,43 @@ def read_json_rata(database_path):
         # Append it to the list
         disability_graph_list.append(g)
     return (disability_graph_list,net_names)
+
+
+
+def prepare_df_ratas(data_to_read):
+    stories_df= pd.read_excel(data_to_read,
+                  dtype={
+                      'AdditionalTags': str, 'ArchiveWarning': str,
+                      'Author': str, 'Bookmarks': str,
+                      'Category': str, 'Chapters': str,
+                      'Characters': str, 'Comments': str,
+                      'Fandom': str, 'Hits': int,
+                      'Kudos': object, 'Language': str,
+                      'Rating': str, 'Relationship': str,
+                      'Series': str, 'Part': float,
+                      'SourceURL': str, 'Title': str,
+                      'Updated': str, 'Words': str,
+                  }) 
+
+
+    stories_df=stories_df.drop_duplicates()
+    stories_df=stories_df.drop(columns=['Author','Chapters','Fandom','Series','Part','Comments','Hits','Kudos','SourceURL','ArchiveWarning','Bookmarks','Category','Characters','Language','Rating','Relationship','Words'])
+
+
+
+    stories_df['Title']=stories_df['Title'].apply(lambda x: x.strip())
+
+    stories_df['AdditionalTags']=stories_df['AdditionalTags'].apply(lambda x: [item.strip().replace("/",'*s*').replace(".",'*d*').replace('?','*q*')  for item in str(x).split(',')])
+    # stories_df['AdditionalTags']=stories_df['AdditionalTags'].apply(lambda x: [item.replace("/",'*s*').replace(".",'*d*').replace('?','*q*') for item in str(x).split(',')])
+    all_additionaltags=[]
+    stories_df["AdditionalTags"].apply(lambda x: all_additionaltags.extend(x))
+    len(all_additionaltags)
+
+
+    stories_df['StoryTagCount']=stories_df["AdditionalTags"].apply(lambda x: len(x))
+    stories_df["Updated"]=pd.to_datetime(stories_df["Updated"])
+    return stories_df
+
 
 # tag,story_number=sys.argv[1:]
 # dascra_whole_tag_works(tag, int(story_number))

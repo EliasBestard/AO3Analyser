@@ -2,7 +2,7 @@ from pyvis.network import Network
 import networkx as nx
 from seaborn import color_palette
 
-def net_visualize(G:nx.DiGraph, hierarchical_layout=False, node_sizes=True, headings="", file_name="nx", show_it=True):
+def net_visualize(G:nx.DiGraph, hierarchical_layout=False, node_sizes=True, headings="", file_name="nx", show_it=True, directed=True):
   # """net_visualize _summary_
 
   # :param G: _description_
@@ -13,7 +13,7 @@ def net_visualize(G:nx.DiGraph, hierarchical_layout=False, node_sizes=True, head
   # :param show_it: _description_, defaults to True
   # :return: _description_
   # """    
-    if(node_sizes):
+    if(node_sizes and directed):
         d = dict(G.out_degree)
         #Updating dict
         d.update((x,min(5*y if 10*y>10 else 15, 100)) for x, y in d.items())
@@ -21,7 +21,7 @@ def net_visualize(G:nx.DiGraph, hierarchical_layout=False, node_sizes=True, head
 
 
 
-    nt = Network("100%","100%", directed=True, heading=headings+"<br>Nodes: "+str(len(G.nodes))+"<br>Edges: "+str(len(G.edges)))
+    nt = Network("100%","100%", directed=directed,bgcolor="rgba(255,255,255,0)", heading=headings+"<br>Nodes: "+str(len(G.nodes))+"<br>Edges: "+str(len(G.edges)))
     
     options = {
       "nodes": {
@@ -44,7 +44,7 @@ def net_visualize(G:nx.DiGraph, hierarchical_layout=False, node_sizes=True, head
       },
       "layout": {
         "hierarchical": {
-          "levelSeparation": 400,
+          # "levelSeparation": 400,
           "enabled": hierarchical_layout,
           "improvedLayout": False
         }
@@ -58,6 +58,7 @@ def net_visualize(G:nx.DiGraph, hierarchical_layout=False, node_sizes=True, head
         },
         "solver": "hierarchicalRepulsion" if hierarchical_layout else "forceAtlas2Based",#"barnesHut",
         # "minVelocity": 0,
+
       },
       "interaction": {
         "dragView": True,
@@ -72,8 +73,7 @@ def net_visualize(G:nx.DiGraph, hierarchical_layout=False, node_sizes=True, head
     
     nt.from_nx(G)
     nt.options=options  
-    nt.bgcolor='#EBF5FB'
-
+    # nt.show_buttons(filter_=['physics']) 
     nt.show(file_name+'.html') if show_it else None
     return nt
 
@@ -99,10 +99,12 @@ def get_visuals_older_vs_newest(G_old:nx.DiGraph, G_new:nx.DiGraph,**kwargs):
   number_comparison = kwargs['number_comparison'] if 'number_comparison' in kwargs else 5
 
 
-  large_nodes=list(set([node for node in G_new.nodes if G_new.out_degree(node)>=number_comparison]+[node for node in G_old.nodes if G_old.out_degree(node)>=number_comparison]))
+  large_nodes=list(set.union(set([node for node in G_new.nodes if G_new.out_degree(node)>=number_comparison]), set([node for node in G_old.nodes if G_old.out_degree(node)>=number_comparison])))
   
-
-  colors= color_palette('Set3',len(large_nodes))
+  
+  colors= color_palette('Set3',len(large_nodes)//3).as_hex()
+  colors.extend(color_palette('pastel',len(large_nodes)//3).as_hex())
+  colors.extend(color_palette(n_colors=len(large_nodes)//3 ).as_hex())
 
 
   nx.set_node_attributes(G_new,"#C9CBCD",'color')
@@ -119,7 +121,7 @@ def get_visuals_older_vs_newest(G_old:nx.DiGraph, G_new:nx.DiGraph,**kwargs):
   nx.set_edge_attributes(G_old,"#C9CBCD",'color')      
 
   return (
-    net_visualize(G_new, hierarchical_layout, False,headings=heading_b, file_name=file_name_b, show_it=show_it),
+    net_visualize(G_new, hierarchical_layout, node_sizes,headings=heading_b, file_name=file_name_b, show_it=show_it),
     net_visualize(G_old, hierarchical_layout, node_sizes,headings=heading_a, file_name=file_name_a, show_it=show_it)
     )
 
@@ -137,7 +139,6 @@ def get_vis_G_diff_H(H:nx.DiGraph, G:nx.DiGraph,**kwargs):
             hierarchical_layout: boolean to display the visualizations in hierarchical layout
   """
   # H-G= H-intersection
-
   show_it = kwargs['show_it'] if 'show_it' in kwargs else True
   node_sizes = kwargs['node_sizes'] if 'node_sizes' in kwargs else True
   hierarchical_layout = kwargs['hierarchical_layout'] if 'hierarchical_layout' in kwargs else False
@@ -158,3 +159,80 @@ def get_vis_G_diff_H(H:nx.DiGraph, G:nx.DiGraph,**kwargs):
   
   return h,net_visualize(h, hierarchical_layout=hierarchical_layout, node_sizes=node_sizes,headings=title,show_it=show_it,file_name=file_name)
 
+
+
+def net_visualize_story_set(G:nx.DiGraph,headings="", file_name="nx",):
+      # """net_visualize _summary_
+
+  # :param G: _description_
+  # :param hierarchical_layout: _description_, defaults to False
+  # :param node_sizes: _description_, defaults to True
+  # :param headings: _description_, defaults to ""
+  # :param file_name: _description_, defaults to "nx"
+  # :param show_it: _description_, defaults to True
+  # :return: _description_
+  # """    
+
+    d = dict(G.degree)
+    d.update((x,min(y if y>15 else 15, 75)) for x, y in d.items())
+    nx.set_node_attributes(G,d,'size')
+    
+    nt = Network("100%","100%", directed=False,bgcolor="rgba(255,255,255,0)", heading=headings+"<br>Nodes: "+str(len(G.nodes))+"<br>Edges: "+str(len(G.edges)))
+    
+    options = {
+      "nodes": {
+        "borderWidthSelected": 3,
+        "font": {
+          "background": "rgba(255,255,255,0)",
+          "strokeWidth": 5
+        },
+        "fixed": {
+          "x": False,
+          "y": False
+        }
+      },
+      "edges": {
+        "color": {
+          "inherit": True
+        },
+        "width": 0,
+        "smooth": False
+      },
+      "layout": {
+        "hierarchical": {
+          # "levelSeparation": 400,
+          "enabled": False,
+          "improvedLayout": False
+        }
+      },
+      "physics": {
+        "forceAtlas2Based": {
+          "springLength": 100,
+          "centralGravity": 0.005,
+          "springLength": 110,
+          "springConstant": 0.02,
+          "damping": 1,
+          "avoidOverlap": 0.06,
+          "gravitationalConstant": -204
+        },
+        "solver": "forceAtlas2Based",
+        "timestep": 1
+        # "minVelocity": 0,
+
+      },
+      "interaction": {
+        "dragView": True,
+        "hover": True,
+        "navigationButtons": True,
+        "keyboard": {
+          "enabled": True
+          },
+      }
+    }
+
+    
+    nt.from_nx(G)
+    nt.options=options  
+    # nt.show_buttons(filter_=['physics']) 
+    nt.show(file_name+'.html') 
+    return nt

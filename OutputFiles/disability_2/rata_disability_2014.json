@@ -1,0 +1,229 @@
+{
+    "Disability": {
+        "type": "canonical_tag",
+        "parent_tags": [
+            "No Fandom"
+        ],
+        "synned_tags": [
+            "Canon Disabilities",
+            "desability",
+            "disabililty",
+            "Disabilities",
+            "disabilities everywhere",
+            "Disability Issues",
+            "disability themes",
+            "disability!fic",
+            "disabilty",
+            "Disable",
+            "disabled!stuck",
+            "dissabilities",
+            "Dissability",
+            "Dsiable",
+            "Handicap",
+            "impairment",
+            "Permanant Injury of Main Character",
+            "Vocal Disability due to Severe Injury"
+        ],
+        "subtags": [
+            {
+                "Deaf": [
+                    {
+                        "Deaf Character": [
+                            "Deaf Dave",
+                            {
+                                "Deaf Derek": [
+                                    "Deaf Derek Hale"
+                                ]
+                            },
+                            "Deaf John",
+                            "Deaf Bilbo",
+                            "Deaf Castiel",
+                            "Deaf Stiles",
+                            {
+                                "Deaf Dean": [
+                                    "Deaf Dean Winchester"
+                                ]
+                            },
+                            "Deaf Sam",
+                            "Deaf Louis"
+                        ]
+                    },
+                    "Deaf Karkat Vantas"
+                ]
+            },
+            {
+                "Blindness": [
+                    {
+                        "Blind Character": [
+                            "Blind Stiles",
+                            "Blind Sherlock",
+                            "Blind Dave",
+                            "Blind Roy",
+                            "Blind Harry",
+                            "Blind John",
+                            {
+                                "Blind Sam": [
+                                    "Blind Sam Winchester"
+                                ]
+                            },
+                            "Blind Castiel",
+                            "Blind Loki",
+                            "Blind Dean",
+                            "Blind Derek",
+                            "Blind Sollux Captor",
+                            "Blind Louis",
+                            "Blind Dirk",
+                            "Blind Jack",
+                            "Blind Niall"
+                        ]
+                    },
+                    "Blind Liam"
+                ]
+            },
+            {
+                "Physical Disability": [
+                    "Permanent Injury"
+                ]
+            },
+            {
+                "Disabled Character": [
+                    "Canon Disabled Character",
+                    {
+                        "Deaf Character": [
+                            "Deaf Dave",
+                            {
+                                "Deaf Derek": [
+                                    "Deaf Derek Hale"
+                                ]
+                            },
+                            "Deaf John",
+                            "Deaf Bilbo",
+                            "Deaf Castiel",
+                            "Deaf Stiles",
+                            {
+                                "Deaf Dean": [
+                                    "Deaf Dean Winchester"
+                                ]
+                            },
+                            "Deaf Sam",
+                            "Deaf Louis"
+                        ]
+                    },
+                    "Disabled Character of Color",
+                    {
+                        "Blind Character": [
+                            "Blind Stiles",
+                            "Blind Sherlock",
+                            "Blind Dave",
+                            "Blind Roy",
+                            "Blind Harry",
+                            "Blind John",
+                            {
+                                "Blind Sam": [
+                                    "Blind Sam Winchester"
+                                ]
+                            },
+                            "Blind Castiel",
+                            "Blind Loki",
+                            "Blind Dean",
+                            "Blind Derek",
+                            "Blind Sollux Captor",
+                            "Blind Louis",
+                            "Blind Dirk",
+                            "Blind Jack",
+                            "Blind Niall"
+                        ]
+                    },
+                    {
+                        "Disabled Dean": [
+                            {
+                                "Disabled Dean Winchester": [
+                                    "Mute Dean Winchester",
+                                    "Deaf Dean Winchester"
+                                ]
+                            },
+                            {
+                                "Mute Dean": [
+                                    "Mute Dean Winchester"
+                                ]
+                            },
+                            {
+                                "Deaf Dean": [
+                                    "Deaf Dean Winchester"
+                                ]
+                            },
+                            "Blind Dean"
+                        ]
+                    },
+                    {
+                        "Disabled Sam": [
+                            {
+                                "Disabled Sam Winchester": [
+                                    "Mute Sam Winchester",
+                                    "Blind Sam Winchester"
+                                ]
+                            },
+                            {
+                                "Blind Sam": [
+                                    "Blind Sam Winchester"
+                                ]
+                            },
+                            "Deaf Sam",
+                            {
+                                "Mute Sam": [
+                                    "Mute Sam Winchester"
+                                ]
+                            }
+                        ]
+                    },
+                    "Deaf Karkat Vantas",
+                    {
+                        "Disabled Castiel": [
+                            "Blind Castiel",
+                            "Deaf Castiel",
+                            "Mute Castiel"
+                        ]
+                    }
+                ]
+            },
+            {
+                "Learning Disabilities": [
+                    "Dyslexia"
+                ]
+            },
+            {
+                "Muteness": [
+                    "Mute Loki",
+                    {
+                        "Mute Dave": [
+                            "Mute Dave Strider"
+                        ]
+                    },
+                    "Mute John",
+                    "Mute Derek",
+                    "Mute Stiles",
+                    "Mute Castiel",
+                    "Mute Justin",
+                    "Mute Karkat Vantas",
+                    {
+                        "Mute Dean": [
+                            "Mute Dean Winchester"
+                        ]
+                    },
+                    "Mute Niall",
+                    "Mute Harry",
+                    "Mute Louis",
+                    {
+                        "Mute Sam": [
+                            "Mute Sam Winchester"
+                        ]
+                    },
+                    "Mute Gavin"
+                ]
+            }
+        ],
+        "metatags": [
+            ""
+        ]
+    }
+}

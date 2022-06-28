@@ -1,73 +1,87 @@
 import argparse
 import os
+from numpy import integer
 
 from sympy import arg
 import Utils.scraper_script as scraper
 import Modules.NetBuilder.net_builder as net_builder
 import Modules.NetVisualizer.net_visualizer as net_visualizer
 import Modules.NetAnalyser.net_analyser as net_analiser
+import pandas as pd
 # # CLI
 
 parser = argparse.ArgumentParser(prog="ao3_analyser")
 
 # ## TagScra
 parser.add_argument("-ts", "--TagScra",
-                    help="Call TagScra Module witht the list of Tags as arguments to mine and genereate a JSON with the RATAS",
+                    help="Call TagScra Module witht a list of focus tags as arguments to mine. Genereate a JSON file with the RATAS",
                     nargs='+'
                     )
 parser.add_argument("-ao3_v", "--AO3Version",
-                    help="Version (year) for which scrap AO3 the tag when calling TagScra",
+                    help="TagScra argument that specifies the version (year) for which TagScra accesses AO3 using the Wayback Machine",
                     type=str,
-                    default='current'
+                    default='current',
+                    nargs=1
                     )
 parser.add_argument("--NonCanonical",
-                    help="Call TagScra Module witht the list of Tags as arguments to mine and genereate all non canonical tags under each tag",
+                    help="TagScra argument that mines and genereates all non canonical tags related with the focus tag received as argument",
                     action='store_true',
                     default=False
                     )
+# ##
+parser.add_argument("--ExpandRATAS", help="""Call TagScra to expand a RATAS. It receives a RATAS JSON file mining all canonical tags for its expansion. It outputs a RATAS JSON file with the Expanded RATAS.""",
+                    type=str)
+parser.add_argument("--ExpandFullRATAS", help="""Call TagScra to fully expand a RATAS. It receives an Expanded RATAS JSON file and a TXT with all non-canonical tags. It outputs a JSON file with the Fully Expanded RATAS.""",
+                    nargs=2)
+
 
 # ## DaScra
 parser.add_argument("-ds", "--DaScra",
-                    help="Call DaScra Module witht the Tag to mine all its works and genereate a JSON with the RATAS",
+                    help="Calls DaScra Module witht the Tag to mine all its fan-works and genereate a xlsx file with the Story-Set metadata",
                     type=str
                     # default='Disability'
                     )
-parser.add_argument("--StoryNumber", help="Number of stories to scrap when calling DaScra ",
+parser.add_argument("--StoryNumber", help="DaScra argument to set the number of fan-work to scrap",
                     type=int,
                     default=1000)
 
 # ## TagScra & DaScra0
-parser.add_argument("-o","--OutputName", help="Name of the file result",
+parser.add_argument("-o","--OutputName", help="Set the name of the file generated file",
                     type=str,
                     default='default_name')
-parser.add_argument("-op","--OutputPath", help="Path of the output",
+parser.add_argument("-op","--OutputPath", help="Set the path to store the generated file",
                     type=str,
                     default='./OutputFiles/')
-# ##
-parser.add_argument("--ExpandRATAS", help="""Read RATA JSON file expands it mining all the canonical tags to get they sub tags and synned tags """,
-                    type=str)
-parser.add_argument("--ExpandFullRATAS", help="""Read RATA JSON file expands it adding all the non canonical tags from a non_canonical file outputed by TagScra""",
-                    nargs=2)
+
 
 # ## Netbuilder & Visualizer
-parser.add_argument("-gn","--GenerateNetwork", help="Read a RATA JSON file and build the Network representation and creates its visualization. Receives the path of the JSON file",
-                    type=str)
+parser.add_argument("-gn","--GenerateNetwork", help="Build a RATA and generates its visualization. Recieves a RATAS JSON file. Outputs and shows the visualization of the RATAS.",
+                    type=str, nargs=1)
+
+parser.add_argument("--GenerateFullTagNetwork", help="Build the Story-Set & RATAS Full Tag Network and generates its visualization. Recieves a RATAS JSON file and a Story-Set. Outputs and shows the visualization of the Full Tag Network.",
+                    nargs=2)
+parser.add_argument("--GenerateSynTagNetwork", help="Build the Story-Set & RATAS Syn Tag Network and generates its visualization. Recieves a RATAS JSON file and a Story-Set. Outputs and shows the visualization of the Syn Tag Network.",
+                    nargs=2)
+parser.add_argument("--GenerateCanonicalTagNetwork", help="Build the Story-Set & RATAS Canonical Tag Network and generates its visualization. Recieves a RATAS JSON file and a Story-Set. Outputs and shows the visualization of the Canonical Tag Network.",
+                    nargs=2)
+parser.add_argument("--GenerateFreeFormTagNetwork", help="Build the Story-Set & RATAS Free-Form Tag Network and generates its visualization. Recieves a RATAS JSON file and a Story-Set. Outputs and shows the visualization of the Free-Form Tag Network.",
+                    nargs=2)
+parser.add_argument("--StorySetYear", help="Set the year of the Story-Set & RATAS Netowrks. It filters the Sotry-Set for all the fan-works before the year inputed as argument.",
+                    default=2022)
 
 # ## Visualizer -- Net Diff, Intersection, etc
-parser.add_argument("-gs","--GenerateSimilarites", help="Given two RATAS JSON files generates boths visualiations highlighting the similarities assuming the first one is an old version of the second one",
+parser.add_argument("-gs","--GenerateSimilarites", help="Generates the visualizations highlighting the similarities between two RATAS. It receives two RATAS JSON files assuming the first is the older version.",
                     nargs=2)
-parser.add_argument("-gd","--GenerateDifferences", help="""Given two RATAS JSON files generates one visualization that highlights the differences of two RATAS
-                     Blue Nodes represents nodes in the difference (in the second file that are not in the first file)
-                     Red Nodes represents nodes in the intersection (in the second file and the first file) """,
+parser.add_argument("-gd","--GenerateDifferences", help="Generates the visualizations highlighting the differences between two RATAS. It receives two RATAS JSON files assuming the first is the older version.",
                     nargs=2)
 
 
 # ## Reports
-parser.add_argument("--GenerateRATASProperties", help="""""",
+parser.add_argument("--GenerateRATASProperties", help="Generates a report with the main properties of a snapshot of a RATAS. It receives a RATAS JSON files. It outputs a xslx file with different information of the RATAS.",
                     nargs=1)
-parser.add_argument("--GenTagDiff", help="""""",
+parser.add_argument("--GenTagDiff", help="Generates a report with the differences of two RATAS. It receives two RATAS JSON files assuming the first one is the older version. It outputs a xslx file with the differences between the RATAS.",
                     nargs=2)
-parser.add_argument("--GenTagDiffDir", help="""""",
+parser.add_argument("--GenTagDiffDir", help="Generates a report with the differences between a set of RATAS. It receives directory full of  RATAS JSON files assuming they are sorted from older to most recent version. It outputs a xslx file with the differences between the RATAS.",
                     nargs=1)
 def parse():
     """
@@ -105,6 +119,35 @@ def parse():
         net_visualizer.net_visualize(g, 
                             headings=heading,
                             file_name=file_name)
+    elif args.GenerateFullTagNetwork or args.GenerateCanonicalTagNetwork or args.GenerateSynTagNetwork or args.GenerateFreeFormTagNetwork:
+        print(" Invoking NetBuilder and NetVisualizer")
+        
+        if args.GenerateFullTagNetwork:
+            type="Full"
+            my_arguments=args.GenerateFullTagNetwork
+        elif args.GenerateCanonicalTagNetwork:
+            type="Canonical"
+            my_arguments=args.GenerateCanonicalTagNetwork
+        elif args.GenerateSynTagNetwork:
+            type="Syn"
+            my_arguments=args.GenerateSynTagNetwork
+        elif args.GenerateFreeFormTagNetwork:
+            type="FreeForm"
+            my_arguments=args.GenerateFreeFormTagNetwork
+        
+        rata_json= scraper.read_JSON(my_arguments[0])
+        g= net_builder.net_build(rata_json)
+
+        file_name = os.path.basename(my_arguments[0])[:-5]+"_"+type+"_Network" if args.OutputName=="default_name" else args.OutputName
+        heading="File: "+my_arguments[0]+'<br>'+file_name+'<br>'+os.path.basename(my_arguments[1])[:-5]
+        
+
+        df=scraper.prepare_df_ratas(my_arguments[1])
+        tag_net = net_builder.generate_story_set_net(type,df,g,year=args.StorySetYear)
+        net_visualizer.net_visualize_story_set(tag_net, 
+                            headings=heading,
+                            file_name=file_name)   
+    
     elif args.GenerateSimilarites:
         print(" Invoking NetBuilder and NetVisualizer ~~ Similarities ")
         

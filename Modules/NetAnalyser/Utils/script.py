@@ -322,8 +322,6 @@ def generate_report(info_dic:dict, file_name='report', w_mode='w'):
     f.close()
 
 
-
-
 def generate_tag_diff_dataset(G:nx.DiGraph, H:nx.DiGraph,**kwargs):
     """generate_tag_diff_dataset Generates a dataset with all the tags, its precense in each Graph and its type
     Tags | H_presence | G_presence | H_type | G_type
@@ -353,14 +351,51 @@ def generate_tag_diff_dataset(G:nx.DiGraph, H:nx.DiGraph,**kwargs):
         df.loc[df.Tags==tag,G.name+'_presence']= G.has_node(tag)
         df.loc[df.Tags==tag,H.name+'_type']= H.nodes[tag]['type'] if  H.has_node(tag) else None
         df.loc[df.Tags==tag,G.name+'_type']= G.nodes[tag]['type'] if  G.has_node(tag) else None
-        if not H.has_node(tag):
-            df.loc[df.Tags==tag,'Action']= 'addition'
-        elif G.has_node(tag) and (H.nodes[tag]['type']=='freeform_tag' or H.nodes[tag]['type']=='synned_tag') and G.nodes[tag]['type']=='canonical_tag':
+        
+        # If old version does not have the node
+        # If it is now a canonical tag asume canonized
+        # If it is now a syn tag asume synonymized
+        # If it is now a freeform tag asume addition
+        if not H.has_node(tag): 
+            if G.nodes[tag]["type"]=='canonical_tag':
+                df.loc[df.Tags==tag,'Action'] = 'canonized' 
+            elif G.nodes[tag]["type"]=='synned_tag':
+                df.loc[df.Tags==tag,'Action'] = 'sinonized'
+            else:
+                df.loc[df.Tags==tag,'Action'] = 'addition'
+        
+        # If existed before
+
+        # If it wasn't canonical tag and now is canonical -> canonized
+        elif G.has_node(tag) and not H.nodes[tag]['type']=='canonical_tag' and G.nodes[tag]['type']=='canonical_tag':
             df.loc[df.Tags==tag,'Action']= 'canonized'
-        elif G.has_node(tag) and (H.nodes[tag]['type']=='freeform_tag' or H.nodes[tag]['type']=='canonical_tag') and G.nodes[tag]['type']=='synned_tag':
+        
+        # If it wasn't syn tag and now is syn -> synonymized
+        elif G.has_node(tag) and not H.nodes[tag]['type']=='synned_tag' and G.nodes[tag]['type']=='synned_tag':
             df.loc[df.Tags==tag,'Action']= 'sinonized'
+        
+
+        # If it wasn't freeform tag and now is freeform -> decanonized
+        elif G.has_node(tag) and not H.nodes[tag]['type']=='freeform_tag' and G.nodes[tag]['type']=='freeform_tag':
+            df.loc[df.Tags==tag,'Action']= 'decanonized'
+
+        # If existed and now it does not
         elif not G.has_node(tag):
             df.loc[df.Tags==tag,'Action']= 'removed'
+
+
+
+
+        # # If it was freeform or syn tag and now is canonical -> canonized
+        # elif G.has_node(tag) and (H.nodes[tag]['type']=='freeform_tag' or H.nodes[tag]['type']=='synned_tag') and G.nodes[tag]['type']=='canonical_tag':
+        #     df.loc[df.Tags==tag,'Action']= 'canonized'
+        
+        # # If it was freeform or syn tag and now is canonical -> canonized
+        # elif G.has_node(tag) and (H.nodes[tag]['type']=='freeform_tag' or H.nodes[tag]['type']=='canonical_tag') and G.nodes[tag]['type']=='synned_tag':
+        #     df.loc[df.Tags==tag,'Action']= 'sinonized'
+        
+        # elif not G.has_node(tag):
+        #     df.loc[df.Tags==tag,'Action']= 'removed'
 
     if generate_csv:
         df.to_csv(path+'/'+file_name+'.csv', index=False)    
@@ -396,9 +431,9 @@ def gen_tags_dataset_list(net_list:list, **kwargs):
             df.loc[df.Tags==tag,columns[1+i*2+1]]= net_list[i].nodes[tag]['type'] if  net_list[i].has_node(tag) else None
     net_list[-1].name=net_names[-1]
     
-    for i in range(len(net_list)-1):
+    for i in range(0,len(net_list)-1):
         net_list[i].name=net_names[i]
-        df_temp= __political_acts_between_two_ratas(net_list[-1],net_list[i])
+        df_temp= __political_acts_between_two_ratas(net_list[i+1],net_list[i])
         df= df.merge(df_temp,on='Tags',how='outer')
 
     if generate_csv:
@@ -413,11 +448,23 @@ def __political_acts_between_two_ratas(rata_new_ver:nx.DiGraph, rata_old_ver:nx.
 
     for tag in df.Tags:
         if not rata_old_ver.has_node(tag):
-            df.loc[df.Tags==tag,action_column]= 'addition'
-        elif rata_new_ver.has_node(tag) and (rata_old_ver.nodes[tag]['type']=='freeform_tag' or rata_old_ver.nodes[tag]['type']=='synned_tag') and rata_new_ver.nodes[tag]['type']=='canonical_tag':
+            if rata_new_ver.nodes[tag]['type']=='freeform_tag':
+                df.loc[df.Tags==tag,action_column]= 'addition'
+            
+            if rata_new_ver.nodes[tag]['type']=='synned_tag':
+                df.loc[df.Tags==tag,action_column]= 'sinonized'
+            
+            if rata_new_ver.nodes[tag]['type']=='canonical_tag':
+                df.loc[df.Tags==tag,action_column]= 'canonized'
+
+        elif rata_new_ver.has_node(tag) and not rata_old_ver.nodes[tag]['type']=='canonical_tag' and rata_new_ver.nodes[tag]['type']=='canonical_tag':
             df.loc[df.Tags==tag,action_column]= 'canonized'
-        elif rata_new_ver.has_node(tag) and (rata_old_ver.nodes[tag]['type']=='freeform_tag' or rata_old_ver.nodes[tag]['type']=='canonical_tag') and rata_new_ver.nodes[tag]['type']=='synned_tag':
+        elif rata_new_ver.has_node(tag) and not rata_old_ver.nodes[tag]['type']=='synned_tag' and rata_new_ver.nodes[tag]['type']=='synned_tag':
             df.loc[df.Tags==tag,action_column]= 'sinonized'
+        
+        elif rata_new_ver.has_node(tag) and not rata_old_ver.nodes[tag]['type']=='freeform_tag' and rata_new_ver.nodes[tag]['type']=='freeform_tag':
+            df.loc[df.Tags==tag,action_column]= 'decanonized'
+        
         elif not rata_new_ver.has_node(tag):
             df.loc[df.Tags==tag,action_column]= 'removed'
     
