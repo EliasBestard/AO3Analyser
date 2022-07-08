@@ -207,7 +207,8 @@ def read_JSON(ratas_file):
     :param ratas_file: path of the JSON file
     :return: return the dictionary containing all the RATAS with each root as key, {} if the file does not exists or empty
     """
-
+    print(ratas_file[0])
+    # ratas_file=ratas_file[0]
     if os.path.isfile(ratas_file):
         with open(ratas_file, 'r', encoding='utf-8') as f:
             current_data = json.load(f)

@@ -28,13 +28,24 @@
 @REM python.exe .\ao3_analyser.py -gn .\legend_current_expanded.json   
 @REM python.exe .\ao3_analyser.py -gn .\legend_current_expanded_full.json   
 
+@REM python.exe .\ao3_analyser.py -gn .\OutputFiles\aaaaaa\previous.json
+@REM python.exe .\ao3_analyser.py -gn ".\OutputFiles\aaaaaa\previous copy.json"
+@REM python.exe .\ao3_analyser.py -gn ".\OutputFiles\disability\rata_disability_curren.json"   
+
+
+
 @REM @REM Generate Visualization of similarities between two disability RATAS version
-@REM python.exe .\ao3_analyser.py -gs .\OutputFiles\disability\rata_disability_2013.json .\OutputFiles\disability\rata_disability_current.json
+@REM python.exe .\ao3_analyser.py -gs .\OutputFiles\disability\rata_disability_2013.json .\OutputFiles\disability_ratas_current\rata_disability_current.json
 @REM python.exe .\ao3_analyser.py -gs .\OutputFiles\disability\rata_disability_2013.json .\OutputFiles\disability\rata_disability_current_expanded_full.json
 
 @REM @REM Generate Visualization of differences between two disability RATAS version
 @REM python.exe .\ao3_analyser.py -gd .\OutputFiles\disability\rata_disability_2013.json .\OutputFiles\disability\rata_disability_current_expanded_full.json
-@REM python.exe .\ao3_analyser.py -gd .\OutputFiles\disability\rata_disability_2013.json .\OutputFiles\disability_ratas_current\rata_disability_current.json
+python.exe .\ao3_analyser.py -gd .\OutputFiles\disability\rata_disability_2013.json .\OutputFiles\disability_ratas_current\rata_disability_current.json
+
+
+
+@REM python.exe .\ao3_analyser.py -gs .\OutputFiles\disability_ratas_old\rata_disability_2013.json .\OutputFiles\disability_ratas_old\rata_disability_2014.json
+
 
 
 
@@ -53,17 +64,18 @@
 
 
 @REM @REM Generate Visualization of a Story-Set & disability RATAS
-python.exe .\ao3_analyser.py --GenerateFullTagNetwork ./OutputFiles/disability/rata_disability_current_expanded_full.json ./OutputFiles/disability_ratas_current/dascra_output_disability.xlsx -o disability_full_tag_net
+@REM python.exe .\ao3_analyser.py --GenerateFullTagNetwork ./OutputFiles/disability/rata_disability_current_expanded_full.json ./OutputFiles/disability_ratas_current/dascra_output_disability.xlsx -o disability_full_tag_net
 
 @REM python.exe .\ao3_analyser.py --GenerateCanonicalTagNetwork ./OutputFiles/disability/rata_disability_current_expanded_full.json ./OutputFiles/disability_ratas_current/dascra_output_disability.xlsx -o disability_canonical_tag_net
 @REM python.exe .\ao3_analyser.py --GenerateCanonicalTagNetwork ./OutputFiles/disability/rata_disability_2013.json ./OutputFiles/disability_ratas_current/dascra_output_disability.xlsx -o disability_canonical_tag_net_2013 --StorySetYear 2013
 
 
-python.exe .\ao3_analyser.py --GenerateSynTagNetwork ./OutputFiles/disability/rata_disability_current_expanded_full.json ./OutputFiles/disability_ratas_current/dascra_output_disability.xlsx -o disability_syn_tag_net
-python.exe .\ao3_analyser.py --GenerateFreeFormTagNetwork ./OutputFiles/disability/rata_disability_current_expanded_full.json ./OutputFiles/disability_ratas_current/dascra_output_disability.xlsx -o disability_freeform_tag_net
+@REM python.exe .\ao3_analyser.py --GenerateSynTagNetwork ./OutputFiles/disability/rata_disability_current_expanded_full.json ./OutputFiles/disability_ratas_current/dascra_output_disability.xlsx -o disability_syn_tag_net
+@REM python.exe .\ao3_analyser.py --GenerateFreeFormTagNetwork ./OutputFiles/disability/rata_disability_current_expanded_full.json ./OutputFiles/disability_ratas_current/dascra_output_disability.xlsx -o disability_freeform_tag_net
    
 @REM python.exe .\ao3_analyser.py -gn .\OutputFiles\disability\rata_disability_current_expanded.json   
 @REM python.exe .\ao3_analyser.py -gn .\OutputFiles\disability\rata_disability_current_expanded_full.json   
+
 @REM python.exe .\ao3_analyser.py -gn .\legend_current.json   
 @REM python.exe .\ao3_analyser.py -gn .\legend_current_expanded.json   
 @REM python.exe .\ao3_analyser.py -gn .\legend_current_expanded_full.json   
