@@ -1,0 +1,56 @@
+{
+    "Disability": {
+        "type": "canonical_tag",
+        "parent_tags": [
+            "No Fandom"
+        ],
+        "synned_tags": [
+            "disability themes",
+            "disabilty",
+            "disabled!stuck"
+        ],
+        "subtags": [
+            "Disabilities",
+            "Disability Issues",
+            "Deaf",
+            {
+                "Deaf Character": [
+                    "Deaf Dave",
+                    "Deaf Bilbo",
+                    "Deaf Castiel",
+                    "Deaf Stiles"
+                ]
+            },
+            "Blindness",
+            {
+                "Blind Character": [
+                    "Blind Dave",
+                    "Blind Roy",
+                    "Blind Harry"
+                ]
+            },
+            "Physical Disability",
+            "Permanent Injury",
+            "Disabled Character"
+        ],
+        "metatags": [""]
+    },
+    "Blind Sherlock": {
+        "type": "freeform_tag",
+        "parent_tags": [
+            "No Fandom"
+        ],
+        "synned_tags": [""],
+        "subtags": [""],
+        "metatags": [""]
+    },
+    "Blind Stiles": {
+        "type": "freeform_tag",
+        "parent_tags": [
+            "No Fandom"
+        ],
+        "synned_tags": [""],
+        "subtags": [""],
+        "metatags": [""]
+    }
+}

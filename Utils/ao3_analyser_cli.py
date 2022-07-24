@@ -56,7 +56,7 @@ parser.add_argument("-op","--OutputPath", help="Set the path to store the genera
 
 # ## Netbuilder & Visualizer
 parser.add_argument("-gn","--GenerateNetwork", help="Build a RATA and generates its visualization. Recieves a RATAS JSON file. Outputs and shows the visualization of the RATAS.",
-                    type=str, nargs=1)
+                    type=str)
 
 parser.add_argument("--GenerateFullTagNetwork", help="Build the Story-Set & RATAS Full Tag Network and generates its visualization. Recieves a RATAS JSON file and a Story-Set. Outputs and shows the visualization of the Full Tag Network.",
                     nargs=2)

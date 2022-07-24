@@ -45,7 +45,7 @@ def story_set_full_tag_net(df:pd.DataFrame,ratas:nx.DiGraph,additional_tags:dict
 
         if ratas.nodes[tag]['type']=='freeform_tag':
             for edges in list(nx.edges(temp)):
-                fulltag_net[edges[0]][edges[1]]['color']='green'
+                fulltag_net[edges[0]][edges[1]]['color']='blue'
         if ratas.nodes[tag]['type']=='canonical_tag':
             for edges in list(nx.edges(temp)):
                 fulltag_net[edges[0]][edges[1]]['color']='red'

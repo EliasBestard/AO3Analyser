@@ -72,8 +72,8 @@ def net_visualize(G:nx.DiGraph, hierarchical_layout=False, node_sizes=True, head
 
     
     nt.from_nx(G)
-    nt.options=options  
-    # nt.show_buttons(filter_=['physics']) 
+    # nt.options=options  
+    nt.show_buttons(filter_=['physics']) 
     nt.show(file_name+'.html') if show_it else None
     return nt
 
